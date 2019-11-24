@@ -1,0 +1,116 @@
+// Tablets and Smaller
+@media (max-width: 800px) {
+	// Home page header
+	#header-home {
+		height: 30rem;
+
+		.header-overlay {
+			height: 30rem;
+		}
+
+		.header-content {
+			padding-top: 5rem;
+		}
+	}
+}
+
+// Smartphones
+@media (max-width: 500px) {
+	// Nav Bar
+	#main-nav {
+		flex-direction: column;
+		align-items: center;
+
+		li {
+			padding: 1rem;
+		}
+	}
+
+	// Home page header
+	#header-home {
+		height: 12rem;
+		border-bottom: 3px solid $main-color;
+		background-position: 20% 30%;
+
+		.header-overlay {
+			height: 12rem;
+		}
+
+		.header-content {
+			display: none;
+		}
+	}
+
+	// Header Inner
+	#header-inner {
+		height: 12rem;
+
+		.about-header-overlay {
+			height: 12rem;
+		}
+	}
+
+	// Stack Grid Columns
+	#home-benefits .specials,
+	#home-stats .stats,
+	#home-use .use,
+	#about-a .about-info,
+	#about-c .project-logos,
+	#about-d .quotes,
+	#tracks-catalog #tracks {
+		grid-template-columns: 1fr;
+	}
+
+	#home {
+		&-benefits {
+			.specials div {
+				border-bottom: 1px solid $light-color;
+				padding-bottom: 1rem;
+
+				&:last-child {
+					border: none;
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&-stats {
+			.stats div {
+				padding: 2rem 0 1rem 0;
+			}
+		}
+	}
+
+	// About
+	#about {
+		&-a {
+			.about-info {
+				grid-template-areas:
+					'bioimage'
+					'bio'
+					'mission'
+					'stat1'
+					'stat2'
+					'stat3';
+			}
+
+			img {
+				height: 238px;
+				width: 325px;
+			}
+		}
+	}
+}
+
+// Smartphone Landscape
+@media (max-height: 580px) {
+	#header-home {
+		.header-content {
+			padding-top: 3rem;
+
+			h1 {
+				font-size: 3rem;
+			}
+		}
+	}
+}
