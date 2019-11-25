@@ -51,8 +51,8 @@
 	}
 
 	// Stack Grid Columns
-	#home-benefits .specials,
-	#home-stats .stats,
+	#home-benefits .benefits,
+	#home-tracks .tracks,
 	#home-use .use,
 	#about-a .about-info,
 	#about-c .project-logos,
@@ -63,7 +63,7 @@
 
 	#home {
 		&-benefits {
-			.specials div {
+			.benefits div {
 				border-bottom: 1px solid $light-color;
 				padding-bottom: 1rem;
 
@@ -74,8 +74,8 @@
 			}
 		}
 
-		&-stats {
-			.stats div {
+		&-tracks {
+			.tracks div {
 				padding: 2rem 0 1rem 0;
 			}
 		}

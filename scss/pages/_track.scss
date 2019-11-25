@@ -1,0 +1,21 @@
+// Track
+#tracks-catalog {
+	#tracks {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(3, 1fr);
+
+		.track {
+			display: grid;
+			text-align: center;
+			position: relative;
+			color: #fff;
+
+			&-text {
+				width: 100%;
+				position: relative;
+				margin-top: -50%;
+			}
+		}
+	}
+}

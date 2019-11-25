@@ -1,0 +1,55 @@
+// Sign Up
+.form {
+	.text-fields {
+		display: grid;
+		grid-template-areas:
+			'name'
+			'email'
+			'password'
+			'confirm-password';
+		grid-gap: 1.2rem;
+
+		// Grid Areas
+		.name-input {
+			grid-area: name;
+		}
+		.email-input {
+			grid-area: email;
+		}
+		.password-input {
+			grid-area: password;
+		}
+		.confirm-password-input {
+			grid-area: confirm-password;
+		}
+
+		.text-input {
+			padding: 0.5rem 1rem;
+			border: 2px solid #000;
+			border-radius: 5px;
+			font-size: 1rem;
+			outline: none;
+		}
+	}
+
+	.terms {
+		font-size: 1rem;
+
+		a {
+			text-decoration: none;
+			font-weight: bold;
+
+			&:visited {
+				color: #000;
+			}
+		}
+	}
+
+	a:hover {
+		color: $main-color;
+	}
+
+	button[type='submit'] {
+		width: 100%;
+	}
+}
