@@ -2,8 +2,13 @@
 
 // CSS Reset
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 // Variables
@@ -16,172 +21,210 @@ $bg-img: url('../../dist/img/showpiece.jpg');
 
 // Core Styles
 body {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.6;
-	background: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  height: 100%;
+  position: relative;
 }
 
 a {
-	text-decoration: none;
-	color: $dark-color;
+  text-decoration: none;
+  color: $dark-color;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
 // Utilities
 
 // Logo
 #logo {
-	padding-top: 0.5rem;
-	color: #fff;
+  padding-top: 0.5rem;
+  color: #fff;
+}
+
+.main-page-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 4rem; /* height of your footer */
+}
+
+.form-page-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
 }
 
 .container {
-	max-width: $website-width;
-	padding: 0 1.5rem;
-	margin: auto;
-	overflow: hidden;
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
 }
 
 .form-container {
-	max-width: 522px;
-	padding: 0 1.5rem;
-	margin: auto;
-	overflow: hidden;
+  max-width: 522px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
 }
 
 // Buttons
 %btn-shared {
-	display: inline-block;
-	padding: 0.8rem 1.6rem;
-	transition: all 0.5s;
-	border: none;
-	cursor: pointer;
-	border-radius: 4px;
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .btn {
-	&-main {
-		@extend %btn-shared;
-		color: #333;
-		background-color: $main-color;
-	}
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
 
-	&-light {
-		@extend %btn-shared;
-		color: #333;
-		background-color: $light-color;
-	}
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
 
-	&-dark {
-		@extend %btn-shared;
-		color: #f4f4f4;
-		background-color: $dark-color;
-	}
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
 
-	&-signup {
-		@extend %btn-shared;
-		color: #333;
-		background-color: $light-color;
-		height: 1rem;
-		margin-top: 0.5rem;
-		line-height: 18px;
-	}
+  &-signup {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+    height: 1rem;
+    margin-top: 0.5rem;
+    line-height: 18px;
+  }
 }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-	background-color: #93cb52;
+  background-color: #93cb52;
 }
 
 // Background Colors
 .bg {
-	&-main {
-		background-color: $main-color;
-		color: #fff;
-	}
+  &-main {
+    background-color: $main-color;
+    color: #fff;
+  }
 
-	&-dark {
-		background-color: $dark-color;
-		color: #fff;
-	}
+  &-dark {
+    background-color: $dark-color;
+    color: #fff;
+  }
 
-	&-medium {
-		background-color: $medium-color;
-		color: #000;
-	}
+  &-medium {
+    background-color: $medium-color;
+    color: #000;
+  }
 
-	&-light {
-		background-color: $light-color;
-		color: #000;
-	}
+  &-light {
+    background-color: $light-color;
+    color: #000;
+  }
 }
 
 .lead {
-	font-size: 1.3rem;
-	margin-bottom: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 // Padding Top and Bottom
 .py {
-	&-1 {
-		padding: 1rem 0;
-	}
-	&-2 {
-		padding: 2rem 0;
-	}
-	&-3 {
-		padding: 3rem 0;
-	}
-	&-4 {
-		padding: 4rem 0;
-	}
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Padding Top
+.pt {
+  &-1 {
+    padding-top: 1rem;
+  }
+  &-2 {
+    padding-top: 2rem;
+  }
+  &-3 {
+    padding-top: 3rem;
+  }
+  &-4 {
+    padding-top: 4rem;
+  }
 }
 
 // Margin Top and Bottom
 .my {
-	&-1 {
-		margin: 1rem 0;
-	}
-	&-2 {
-		margin: 2rem 0;
-	}
-	&-3 {
-		margin: 3rem 0;
-	}
-	&-4 {
-		margin: 4rem 0;
-	}
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
 }
 
 .section-title {
-	font-size: 2rem;
-	font-weight: 100;
-	text-transform: uppercase;
-	display: block;
-	padding-bottom: 0.5rem;
-	text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .bottom-line {
-	height: 2px;
-	width: 3rem;
-	background-color: $main-color;
-	display: block;
-	margin: 0 auto 1rem auto;
+  height: 2px;
+  width: 3rem;
+  background-color: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 .text-primary {
-	color: $main-color;
+  color: $main-color;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }

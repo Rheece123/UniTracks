@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0; }
 
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background: #fff; }
+  background: #fff;
+  height: 100%;
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -20,6 +26,22 @@ img {
 #logo {
   padding-top: 0.5rem;
   color: #fff; }
+
+.main-page-container {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 4rem;
+  /* height of your footer */ }
+
+.form-page-container {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative; }
 
 .container {
   max-width: 1280px;
@@ -100,6 +122,18 @@ input[class^='btn-']:hover {
 .py-4 {
   padding: 4rem 0; }
 
+.pt-1 {
+  padding-top: 1rem; }
+
+.pt-2 {
+  padding-top: 2rem; }
+
+.pt-3 {
+  padding-top: 3rem; }
+
+.pt-4 {
+  padding-top: 4rem; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -129,6 +163,10 @@ input[class^='btn-']:hover {
 
 .text-primary {
   color: #93cb52; }
+
+.page-container {
+  position: relative;
+  min-height: 100vh; }
 
 #header-home {
   background: #000 url("../../dist/img/showpiece.jpg") no-repeat center right/cover;
@@ -326,10 +364,14 @@ input[class^='btn-']:hover {
         #main-nav ul li a:hover {
           border-color: #93cb52; }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 #main-footer {
   background: #333;
-  color: #fff;
-  height: 4rem; }
+  color: #fff; }
   #main-footer .footer-content {
     display: flex;
     justify-content: center;
