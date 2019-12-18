@@ -1,89 +1,98 @@
 // About Sections
 #about {
-	// About A
-	&-a {
-		.about-info {
-			display: grid;
-			grid-template-areas:
-				'bioimage bio bio'
-				'mission mission mission'
-				'stat1 stat2 stat3';
-			grid-gap: 1.2rem;
-		}
+  // About A
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'mission mission mission'
+        'stat1 stat2 stat3';
+      grid-gap: 1.2rem;
+    }
 
-		// Grid Areas
-		.bio-image {
-			grid-area: bioimage;
-		}
+    // Grid Areas
+    .bio-image {
+      grid-area: bioimage;
+    }
 
-		.bio {
-			grid-area: bio;
-			border-left: 3px solid $main-color;
-			padding: 0.8rem;
-		}
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
 
-		.mission {
-			grid-area: mission;
-		}
+      h3 {
+        margin-bottom: 1rem;
+      }
 
-		.stat1 {
-			grid-area: stat1;
-		}
+      p {
+        line-height: 2;
+        text-align: left;
+      }
+    }
 
-		.stat2 {
-			grid-area: stat2;
-		}
+    .mission {
+      grid-area: mission;
+    }
 
-		.stat3 {
-			grid-area: stat3;
-		}
+    .stat1 {
+      grid-area: stat1;
+    }
 
-		img {
-			height: 338px;
-			width: 414px;
-		}
-	}
+    .stat2 {
+      grid-area: stat2;
+    }
 
-	// About C
-	&-c {
-		.project-logos {
-			display: grid;
-			grid-template-columns: repeat(5, 1fr);
-			grid-gap: 2rem;
+    .stat3 {
+      grid-area: stat3;
+    }
 
-			img {
-				width: 90%;
-				height: 180px;
-			}
-		}
-	}
+    img {
+      height: 338px;
+      width: 414px;
+    }
+  }
 
-	// About D
-	&-d {
-		.quotes {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 0.5rem;
+  // About B
+  &-b {
+    .project-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
 
-			ul {
-				list-style: none;
-				margin-top: 1rem;
-				display: flex;
-				align-items: center;
-			}
+      img {
+        width: 200px;
+        height: 170px;
+      }
+    }
+  }
 
-			p {
-				border: 1px solid $medium-color;
-				border-radius: 5px;
-				padding: 0.5rem;
-			}
+  // About C
+  &-c {
+    .quotes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.5rem;
 
-			img {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				margin-right: 0.5rem;
-			}
-		}
-	}
+      ul {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }

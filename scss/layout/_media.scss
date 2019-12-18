@@ -1,116 +1,306 @@
 // Tablets and Smaller
 @media (max-width: 800px) {
-	// Home page header
-	#header-home {
-		height: 30rem;
+  // Home page header
+  #header-home {
+    height: 30rem;
 
-		.header-overlay {
-			height: 30rem;
-		}
+    .header-overlay {
+      height: 30rem;
+    }
 
-		.header-content {
-			padding-top: 5rem;
-		}
-	}
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
 }
 
 // Smartphones
 @media (max-width: 500px) {
-	// Nav Bar
-	#main-nav {
-		flex-direction: column;
-		align-items: center;
+  // Nav Bar
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
 
-		li {
-			padding: 1rem;
-		}
-	}
+    li {
+      padding: 1rem;
+    }
+  }
 
-	// Home page header
-	#header-home {
-		height: 12rem;
-		border-bottom: 3px solid $main-color;
-		background-position: 20% 30%;
+  // Home page header
+  #header-home {
+    height: 12rem;
+    border-bottom: 3px solid $main-color;
+    background-position: 20% 30%;
 
-		.header-overlay {
-			height: 12rem;
-		}
+    .header-overlay {
+      height: 12rem;
+    }
 
-		.header-content {
-			display: none;
-		}
-	}
+    .header-content {
+      display: none;
+    }
+  }
 
-	// Header Inner
-	#header-inner {
-		height: 12rem;
+  // Header Inner
+  #header-inner {
+    height: 12rem;
 
-		.about-header-overlay {
-			height: 12rem;
-		}
-	}
+    .about-header-overlay {
+      height: 12rem;
+    }
+  }
 
-	// Stack Grid Columns
-	#home-benefits .benefits,
-	#home-tracks .tracks,
-	#home-use .use,
-	#about-a .about-info,
-	#about-c .project-logos,
-	#about-d .quotes,
-	#tracks-catalog #tracks {
-		grid-template-columns: 1fr;
-	}
+  // Stack Grid Columns
+  #home-benefits .benefits,
+  #home-tracks .tracks,
+  #home-use .use,
+  #about-a .about-info,
+  #about-b .project-logos,
+  #about-c .quotes,
+  #tracks-catalog #tracks {
+    grid-template-columns: 1fr;
+  }
 
-	#home {
-		&-benefits {
-			.benefits div {
-				border-bottom: 1px solid $light-color;
-				padding-bottom: 1rem;
+  #home {
+    &-benefits {
+      .benefits div {
+        border-bottom: 1px solid $light-color;
+        padding-bottom: 1rem;
 
-				&:last-child {
-					border: none;
-					padding-bottom: 0;
-				}
-			}
-		}
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
 
-		&-tracks {
-			.tracks div {
-				padding: 2rem 0 1rem 0;
-			}
-		}
-	}
+    &-tracks {
+      .tracks div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
 
-	// About
-	#about {
-		&-a {
-			.about-info {
-				grid-template-areas:
-					'bioimage'
-					'bio'
-					'mission'
-					'stat1'
-					'stat2'
-					'stat3';
-			}
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'mission'
+          'stat1'
+          'stat2'
+          'stat3';
+      }
 
-			img {
-				height: 238px;
-				width: 325px;
-			}
-		}
-	}
+      .bio {
+        padding: 0.4rem;
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 0.2rem;
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 0.8rem;
+          text-align: left;
+        }
+      }
+
+      img {
+        height: 260px;
+        width: 363px;
+      }
+    }
+    &-c {
+      .quotes div {
+        border-bottom: 1px solid $dark-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Login
+  #login {
+    .form-container {
+      #signin {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  // Signup
+  #signup {
+    .form-container {
+      #login {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }
 
 // Smartphone Landscape
 @media (max-height: 580px) {
-	#header-home {
-		.header-content {
-			padding-top: 3rem;
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
 
-			h1 {
-				font-size: 3rem;
-			}
-		}
-	}
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  // Home
+  #home {
+    // Benefits Section
+    &-benefits {
+      .benefits {
+        margin-top: 2rem;
+
+        h3,
+        p {
+          text-align: left;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        .fas {
+          padding-bottom: 0.2rem;
+        }
+      }
+    }
+
+    // Tracks Section
+    &-tracks {
+      .tracks {
+        li {
+          &.stats-title {
+            font-size: 1.1rem;
+          }
+
+          &.stats-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    // Use Section
+    &-use {
+      .use {
+        div {
+          text-align: left;
+
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // About Sections
+  #about {
+    // About A
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bio bio bio'
+          'mission mission mission'
+          'stat1 stat2 stat3';
+      }
+
+      // Remove bio image and just have about text
+      .bio-image {
+        display: none;
+      }
+
+      .stats-text {
+        font-size: 0.8rem;
+      }
+
+      // Pie chart images
+      img {
+        height: 185px;
+        width: 210px;
+      }
+    }
+
+    // About B
+    &-b {
+      .project-logos {
+        grid-gap: 1rem;
+
+        img {
+          width: 150px;
+          height: 120px;
+        }
+      }
+    }
+
+    // About C
+    &-c {
+      .quotes {
+        grid-gap: 0.5rem;
+
+        ul {
+          display: block;
+        }
+
+        p {
+          border: 1px solid $medium-color;
+          border-radius: 5px;
+          padding: 0.5rem;
+        }
+
+        img {
+          width: 120px;
+          height: 120px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // Track
+  #tracks-catalog {
+    #tracks {
+      grid-gap: 0.5rem;
+
+      .track {
+        &-text {
+          margin-top: -60%;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  // Login
+  #login {
+    .form-container {
+      #signin {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  // Signup
+  #signup {
+    .form-container {
+      #login {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }

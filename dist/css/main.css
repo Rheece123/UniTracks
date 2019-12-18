@@ -256,6 +256,11 @@ input[class^='btn-']:hover {
   grid-area: bio;
   border-left: 3px solid #93cb52;
   padding: 0.8rem; }
+  #about-a .bio h3 {
+    margin-bottom: 1rem; }
+  #about-a .bio p {
+    line-height: 2;
+    text-align: left; }
 
 #about-a .mission {
   grid-area: mission; }
@@ -273,28 +278,28 @@ input[class^='btn-']:hover {
   height: 338px;
   width: 414px; }
 
-#about-c .project-logos {
+#about-b .project-logos {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
-  #about-c .project-logos img {
-    width: 90%;
-    height: 180px; }
+  #about-b .project-logos img {
+    width: 200px;
+    height: 170px; }
 
-#about-d .quotes {
+#about-c .quotes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5rem; }
-  #about-d .quotes ul {
+  #about-c .quotes ul {
     list-style: none;
     margin-top: 1rem;
     display: flex;
     align-items: center; }
-  #about-d .quotes p {
+  #about-c .quotes p {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem; }
-  #about-d .quotes img {
+  #about-c .quotes img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -332,14 +337,6 @@ input[class^='btn-']:hover {
     border-radius: 5px;
     font-size: 1rem;
     outline: none; }
-
-.form .terms {
-  font-size: 1rem; }
-  .form .terms a {
-    text-decoration: none;
-    font-weight: bold; }
-    .form .terms a:visited {
-      color: #000; }
 
 .form a:hover {
   color: #93cb52; }
@@ -408,8 +405,8 @@ footer {
   #home-tracks .tracks,
   #home-use .use,
   #about-a .about-info,
-  #about-c .project-logos,
-  #about-d .quotes,
+  #about-b .project-logos,
+  #about-c .quotes,
   #tracks-catalog #tracks {
     grid-template-columns: 1fr; }
   #home-benefits .benefits div {
@@ -422,12 +419,83 @@ footer {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
     grid-template-areas: 'bioimage' 'bio' 'mission' 'stat1' 'stat2' 'stat3'; }
+  #about-a .bio {
+    padding: 0.4rem; }
+    #about-a .bio h3 {
+      font-size: 1rem;
+      margin-bottom: 0.2rem; }
+    #about-a .bio p {
+      line-height: 1.6;
+      font-size: 0.8rem;
+      text-align: left; }
   #about-a img {
-    height: 238px;
-    width: 325px; } }
+    height: 260px;
+    width: 363px; }
+  #about-c .quotes div {
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem; }
+    #about-c .quotes div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #login .form-container #signin {
+    margin-bottom: 3rem; }
+  #signup .form-container #login {
+    margin-bottom: 3rem; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
     padding-top: 3rem; }
     #header-home .header-content h1 {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  #home-benefits .benefits {
+    margin-top: 2rem; }
+    #home-benefits .benefits h3,
+    #home-benefits .benefits p {
+      text-align: left; }
+    #home-benefits .benefits h3 {
+      font-size: 1rem; }
+    #home-benefits .benefits .fas {
+      padding-bottom: 0.2rem; }
+  #home-tracks .tracks li.stats-title {
+    font-size: 1.1rem; }
+  #home-tracks .tracks li.stats-text {
+    font-size: 1rem; }
+  #home-use .use div {
+    text-align: left; }
+    #home-use .use div h3 {
+      font-size: 1rem; }
+  #about-a .about-info {
+    grid-template-areas: 'bio bio bio' 'mission mission mission' 'stat1 stat2 stat3'; }
+  #about-a .bio-image {
+    display: none; }
+  #about-a .stats-text {
+    font-size: 0.8rem; }
+  #about-a img {
+    height: 185px;
+    width: 210px; }
+  #about-b .project-logos {
+    grid-gap: 1rem; }
+    #about-b .project-logos img {
+      width: 150px;
+      height: 120px; }
+  #about-c .quotes {
+    grid-gap: 0.5rem; }
+    #about-c .quotes ul {
+      display: block; }
+    #about-c .quotes p {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0.5rem; }
+    #about-c .quotes img {
+      width: 120px;
+      height: 120px;
+      margin-right: 0; }
+  #tracks-catalog #tracks {
+    grid-gap: 0.5rem; }
+    #tracks-catalog #tracks .track-text {
+      margin-top: -60%;
+      font-size: 0.8rem; }
+  #login .form-container #signin {
+    margin-bottom: 3rem; }
+  #signup .form-container #login {
+    margin-bottom: 3rem; } }

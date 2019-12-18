@@ -32,19 +32,6 @@
     }
   }
 
-  .terms {
-    font-size: 1rem;
-
-    a {
-      text-decoration: none;
-      font-weight: bold;
-
-      &:visited {
-        color: #000;
-      }
-    }
-  }
-
   a:hover {
     color: $main-color;
   }
