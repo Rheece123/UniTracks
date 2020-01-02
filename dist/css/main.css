@@ -250,7 +250,9 @@ input[class^='btn-']:hover {
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  height: auto;
+  width: 100%; }
 
 #about-a .bio {
   grid-area: bio;
@@ -283,8 +285,8 @@ input[class^='btn-']:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
   #about-b .project-logos img {
-    width: 200px;
-    height: 170px; }
+    height: 135px;
+    width: 100%; }
 
 #about-c .quotes {
   display: grid;
