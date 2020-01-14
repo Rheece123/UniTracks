@@ -172,7 +172,7 @@ input[class^='btn-']:hover {
   min-height: 100vh; }
 
 #header-home {
-  background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.jpg") no-repeat center right/cover;
+  background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece-web.jpg") no-repeat center right/cover;
   height: 90vh;
   color: #fff; }
   #header-home .header-overlay {
@@ -186,7 +186,7 @@ input[class^='btn-']:hover {
       line-height: 1.2; }
 
 #header-inner {
-  background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.jpg") no-repeat 20% 30%/cover;
+  background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece-web.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #93cb52; }
 
@@ -254,8 +254,7 @@ input[class^='btn-']:hover {
 
 #about-a .bio-image {
   grid-area: bioimage;
-  height: auto;
-  width: 100%; }
+  height: auto; }
 
 #about-a .bio {
   grid-area: bio;
@@ -388,7 +387,12 @@ footer {
     #header-home .header-content {
       padding-top: 5rem; } }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; }
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -420,6 +424,8 @@ footer {
     #home-benefits .benefits div:last-child {
       border: none;
       padding-bottom: 0; }
+  #home-tracks p {
+    margin: auto; }
   #home-tracks .tracks div {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
