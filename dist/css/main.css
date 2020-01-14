@@ -164,6 +164,9 @@ input[class^='btn-']:hover {
 .text-primary {
   color: #93cb52; }
 
+.current {
+  border-bottom: 3px solid #93cb52 !important; }
+
 .page-container {
   position: relative;
   min-height: 100vh; }
@@ -361,7 +364,7 @@ input[class^='btn-']:hover {
         padding-bottom: 0.5rem;
         transition: border-color 0.5s; }
         #main-nav ul li a:hover {
-          border-color: #93cb52; }
+          border-bottom: 3px #93cb52 solid; }
 
 footer {
   position: absolute;

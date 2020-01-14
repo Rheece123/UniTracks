@@ -18,7 +18,8 @@
 				transition: border-color 0.5s;
 
 				&:hover {
-					border-color: $main-color;
+					border-bottom: 3px $main-color solid;
+					// border-color: $main-color;
 				}
 			}
 		}

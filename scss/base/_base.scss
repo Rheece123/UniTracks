@@ -227,6 +227,10 @@ input[class^='btn-']:hover {
 	color: $main-color;
 }
 
+.current {
+	border-bottom: 3px solid $main-color !important;
+}
+
 .page-container {
 	position: relative;
 	min-height: 100vh;
