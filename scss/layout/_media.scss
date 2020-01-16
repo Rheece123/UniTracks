@@ -1,3 +1,13 @@
+// iPad Pro Tablet
+// @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+// 	#about {
+// 		&-unitracks {
+// 			.about-info {
+// 			}
+// 		}
+// 	}
+// }
+
 // Tablets and Smaller
 @media (max-width: 800px) {
 	// Home page header
@@ -12,18 +22,51 @@
 			padding-top: 5rem;
 		}
 	}
+
+	#about {
+		&-unitracks {
+			.about-info {
+				img {
+					display: none;
+				}
+
+				.bio {
+					margin: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		// About Projects Section
+		&-projects {
+			.project-logos {
+				.logo {
+					img {
+						height: 100px;
+					}
+				}
+			}
+		}
+
+		// About Quotes Section
+		&-quotes {
+			.quotes {
+				grid-template-areas:
+					'quote1 quote2'
+					'quote3 quote4';
+
+				.quote {
+					img {
+						height: 170px;
+					}
+				}
+			}
+		}
+	}
 }
 
 // Smartphones
 @media (max-width: 480px) {
-	// Utility Classes
-	.container {
-		max-width: $website-width;
-		padding: 0 1.5rem;
-		margin: auto;
-		overflow: hidden;
-	}
-
 	// Nav Bar
 	#main-nav {
 		flex-direction: column;
@@ -62,13 +105,11 @@
 	#home-benefits .benefits,
 	#home-tracks .tracks,
 	#home-use .use,
-	#about-a .about-info,
-	#about-b .project-logos,
-	#about-c .quotes,
 	#tracks-catalog #tracks {
 		grid-template-columns: 1fr;
 	}
 
+	// Home Page Sections
 	#home {
 		&-benefits {
 			.benefits div {
@@ -82,7 +123,6 @@
 			}
 		}
 
-		// Section B; tracks
 		&-tracks {
 			p {
 				margin: auto;
@@ -94,48 +134,50 @@
 		}
 	}
 
-	// About
+	// About Page
 	#about {
-		&-a {
-			.about-info {
-				grid-template-areas:
-					'bioimage'
-					'bio'
-					'mission'
-					'stat1'
-					'stat2'
-					'stat3';
-			}
+		// Stats Section
+		&-stats {
+			.stats {
+				display: block;
 
-			.bio {
-				padding: 0.4rem;
-
-				h3 {
-					font-size: 1rem;
-					margin-bottom: 0.2rem;
+				.stat {
+					border-bottom: 1px solid #f4f4f4;
 				}
 
-				p {
-					line-height: 1.6;
-					font-size: 0.8rem;
-					text-align: left;
+				&-text {
+					padding-bottom: 1rem;
 				}
-			}
-
-			img {
-				height: 260px;
-				width: 363px;
 			}
 		}
-		&-c {
-			.quotes div {
-				border-bottom: 1px solid $dark-color;
-				padding-bottom: 1rem;
 
-				&:last-child {
-					border: none;
-					padding-bottom: 0;
+		// Projects Section
+		&-projects {
+			.project-logos {
+				display: block;
+
+				.logo {
+					margin-bottom: 2rem;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					img {
+						height: 160px;
+					}
 				}
+			}
+		}
+
+		// About Quotes Section
+		&-quotes {
+			.quotes {
+				grid-template-areas:
+					'quote1'
+					'quote2'
+					'quote3'
+					'quote4';
 			}
 		}
 	}
@@ -224,62 +266,41 @@
 
 	// About Sections
 	#about {
-		// About A
-		&-a {
+		&-unitracks {
 			.about-info {
-				grid-template-areas:
-					'bio bio bio'
-					'mission mission mission'
-					'stat1 stat2 stat3';
-			}
+				img {
+					display: none;
+				}
 
-			// Remove bio image and just have about text
-			.bio-image {
-				display: none;
-			}
-
-			.stats-text {
-				font-size: 0.8rem;
-			}
-
-			// Pie chart images
-			img {
-				height: 185px;
-				width: 210px;
+				.bio {
+					margin: 0;
+					width: 100%;
+				}
 			}
 		}
 
-		// About B
-		&-b {
+		// About Projects Section
+		&-projects {
 			.project-logos {
-				grid-gap: 1rem;
-
-				img {
-					width: 150px;
-					height: 120px;
+				.logo {
+					img {
+						height: 100px;
+					}
 				}
 			}
 		}
 
-		// About C
-		&-c {
+		// About Quotes Section
+		&-quotes {
 			.quotes {
-				grid-gap: 0.5rem;
+				grid-template-areas:
+					'quote1 quote2'
+					'quote3 quote4';
 
-				ul {
-					display: block;
-				}
-
-				p {
-					border: 1px solid $medium-color;
-					border-radius: 5px;
-					padding: 0.5rem;
-				}
-
-				img {
-					width: 120px;
-					height: 120px;
-					margin-right: 0;
+				.quote {
+					img {
+						height: 170px;
+					}
 				}
 			}
 		}

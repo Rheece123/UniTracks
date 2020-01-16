@@ -247,67 +247,63 @@ input[class^='btn-']:hover {
     line-height: 15px;
     padding: 1rem; }
 
-#about-a .about-info {
-  display: grid;
-  grid-template-areas: 'bioimage bio bio' 'mission mission mission' 'stat1 stat2 stat3';
-  grid-gap: 1.2rem; }
+#about-unitracks .about-info {
+  display: flex; }
+  #about-unitracks .about-info img {
+    height: auto;
+    width: 40%; }
+  #about-unitracks .about-info .bio {
+    border-left: 4px solid #93cb52;
+    margin-left: 3rem;
+    padding: 1rem;
+    width: 90%; }
+    #about-unitracks .about-info .bio h3 {
+      padding: 1rem; }
+    #about-unitracks .about-info .bio p {
+      text-align: justify;
+      padding: 1rem; }
 
-#about-a .bio-image {
-  grid-area: bioimage;
-  height: auto; }
+#about-stats .stats {
+  display: flex; }
+  #about-stats .stats-title {
+    font-size: 5rem;
+    color: #93cb52; }
+  #about-stats .stats-text {
+    padding: 0.2rem 2rem; }
 
-#about-a .bio {
-  grid-area: bio;
-  border-left: 3px solid #93cb52;
-  padding: 0.8rem; }
-  #about-a .bio h3 {
-    margin-bottom: 1rem; }
-  #about-a .bio p {
-    line-height: 2;
-    text-align: left; }
-
-#about-a .mission {
-  grid-area: mission; }
-
-#about-a .stat1 {
-  grid-area: stat1; }
-
-#about-a .stat2 {
-  grid-area: stat2; }
-
-#about-a .stat3 {
-  grid-area: stat3; }
-
-#about-a img {
-  height: 338px;
-  width: 414px; }
-
-#about-b .project-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-b .project-logos img {
-    height: 135px;
+#about-projects .project-logos {
+  display: flex; }
+  #about-projects .project-logos .logo {
+    margin-right: 2rem;
     width: 100%; }
+    #about-projects .project-logos .logo:last-child {
+      margin-right: 0; }
+    #about-projects .project-logos .logo img {
+      height: 160px; }
 
-#about-c .quotes {
+#about-quotes .quotes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem; }
-  #about-c .quotes ul {
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center; }
-  #about-c .quotes p {
+  grid-template-areas: 'quote1 quote2 quote3 quote4';
+  grid-gap: 2rem; }
+  #about-quotes .quotes .quote {
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0.5rem; }
-  #about-c .quotes img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 0.5rem; }
+    border-radius: 5px; }
+    #about-quotes .quotes .quote .quote-1 {
+      grid-area: quote1; }
+    #about-quotes .quotes .quote .quote-2 {
+      grid-area: quote2; }
+    #about-quotes .quotes .quote .quote-3 {
+      grid-area: quote3; }
+    #about-quotes .quotes .quote .quote-4 {
+      grid-area: quote4; }
+    #about-quotes .quotes .quote img {
+      display: block;
+      margin: 1rem auto;
+      width: 50%;
+      height: 135px;
+      border-radius: 50%; }
+    #about-quotes .quotes .quote p {
+      padding: 1rem; }
 
 #tracks-catalog #tracks {
   display: grid;
@@ -385,14 +381,20 @@ footer {
     #header-home .header-overlay {
       height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+  #about-unitracks .about-info img {
+    display: none; }
+  #about-unitracks .about-info .bio {
+    margin: 0;
+    width: 100%; }
+  #about-projects .project-logos .logo img {
+    height: 100px; }
+  #about-quotes .quotes {
+    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
+    #about-quotes .quotes .quote img {
+      height: 170px; } }
 
 @media (max-width: 480px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 1.5rem;
-    margin: auto;
-    overflow: hidden; }
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -413,9 +415,6 @@ footer {
   #home-benefits .benefits,
   #home-tracks .tracks,
   #home-use .use,
-  #about-a .about-info,
-  #about-b .project-logos,
-  #about-c .quotes,
   #tracks-catalog #tracks {
     grid-template-columns: 1fr; }
   #home-benefits .benefits div {
@@ -428,26 +427,22 @@ footer {
     margin: auto; }
   #home-tracks .tracks div {
     padding: 2rem 0 1rem 0; }
-  #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'mission' 'stat1' 'stat2' 'stat3'; }
-  #about-a .bio {
-    padding: 0.4rem; }
-    #about-a .bio h3 {
-      font-size: 1rem;
-      margin-bottom: 0.2rem; }
-    #about-a .bio p {
-      line-height: 1.6;
-      font-size: 0.8rem;
-      text-align: left; }
-  #about-a img {
-    height: 260px;
-    width: 363px; }
-  #about-c .quotes div {
-    border-bottom: 1px solid #333;
-    padding-bottom: 1rem; }
-    #about-c .quotes div:last-child {
-      border: none;
-      padding-bottom: 0; }
+  #about-stats .stats {
+    display: block; }
+    #about-stats .stats .stat {
+      border-bottom: 1px solid #f4f4f4; }
+    #about-stats .stats-text {
+      padding-bottom: 1rem; }
+  #about-projects .project-logos {
+    display: block; }
+    #about-projects .project-logos .logo {
+      margin-bottom: 2rem; }
+      #about-projects .project-logos .logo:last-child {
+        margin-bottom: 0; }
+      #about-projects .project-logos .logo img {
+        height: 160px; }
+  #about-quotes .quotes {
+    grid-template-areas: 'quote1' 'quote2' 'quote3' 'quote4'; }
   #login .form-container #signin {
     margin-bottom: 3rem; }
   #signup .form-container #login {
@@ -475,32 +470,17 @@ footer {
     text-align: left; }
     #home-use .use div h3 {
       font-size: 1rem; }
-  #about-a .about-info {
-    grid-template-areas: 'bio bio bio' 'mission mission mission' 'stat1 stat2 stat3'; }
-  #about-a .bio-image {
+  #about-unitracks .about-info img {
     display: none; }
-  #about-a .stats-text {
-    font-size: 0.8rem; }
-  #about-a img {
-    height: 185px;
-    width: 210px; }
-  #about-b .project-logos {
-    grid-gap: 1rem; }
-    #about-b .project-logos img {
-      width: 150px;
-      height: 120px; }
-  #about-c .quotes {
-    grid-gap: 0.5rem; }
-    #about-c .quotes ul {
-      display: block; }
-    #about-c .quotes p {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 0.5rem; }
-    #about-c .quotes img {
-      width: 120px;
-      height: 120px;
-      margin-right: 0; }
+  #about-unitracks .about-info .bio {
+    margin: 0;
+    width: 100%; }
+  #about-projects .project-logos .logo img {
+    height: 100px; }
+  #about-quotes .quotes {
+    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
+    #about-quotes .quotes .quote img {
+      height: 170px; }
   #tracks-catalog #tracks {
     grid-gap: 0.5rem; }
     #tracks-catalog #tracks .track-text {
