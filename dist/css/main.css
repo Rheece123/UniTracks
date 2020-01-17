@@ -27,6 +27,13 @@ img {
   padding-top: 0.5rem;
   color: #fff; }
 
+.preload-transitions * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important; }
+
 .main-page-container {
   min-height: 100vh;
   /* will cover the 100% of viewport */
