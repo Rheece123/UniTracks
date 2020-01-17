@@ -12,6 +12,7 @@
 }
 
 // Variables
+$font-stack: 'Roboto', sans-serif;
 $website-width: 1280px;
 $main-color: #93cb52;
 $light-color: #f4f4f4;
@@ -24,7 +25,7 @@ $bg-img: url('https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.jpg');
 
 // Core Styles
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: $font-stack;
 	line-height: 1.6;
 	background: #fff;
 	height: 100%;

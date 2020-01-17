@@ -199,6 +199,17 @@
 			}
 		}
 	}
+
+	// Search Input on Tracks Page
+	.search {
+		input[type='text'] {
+			width: 15rem;
+		}
+
+		.search-btn {
+			padding: 0.8rem 1.4rem;
+		}
+	}
 }
 
 // Smartphone Landscape
