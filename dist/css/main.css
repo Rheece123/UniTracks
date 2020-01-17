@@ -317,7 +317,7 @@ input[class^='btn-']:hover {
     #tracks-catalog #tracks .track-text {
       width: 100%;
       position: relative;
-      margin-top: -50%; }
+      margin-top: -45%; }
 
 .form .text-fields {
   display: grid;
