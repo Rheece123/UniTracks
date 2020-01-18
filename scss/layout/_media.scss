@@ -43,6 +43,19 @@
 		}
 	}
 
+	// Available Tracks Section
+	#home {
+		&-tracks {
+			.container {
+				.tracks-container {
+					p {
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+
 	#about {
 		&-unitracks {
 			.about-info {
@@ -123,7 +136,6 @@
 
 	// Stack Grid Columns
 	#home-benefits .benefits,
-	#home-tracks .tracks,
 	#home-use .use,
 	#tracks-catalog #tracks {
 		grid-template-columns: 1fr;
@@ -143,13 +155,36 @@
 			}
 		}
 
+		// Available Tracks Section
 		&-tracks {
-			p {
-				margin: auto;
+			.section-title {
+				font-size: 1.6rem;
 			}
 
-			.tracks div {
-				padding: 2rem 0 1rem 0;
+			.lead {
+				padding: 0;
+				margin-bottom: 1rem;
+				font-size: 1rem;
+			}
+			.container {
+				.tracks-container {
+					display: block;
+					height: 85vh;
+
+					.track {
+						padding-top: 1rem;
+						padding-bottom: 1rem;
+						border-bottom: 1px solid #ccc;
+
+						&:last-child {
+							border-bottom: none;
+						}
+
+						h2 {
+							padding: 0.5rem 0;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -266,17 +301,11 @@
 			}
 		}
 
-		// Tracks Section
+		// Available Tracks Section
 		&-tracks {
-			.tracks {
-				li {
-					&.stats-title {
-						font-size: 1.1rem;
-					}
-
-					&.stats-text {
-						font-size: 1rem;
-					}
+			.container {
+				.tracks-container {
+					height: 45vh;
 				}
 			}
 		}

@@ -52,33 +52,20 @@
 		}
 	}
 
+	// Available Tracks Section
 	&-tracks {
-		.tracks {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
+		background: url('../img/tracks-bg.jpg') no-repeat center center/cover;
+		color: #fff;
 
-			li {
-				line-height: 2;
+		.container {
+			.tracks-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 25vh;
 
-				&.stats-title {
-					font-size: 2rem;
-					font-weight: bold;
-				}
-
-				&.stats-text {
-					font-size: 1rem;
-				}
-			}
-
-			div {
-				padding: 3rem 0;
-
-				&:nth-child(odd) {
-					background-color: $light-color;
-				}
-
-				&:nth-child(even) {
-					background-color: $medium-color;
+				i {
+					color: $main-color;
 				}
 			}
 		}

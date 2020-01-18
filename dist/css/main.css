@@ -210,22 +210,16 @@ input[class^='btn-']:hover {
     color: #93cb52;
     padding-bottom: 0.4rem; }
 
-#home-tracks .tracks {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
-  #home-tracks .tracks li {
-    line-height: 2; }
-    #home-tracks .tracks li.stats-title {
-      font-size: 2rem;
-      font-weight: bold; }
-    #home-tracks .tracks li.stats-text {
-      font-size: 1rem; }
-  #home-tracks .tracks div {
-    padding: 3rem 0; }
-    #home-tracks .tracks div:nth-child(odd) {
-      background-color: #f4f4f4; }
-    #home-tracks .tracks div:nth-child(even) {
-      background-color: #ccc; }
+#home-tracks {
+  background: url("../img/tracks-bg.jpg") no-repeat center center/cover;
+  color: #fff; }
+  #home-tracks .container .tracks-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh; }
+    #home-tracks .container .tracks-container i {
+      color: #93cb52; }
 
 #home-use .use {
   display: grid;
@@ -423,6 +417,8 @@ footer {
       height: 30rem; }
     #header-home .header-content {
       padding-top: 5rem; }
+  #home-tracks .container .tracks-container p {
+    font-size: 0.8rem; }
   #about-unitracks .about-info img {
     display: none; }
   #about-unitracks .about-info .bio {
@@ -454,7 +450,6 @@ footer {
     #header-inner .about-header-overlay {
       height: 12rem; }
   #home-benefits .benefits,
-  #home-tracks .tracks,
   #home-use .use,
   #tracks-catalog #tracks {
     grid-template-columns: 1fr; }
@@ -464,10 +459,23 @@ footer {
     #home-benefits .benefits div:last-child {
       border: none;
       padding-bottom: 0; }
-  #home-tracks p {
-    margin: auto; }
-  #home-tracks .tracks div {
-    padding: 2rem 0 1rem 0; }
+  #home-tracks .section-title {
+    font-size: 1.6rem; }
+  #home-tracks .lead {
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem; }
+  #home-tracks .container .tracks-container {
+    display: block;
+    height: 85vh; }
+    #home-tracks .container .tracks-container .track {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc; }
+      #home-tracks .container .tracks-container .track:last-child {
+        border-bottom: none; }
+      #home-tracks .container .tracks-container .track h2 {
+        padding: 0.5rem 0; }
   #about-stats .stats {
     display: block; }
     #about-stats .stats .stat {
@@ -507,10 +515,8 @@ footer {
       font-size: 1rem; }
     #home-benefits .benefits .fas {
       padding-bottom: 0.2rem; }
-  #home-tracks .tracks li.stats-title {
-    font-size: 1.1rem; }
-  #home-tracks .tracks li.stats-text {
-    font-size: 1rem; }
+  #home-tracks .container .tracks-container {
+    height: 45vh; }
   #home-use .use div {
     text-align: left; }
     #home-use .use div h3 {
