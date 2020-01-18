@@ -48,7 +48,9 @@ img {
   /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
-  position: relative; }
+  position: relative;
+  padding-bottom: 0.1rem;
+  /* height of your footer */ }
 
 .container {
   max-width: 1280px;
