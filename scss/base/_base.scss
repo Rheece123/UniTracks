@@ -74,7 +74,7 @@ img {
 	overflow: hidden;
 	display: block;
 	position: relative;
-	padding-bottom: 0.1rem; /* height of your footer */
+	padding-bottom: 0.1rem; /* Having small footer at bottom stops content moving to the right */
 }
 
 .container {
