@@ -50,7 +50,7 @@ img {
   display: block;
   position: relative;
   padding-bottom: 0.1rem;
-  /* height of your footer */ }
+  /* Having small footer at bottom stops content moving to the right */ }
 
 .container {
   max-width: 1280px;
@@ -268,10 +268,9 @@ input[class^='btn-']:hover {
 
 #about-stats .stats {
   display: flex; }
-  #about-stats .stats-title {
-    font-size: 5rem;
-    color: #93cb52; }
-  #about-stats .stats-text {
+  #about-stats .stats .stat-title {
+    font-size: 5rem; }
+  #about-stats .stats .stat-text {
     padding: 0.2rem 2rem; }
 
 #about-projects .project-logos {

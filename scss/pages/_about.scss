@@ -33,13 +33,14 @@
 		.stats {
 			display: flex;
 
-			&-title {
-				font-size: 5rem;
-				color: $main-color;
-			}
+			.stat {
+				&-title {
+					font-size: 5rem;
+				}
 
-			&-text {
-				padding: 0.2rem 2rem;
+				&-text {
+					padding: 0.2rem 2rem;
+				}
 			}
 		}
 	}
