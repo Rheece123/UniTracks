@@ -425,9 +425,7 @@ footer {
     margin: 0;
     width: 100%; }
   #about-quotes .quotes {
-    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
-    #about-quotes .quotes .quote img {
-      height: 170px; } }
+    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; } }
 
 @media (max-width: 480px) {
   #main-nav {
@@ -524,8 +522,6 @@ footer {
     width: 100%; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
-    #about-quotes .quotes .quote img {
-      height: 170px; }
   #tracks-catalog #tracks {
     grid-gap: 0.5rem; }
     #tracks-catalog #tracks .track-text {
