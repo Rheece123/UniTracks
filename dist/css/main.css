@@ -277,11 +277,10 @@ input[class^='btn-']:hover {
   display: flex; }
   #about-projects .project-logos .logo {
     margin-right: 2rem;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     #about-projects .project-logos .logo:last-child {
       margin-right: 0; }
-    #about-projects .project-logos .logo img {
-      height: 160px; }
 
 #about-quotes .quotes {
   display: grid;
@@ -301,8 +300,8 @@ input[class^='btn-']:hover {
     #about-quotes .quotes .quote img {
       display: block;
       margin: 1rem auto;
-      width: 135px;
-      height: 135px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%; }
     #about-quotes .quotes .quote p {
       padding: 1rem; }
@@ -425,8 +424,6 @@ footer {
   #about-unitracks .about-info .bio {
     margin: 0;
     width: 100%; }
-  #about-projects .project-logos .logo img {
-    height: 100px; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
     #about-quotes .quotes .quote img {
@@ -489,8 +486,6 @@ footer {
       margin-bottom: 2rem; }
       #about-projects .project-logos .logo:last-child {
         margin-bottom: 0; }
-      #about-projects .project-logos .logo img {
-        height: 160px; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1' 'quote2' 'quote3' 'quote4'; }
   #login .form-container #signin {
@@ -527,8 +522,6 @@ footer {
   #about-unitracks .about-info .bio {
     margin: 0;
     width: 100%; }
-  #about-projects .project-logos .logo img {
-    height: 100px; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
     #about-quotes .quotes .quote img {

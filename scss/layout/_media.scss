@@ -70,17 +70,6 @@
 			}
 		}
 
-		// About Projects Section
-		&-projects {
-			.project-logos {
-				.logo {
-					img {
-						height: 100px;
-					}
-				}
-			}
-		}
-
 		// About Quotes Section
 		&-quotes {
 			.quotes {
@@ -217,10 +206,6 @@
 					&:last-child {
 						margin-bottom: 0;
 					}
-
-					img {
-						height: 160px;
-					}
 				}
 			}
 		}
@@ -335,17 +320,6 @@
 				.bio {
 					margin: 0;
 					width: 100%;
-				}
-			}
-		}
-
-		// About Projects Section
-		&-projects {
-			.project-logos {
-				.logo {
-					img {
-						height: 100px;
-					}
 				}
 			}
 		}
