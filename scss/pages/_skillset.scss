@@ -1,0 +1,37 @@
+#course-overview,
+#course-modules {
+	.container {
+		max-width: 1000px;
+	}
+}
+
+#course-modules {
+	.container {
+		.module {
+			background-color: #c4c4c4;
+			padding: 2rem 4rem;
+			margin-bottom: 3rem;
+
+			.lead {
+				margin-bottom: 0.5rem;
+			}
+
+			.topics {
+				h4 {
+					padding: 1rem 0;
+				}
+			}
+		}
+	}
+}
+
+// Smartphones
+@media (max-width: 480px) {
+	#course-modules {
+		.container {
+			.module {
+				padding: 1rem 2rem;
+			}
+		}
+	}
+}
