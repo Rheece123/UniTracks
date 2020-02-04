@@ -338,6 +338,21 @@ input[class^='btn-']:hover {
   #course-modules .container .module {
     padding: 1rem 2rem; } }
 
+.module-title {
+  color: #fff;
+  padding-top: 0.5rem; }
+
+#question {
+  background-color: #c4c4c4; }
+  #question .container h2 {
+    display: inline-block; }
+  #question .container .btn-dark {
+    float: right; }
+
+#answer .container {
+  background-color: #c4c4c4;
+  height: 500px; }
+
 .form .text-fields {
   display: grid;
   grid-template-areas: 'name' 'email' 'password' 'confirm-password';
