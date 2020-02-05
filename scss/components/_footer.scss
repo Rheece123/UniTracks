@@ -2,19 +2,19 @@
 // Need to fix this footer as it does not stick to the bottom when there is not enough content on the page
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 #main-footer {
-  background: $dark-color;
-  color: #fff;
+	background: $dark-color;
+	color: #fff;
 
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-  }
+	.footer-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4rem;
+	}
 }

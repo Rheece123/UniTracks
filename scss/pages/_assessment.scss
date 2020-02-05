@@ -3,23 +3,49 @@
 	padding-top: 0.5rem;
 }
 
-#question {
-	background-color: #c4c4c4;
+#question-container,
+#answer-container {
+	background-color: $medium-color;
+}
 
-	.container {
-		h2 {
-			display: inline-block;
+#answer-container {
+	height: 40vh;
+
+	.answer-btn {
+		display: block;
+		margin: 2rem 0;
+		width: 50%;
+
+		&:focus {
+			background-color: #93cb52;
+			color: #333;
+			outline-color: #93cb52;
+		}
+	}
+
+	.instructions {
+		p {
+			line-height: 1.8;
 		}
 
-		.btn-dark {
-			float: right;
+		.controls {
+			display: block;
+			text-align: center;
+
+			#start-btn {
+				margin: 2rem 0;
+				text-align: start;
+			}
 		}
 	}
 }
 
-#answer {
-	.container {
-		background-color: #c4c4c4;
-		height: 500px;
-	}
+.hide {
+	display: none;
+}
+
+.btn-dark:hover {
+	background-color: #93cb52;
+	color: #333;
+	outline-color: #93cb52;
 }

@@ -137,6 +137,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
 	background-color: #93cb52;
+	color: #333;
 }
 
 // Background Colors
@@ -247,4 +248,8 @@ input[class^='btn-']:hover {
 .page-container {
 	position: relative;
 	min-height: 100vh;
+}
+
+.hide {
+	display: none;
 }

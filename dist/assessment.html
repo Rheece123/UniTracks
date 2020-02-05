@@ -47,7 +47,7 @@
 		<title>Assessment | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="main-page-container">
+		<div class="form-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -63,32 +63,35 @@
 				</div>
 			</header>
 
-			<!-- Question Section -->
-			<section id="question" class="py-2">
-				<div class="container">
-					<h2>Question Number: Question Title</h2>
-					<a href="#" class="btn-dark">Exit Assessment</a>
-					<a href="#" class="btn-dark">Exit Assessment</a>
-				</div>
-			</section>
+			<div id="question-container" class="py-2">
+				<div class="container"><h2 class="title">Instructions</h2></div>
+			</div>
 
-			<!-- Answer Section -->
-			<section id="answer" class="py-2">
+			<div id="answer-container" class="my-3 py-3">
 				<div class="container">
-					<h2>Question Number: Question Title</h2>
-					<a href="#" class="btn-dark">Answer 1</a>
-					<a href="#" class="btn-dark">Answer 2</a>
-					<a href="#" class="btn-dark">Answer 3</a>
-					<a href="#" class="btn-dark">Answer 4</a>
+					<div class="answer-buttons hide"></div>
+					<div class="instructions">
+						<p class="instruction-text">
+							This digital assessment will contain 10 questions. Each question will provide 4 possible answers, click on
+							the answer you believe to be correct and the next question will then appear. There is a skip button which
+							will appear in the bottom bar which will allow you to skip a question without providing an answer. Once
+							you have answered a question or skipped a question, you cannot return to the question. This assessment has
+							no time limit so take as much time as needed. Once you have completed the assessment, your results will
+							appear and some recommendations will be provided.
+						</p>
+						<p class="instruction-text my-2">To start the assessment, click the Start Assessment button.</p>
+						<button id="start-btn" class="btn-dark my-2">Start Assessment</button>
+					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- Footer -->
-			<footer id="main-footer">
+			<footer id="main-footer" class="progress-bar">
 				<div class="footer-content container">
-					<p>Copyright&copy; 2019. All Rights Reserved</p>
+					<button id="skip-btn" class="btn-light hide">Skip Question</button>
 				</div>
 			</footer>
+			<script src="./js/assessment.js"></script>
 		</div>
 	</body>
 </html>

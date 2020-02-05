@@ -95,7 +95,8 @@ img {
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: #93cb52; }
+  background-color: #93cb52;
+  color: #333; }
 
 .bg-main {
   background-color: #93cb52;
@@ -180,6 +181,9 @@ input[class^='btn-']:hover {
 .page-container {
   position: relative;
   min-height: 100vh; }
+
+.hide {
+  display: none; }
 
 #header-home {
   background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.webp") no-repeat center right/cover;
@@ -342,16 +346,36 @@ input[class^='btn-']:hover {
   color: #fff;
   padding-top: 0.5rem; }
 
-#question {
-  background-color: #c4c4c4; }
-  #question .container h2 {
-    display: inline-block; }
-  #question .container .btn-dark {
-    float: right; }
+#question-container,
+#answer-container {
+  background-color: #ccc; }
 
-#answer .container {
-  background-color: #c4c4c4;
-  height: 500px; }
+#answer-container {
+  height: 40vh; }
+  #answer-container .answer-btn {
+    display: block;
+    margin: 2rem 0;
+    width: 50%; }
+    #answer-container .answer-btn:focus {
+      background-color: #93cb52;
+      color: #333;
+      outline-color: #93cb52; }
+  #answer-container .instructions p {
+    line-height: 1.8; }
+  #answer-container .instructions .controls {
+    display: block;
+    text-align: center; }
+    #answer-container .instructions .controls #start-btn {
+      margin: 2rem 0;
+      text-align: start; }
+
+.hide {
+  display: none; }
+
+.btn-dark:hover {
+  background-color: #93cb52;
+  color: #333;
+  outline-color: #93cb52; }
 
 .form .text-fields {
   display: grid;
