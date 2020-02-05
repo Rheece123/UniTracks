@@ -1,9 +1,5 @@
-// Init SpeechSynth API
-const synth = window.speechSynthesis;
-
 // UI Variables
 const startButton = document.querySelector('#start-btn');
-const audioButton = document.querySelector('#audio-btn');
 const skipButton = document.querySelector('#skip-btn');
 const questionText = document.querySelector('.title');
 const instructionText = document.querySelectorAll('.instruction-text');
@@ -12,43 +8,7 @@ const answerButtons = document.querySelector('.answer-buttons');
 // Assessment Variables
 let currentQuestionIndex = 0;
 let score = 0;
-
-// Init voices array
-let voices = [];
-
-function getVoices() {
-	voices = synth.getVoices();
-}
-
-getVoices();
-if (synth.onvoiceschanged !== undefined) {
-	synth.onvoiceschanged = getVoices;
-}
-
-// Speak
-function speak() {
-	// Check if voice is already speaking
-	if (synth.speaking) {
-		return;
-	}
-
-	// Get speak text
-	const speakText = new SpeechSynthesisUtterance(questionText.innerText);
-
-	// Set voice, pitch and rate for voice
-	speakText.voice = voices[4];
-	speakText.rate = 1;
-	speakText.pitch = 1;
-
-	// Speak
-	synth.speak(speakText);
-}
-
-// Audio button submit
-audioButton.addEventListener('click', function(e) {
-	console.log('SPEAKING');
-	speak();
-});
+let assessmentStarted = false;
 
 // Control Button Events
 startButton.addEventListener('click', startAssessment);
@@ -59,6 +19,12 @@ skipButton.addEventListener('click', function() {
 });
 
 function startAssessment() {
+	// Stop playing the audio
+	synth.cancel();
+
+	// Assessment has started
+	assessmentStarted = true;
+
 	// Hide start button and instruction text
 	startButton.classList.add('hide');
 
@@ -78,10 +44,10 @@ function setQuestion() {
 	resetAnswerContainer();
 
 	// Before asking a question, check if there are anymore questions
-	checkEndOfAssessment();
-
-	// Show first question using current question index
-	showQuestion(questions[currentQuestionIndex]);
+	// Show question using current question index if there are anymore questions
+	if (!checkEndOfAssessment()) {
+		showQuestion(questions[currentQuestionIndex]);
+	}
 }
 
 function resetAnswerContainer() {
@@ -93,7 +59,7 @@ function resetAnswerContainer() {
 
 function showQuestion(question) {
 	// Show current question in questions container div
-	questionText.innerText = question.question;
+	questionText.innerText = `Question ${currentQuestionIndex + 1}: ${question.question}`;
 
 	// Add answer buttons
 	addAnswerButtons(question);
@@ -135,32 +101,12 @@ function checkAnswer(e) {
 
 function checkEndOfAssessment() {
 	// If there are no remaining questions, end the assessment and show the score
-	console.log(questions.length, currentQuestionIndex + 1);
 	if (questions.length < currentQuestionIndex + 1) {
 		questionText.innerText = 'Results';
-		answerButtons.innerHTML = `<h1>You Scored ${score} out of ${questions.length}`;
+		answerButtons.innerHTML = `<h1>You Scored ${score} out of ${questions.length}</h1>
+															 <a href="index.html" class="btn-dark my-3">Exit Assessment</a>
+															 `;
 		skipButton.classList.add('hide');
+		return true;
 	}
 }
-
-// List of questions
-const questions = [
-	{
-		question: 'What is 2 + 2?',
-		answers: [
-			{ text: '4', correct: true },
-			{ text: '8', correct: false },
-			{ text: '40', correct: false },
-			{ text: '22', correct: false }
-		]
-	},
-	{
-		question: 'What is 2 + 6?',
-		answers: [
-			{ text: '220', correct: false },
-			{ text: '5', correct: false },
-			{ text: '81', correct: false },
-			{ text: '8', correct: true }
-		]
-	}
-];

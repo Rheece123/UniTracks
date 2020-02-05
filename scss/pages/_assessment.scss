@@ -1,3 +1,8 @@
+button {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
 .module-title {
 	color: #fff;
 	padding-top: 0.5rem;
@@ -22,12 +27,6 @@
 		display: block;
 		margin: 2rem 0;
 		width: 50%;
-
-		&:focus {
-			background-color: #93cb52;
-			color: #333;
-			outline-color: #93cb52;
-		}
 	}
 
 	.instructions {
@@ -54,5 +53,4 @@
 .btn-dark:hover {
 	background-color: #93cb52;
 	color: #333;
-	outline-color: #93cb52;
 }

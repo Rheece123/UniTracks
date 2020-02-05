@@ -342,6 +342,10 @@ input[class^='btn-']:hover {
   #course-modules .container .module {
     padding: 1rem 2rem; } }
 
+button {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
+
 .module-title {
   color: #fff;
   padding-top: 0.5rem; }
@@ -360,10 +364,6 @@ input[class^='btn-']:hover {
     display: block;
     margin: 2rem 0;
     width: 50%; }
-    #answer-container .answer-btn:focus {
-      background-color: #93cb52;
-      color: #333;
-      outline-color: #93cb52; }
   #answer-container .instructions p {
     line-height: 1.8; }
   #answer-container .instructions .controls {
@@ -378,8 +378,7 @@ input[class^='btn-']:hover {
 
 .btn-dark:hover {
   background-color: #93cb52;
-  color: #333;
-  outline-color: #93cb52; }
+  color: #333; }
 
 .form .text-fields {
   display: grid;
