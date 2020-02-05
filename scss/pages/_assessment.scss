@@ -8,8 +8,7 @@ button {
 	padding-top: 0.5rem;
 }
 
-#question-container,
-#answer-container {
+#question-container {
 	background-color: $medium-color;
 }
 
@@ -28,22 +27,6 @@ button {
 		margin: 2rem 0;
 		width: 50%;
 	}
-
-	.instructions {
-		p {
-			line-height: 1.8;
-		}
-
-		.controls {
-			display: block;
-			text-align: center;
-
-			#start-btn {
-				margin: 2rem 0;
-				text-align: start;
-			}
-		}
-	}
 }
 
 .hide {
@@ -53,4 +36,35 @@ button {
 .btn-dark:hover {
 	background-color: #93cb52;
 	color: #333;
+}
+
+// Footer
+#footer {
+	background: $dark-color;
+	color: #fff;
+
+	.footer-content {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 4.5rem;
+
+		// Progress Bar
+		#progress {
+			width: 50%;
+			.progress-count {
+				padding-right: 2rem;
+			}
+
+			.progress-bar {
+				background-color: #ddd;
+
+				.progress-bar-status {
+					width: 2%;
+					height: 20px;
+					background-color: $main-color;
+				}
+			}
+		}
+	}
 }

@@ -4,11 +4,16 @@ const skipButton = document.querySelector('#skip-btn');
 const questionText = document.querySelector('.title');
 const instructionText = document.querySelectorAll('.instruction-text');
 const answerButtons = document.querySelector('.answer-buttons');
+const progressBarContainer = document.querySelector('#progress');
+const progressCounter = document.querySelector('.progress-counter');
+const progressBar = document.querySelector('.progress-bar');
+const progressStatus = document.querySelector('.progress-bar-status');
 
 // Assessment Variables
 let currentQuestionIndex = 0;
 let score = 0;
 let assessmentStarted = false;
+let currentProgressWidth = 0;
 
 // Control Button Events
 startButton.addEventListener('click', startAssessment);
@@ -35,6 +40,9 @@ function startAssessment() {
 	// Show the skip button
 	skipButton.classList.remove('hide');
 
+	// Show the progress bar
+	progressBarContainer.classList.remove('hide');
+
 	// Ask the first question
 	setQuestion();
 }
@@ -42,6 +50,9 @@ function startAssessment() {
 function setQuestion() {
 	// Remove answer buttons in answer container before showing the next question
 	resetAnswerContainer();
+
+	// Increment progress bar after each question
+	incrementProgressBar();
 
 	// Before asking a question, check if there are anymore questions
 	// Show question using current question index if there are anymore questions
@@ -63,6 +74,19 @@ function showQuestion(question) {
 
 	// Add answer buttons
 	addAnswerButtons(question);
+}
+
+function incrementProgressBar() {
+	const progressRatio = 100 / questions.length;
+	currentProgressWidth += progressRatio;
+	progressStatus.style.width = `${currentProgressWidth}%`;
+
+	// Increment the question counter above progress bar
+	incrementQuestionCounter();
+}
+
+function incrementQuestionCounter() {
+	progressCounter.innerText = `${currentQuestionIndex + 1} / ${questions.length}`;
 }
 
 function addAnswerButtons(question) {
@@ -104,9 +128,12 @@ function checkEndOfAssessment() {
 	if (questions.length < currentQuestionIndex + 1) {
 		questionText.innerText = 'Results';
 		answerButtons.innerHTML = `<h1>You Scored ${score} out of ${questions.length}</h1>
-															 <a href="index.html" class="btn-dark my-3">Exit Assessment</a>
-															 `;
+															 <a href="index.html" class="btn-dark my-3">Exit Assessment</a>`;
+
+		// Hide skip button and progress bar
 		skipButton.classList.add('hide');
+		progressBarContainer.classList.add('hide');
+
 		return true;
 	}
 }

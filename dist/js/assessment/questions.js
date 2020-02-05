@@ -16,5 +16,23 @@ const questions = [
 			{ text: '81', correct: false },
 			{ text: '8', correct: true }
 		]
+	},
+	{
+		question: 'What is 18 + 6?',
+		answers: [
+			{ text: '220', correct: false },
+			{ text: '5', correct: false },
+			{ text: '81', correct: false },
+			{ text: '8', correct: true }
+		]
+	},
+	{
+		question: 'What is 12 + 6?',
+		answers: [
+			{ text: '220', correct: false },
+			{ text: '5', correct: false },
+			{ text: '81', correct: false },
+			{ text: '8', correct: true }
+		]
 	}
 ];
