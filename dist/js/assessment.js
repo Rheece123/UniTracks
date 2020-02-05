@@ -1,5 +1,9 @@
+// Init SpeechSynth API
+const synth = window.speechSynthesis;
+
 // UI Variables
 const startButton = document.querySelector('#start-btn');
+const audioButton = document.querySelector('#audio-btn');
 const skipButton = document.querySelector('#skip-btn');
 const questionText = document.querySelector('.title');
 const instructionText = document.querySelectorAll('.instruction-text');
@@ -8,6 +12,43 @@ const answerButtons = document.querySelector('.answer-buttons');
 // Assessment Variables
 let currentQuestionIndex = 0;
 let score = 0;
+
+// Init voices array
+let voices = [];
+
+function getVoices() {
+	voices = synth.getVoices();
+}
+
+getVoices();
+if (synth.onvoiceschanged !== undefined) {
+	synth.onvoiceschanged = getVoices;
+}
+
+// Speak
+function speak() {
+	// Check if voice is already speaking
+	if (synth.speaking) {
+		return;
+	}
+
+	// Get speak text
+	const speakText = new SpeechSynthesisUtterance(questionText.innerText);
+
+	// Set voice, pitch and rate for voice
+	speakText.voice = voices[4];
+	speakText.rate = 1;
+	speakText.pitch = 1;
+
+	// Speak
+	synth.speak(speakText);
+}
+
+// Audio button submit
+audioButton.addEventListener('click', function(e) {
+	console.log('SPEAKING');
+	speak();
+});
 
 // Control Button Events
 startButton.addEventListener('click', startAssessment);

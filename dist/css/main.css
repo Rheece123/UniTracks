@@ -350,6 +350,10 @@ input[class^='btn-']:hover {
 #answer-container {
   background-color: #ccc; }
 
+#question-container .container {
+  display: flex;
+  justify-content: space-between; }
+
 #answer-container {
   height: 40vh; }
   #answer-container .answer-btn {

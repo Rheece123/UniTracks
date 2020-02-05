@@ -8,6 +8,13 @@
 	background-color: $medium-color;
 }
 
+#question-container {
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
 #answer-container {
 	height: 40vh;
 
