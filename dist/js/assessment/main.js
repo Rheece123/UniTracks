@@ -11,23 +11,6 @@ const progressStatus = document.querySelector('.progress-bar-status');
 const loader = document.querySelector('.loader');
 const content = document.querySelector('.content');
 
-function init() {
-	setTimeout(function() {
-		loader.style.opacity = 0;
-		loader.style.display = 'none';
-
-		// Bring in page content
-		content.style.display = 'block';
-
-		// Fade content in
-		setTimeout(function() {
-			content.style.opacity = 1;
-		}, 50);
-	}, 4000);
-}
-
-init();
-
 // Assessment Variables
 let currentQuestionIndex = 0;
 let score = 0;
@@ -41,6 +24,21 @@ skipButton.addEventListener('click', function() {
 	currentQuestionIndex++;
 	setQuestion();
 });
+
+(function loadingAnimation() {
+	setTimeout(function() {
+		loader.style.opacity = 0;
+		loader.style.display = 'none';
+
+		// Bring in page content
+		content.style.display = 'block';
+
+		// Fade content in
+		setTimeout(function() {
+			content.style.opacity = 1;
+		}, 50);
+	}, 4000);
+})();
 
 function startAssessment() {
 	// Stop playing the audio
