@@ -25,7 +25,7 @@
 }
 
 // Initially set the page content to display none and then show it after the loading animation
-.form-page-container {
+.content {
 	opacity: 0;
 	display: none;
 	transition: opacity 2s ease-in;

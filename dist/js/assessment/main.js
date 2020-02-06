@@ -9,7 +9,7 @@ const progressCounter = document.querySelector('.progress-counter');
 const progressBar = document.querySelector('.progress-bar');
 const progressStatus = document.querySelector('.progress-bar-status');
 const loader = document.querySelector('.loader');
-const content = document.querySelector('.form-page-container');
+const content = document.querySelector('.content');
 
 function init() {
 	setTimeout(function() {
