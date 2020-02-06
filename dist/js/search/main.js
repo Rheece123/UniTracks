@@ -6,12 +6,6 @@ const trackInput = document.querySelector('#search-courses');
 // Search Functionality on Tracks Page
 trackInput.addEventListener('keyup', filterCourses);
 
-// Prevent transition on page load
-document.addEventListener('DOMContentLoaded', function() {
-	let node = document.querySelector('.preload-transitions');
-	node.classList.remove('preload-transitions');
-});
-
 // Filter through courses
 function filterCourses(e) {
 	const inputText = e.target.value.toLowerCase();

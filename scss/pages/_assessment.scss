@@ -1,3 +1,36 @@
+// Loading Animation
+.loader {
+	font-size: 40px;
+	color: $main-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.loader::after {
+	content: '\2026';
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+	animation: dots steps(4, end) 2s infinite;
+	width: 0px;
+}
+
+@keyframes dots {
+	to {
+		width: 2rem;
+	}
+}
+
+// Initially set the page content to display none and then show it after the loading animation
+.form-page-container {
+	opacity: 0;
+	display: none;
+	transition: opacity 2s ease-in;
+}
+
 button {
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;

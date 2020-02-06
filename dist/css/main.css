@@ -342,6 +342,32 @@ input[class^='btn-']:hover {
   #course-modules .container .module {
     padding: 1rem 2rem; } }
 
+.loader {
+  font-size: 40px;
+  color: #93cb52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh; }
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px; }
+
+@keyframes dots {
+  to {
+    width: 2rem; } }
+
+.form-page-container {
+  opacity: 0;
+  display: none;
+  transition: opacity 2s ease-in; }
+
 button {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }
