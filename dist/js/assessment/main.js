@@ -25,20 +25,24 @@ skipButton.addEventListener('click', function() {
 	setQuestion();
 });
 
-(function loadingAnimation() {
+function loadingAnimation(loadingText, contentToLoad) {
+	loader.innerText = loadingText;
+
 	setTimeout(function() {
 		loader.style.opacity = 0;
 		loader.style.display = 'none';
 
-		// Bring in page content
-		content.style.display = 'block';
+		// Show content
+		contentToLoad.style.display = 'block';
 
 		// Fade content in
 		setTimeout(function() {
-			content.style.opacity = 1;
+			contentToLoad.style.opacity = 1;
 		}, 50);
 	}, 4000);
-})();
+}
+
+loadingAnimation('Loading Assessment', content);
 
 function startAssessment() {
 	// Stop playing the audio
@@ -73,7 +77,7 @@ function setQuestion() {
 
 	// Before asking a question, check if there are anymore questions
 	// Show question using current question index if there are anymore questions
-	if (!checkEndOfAssessment()) {
+	if (!endOfAssessment()) {
 		showQuestion(questions[currentQuestionIndex]);
 	}
 }
@@ -140,9 +144,10 @@ function checkAnswer(e) {
 	setQuestion();
 }
 
-function checkEndOfAssessment() {
+function endOfAssessment() {
 	// If there are no remaining questions, end the assessment and show the score
 	if (questions.length < currentQuestionIndex + 1) {
+		loadingAnimation('Calculating Score', content);
 		questionText.innerText = 'Results';
 		answerButtons.innerHTML = `<h1>You Scored ${score} out of ${questions.length}</h1>
 															 <a href="index.html" class="btn-dark my-3">Exit Assessment</a>`;
