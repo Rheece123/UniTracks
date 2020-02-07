@@ -1,19 +1,47 @@
 // UI Variables
+
+// Loading Animation
+const loader = document.querySelector('.loader');
+const content = document.querySelector('.content');
+
+// Controls
 const startButton = document.querySelector('#start-btn');
 const skipButton = document.querySelector('#skip-btn');
+const exitButton = document.querySelector('#exit-btn');
+
+// Top bar info
+const questionsContainer = document.querySelector('#question-container');
 const questionText = document.querySelector('.title');
+
+// Answer container
+const answerContainer = document.querySelector('#answer-container');
 const instructionText = document.querySelectorAll('.instruction-text');
 const answerButtons = document.querySelector('.answer-buttons');
+
+// Footer Progress Bar
 const progressBarContainer = document.querySelector('#progress');
 const progressCounter = document.querySelector('.progress-counter');
 const progressBar = document.querySelector('.progress-bar');
 const progressStatus = document.querySelector('.progress-bar-status');
-const loader = document.querySelector('.loader');
-const content = document.querySelector('.content');
+
+// Result Container
+const resultsContainer = document.querySelector('#results-container');
+const passText = document.querySelector('.pass-text');
+const scoreText = document.querySelector('.score');
+const timestampText = document.querySelector('.timestamp-text');
+const printButton = document.querySelector('#print-btn');
+
+// Skills Breakdown
+const correctText = document.querySelector('.correct-title');
+const correctSkills = document.querySelector('.correct-skills');
+const wrongSkills = document.querySelector('.wrong-skills');
+const wrongText = document.querySelector('.wrong-title');
 
 // Assessment Variables
+const progressRatio = 100 / questions.length;
 let currentQuestionIndex = 0;
-let score = 0;
+let percentageScore = 0;
+let correctScore = 0;
 let assessmentStarted = false;
 let currentProgressWidth = 0;
 
@@ -23,6 +51,10 @@ startButton.addEventListener('click', startAssessment);
 skipButton.addEventListener('click', function() {
 	currentQuestionIndex++;
 	setQuestion();
+});
+
+printButton.addEventListener('click', function() {
+	window.print();
 });
 
 function loadingAnimation(loadingText, contentToLoad) {
@@ -64,13 +96,16 @@ function startAssessment() {
 	// Show the progress bar
 	progressBarContainer.classList.remove('hide');
 
-	// Ask the first question
+	// Ask question
 	setQuestion();
 }
 
 function setQuestion() {
 	// Remove answer buttons in answer container before showing the next question
 	resetAnswerContainer();
+
+	// Stop playing any audio
+	synth.cancel();
 
 	// Increment progress bar after each question
 	incrementProgressBar();
@@ -98,7 +133,6 @@ function showQuestion(question) {
 }
 
 function incrementProgressBar() {
-	const progressRatio = 100 / questions.length;
 	currentProgressWidth += progressRatio;
 	progressStatus.style.width = `${currentProgressWidth}%`;
 
@@ -117,7 +151,7 @@ function addAnswerButtons(question) {
 		button.innerText = answer.text;
 		button.classList.add('answer-btn', 'btn-dark');
 
-		// Add correct dataset attribute to correct value that is equal to true for answer object value
+		// Add true or false dataset attribute to each answer so that it can be
 		if (answer.correct) {
 			button.dataset.correct = answer.correct;
 		}
@@ -134,9 +168,13 @@ function addAnswerButtons(question) {
 }
 
 function checkAnswer(e) {
-	// If user clicks on correct answer, add 1 to their score
+	// If user clicks on correct answer, add percentage ratio to percentage and add 1 to their score
 	if (e.target.dataset.correct) {
-		score++;
+		percentageScore += progressRatio;
+		correctScore++;
+
+		// Set answeredCorrectly property within question object to true
+		questions[currentQuestionIndex].answers.answeredCorrectly = true;
 	}
 
 	// Ask next question
@@ -145,16 +183,56 @@ function checkAnswer(e) {
 }
 
 function endOfAssessment() {
-	// If there are no remaining questions, end the assessment and show the score
+	// If there are no remaining questions, end the assessment, show the score and skills breakdown
 	if (questions.length < currentQuestionIndex + 1) {
-		loadingAnimation('Calculating Score', content);
 		questionText.innerText = 'Results';
-		answerButtons.innerHTML = `<h1>You Scored ${score} out of ${questions.length}</h1>
-															 <a href="index.html" class="btn-dark my-3">Exit Assessment</a>`;
+
+		// Replace audio button with Exit Assessment button and show the Exit Assessment button
+		audioButton.replaceWith(exitButton);
+		exitButton.classList.remove('hide');
 
 		// Hide skip button and progress bar
 		skipButton.classList.add('hide');
 		progressBarContainer.classList.add('hide');
+		answerContainer.classList.add('hide');
+
+		resultsContainer.classList.remove('hide');
+
+		if (percentageScore >= 70) {
+			passText.innerText = 'You passed the assessment';
+		} else {
+			passText.innerText = 'You did not pass the assessment';
+		}
+
+		scoreText.innerText = `${percentageScore}%`;
+
+		// Get current date and parse it to remove timezone
+		let s = new Date();
+		let d = new Date(Date.parse(s));
+		timestampText.innerText = d.toUTCString();
+
+		// Set correct and incorrect text
+		correctText.innerText = `Correct (${correctScore} out of ${questions.length})`;
+		wrongText.innerText = `Incorrect (${questions.length - correctScore} out of ${questions.length})`;
+
+		// Loop through each question object that has a answeredCorrect property of true and add to the correct skills list
+
+		questions.forEach(function(question) {
+			console.log(question);
+			if (question.answers.answeredCorrectly) {
+				const li = document.createElement('li');
+				li.innerText = question.category;
+
+				// Append li to ul
+				correctSkills.appendChild(li);
+			} else {
+				const li = document.createElement('li');
+				li.innerText = question.category;
+
+				// Append li to ul
+				wrongSkills.appendChild(li);
+			}
+		});
 
 		return true;
 	}

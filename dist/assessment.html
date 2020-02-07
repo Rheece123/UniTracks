@@ -69,6 +69,7 @@
 				<div class="container">
 					<h2 class="title">Instructions</h2>
 					<button id="audio-btn" class="btn-dark">Audio</button>
+					<a id="exit-btn" href="index.html" class="btn-dark hide">Exit Assessment</a>
 				</div>
 			</div>
 
@@ -86,6 +87,34 @@
 						</p>
 						<p class="instruction-text my-2">To start the assessment, click the Start Assessment button.</p>
 						<button id="start-btn" class="btn-dark my-2">Start Assessment</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Results Container which will only be shown at the end of the assessment -->
+			<div id="results-container" class="my-1 hide">
+				<div class="container">
+					<p class="assessment-text">
+						You have completed the assessment. Below is the score you achieved and a breakdown of the skills you have
+						mastered and the skills you need to improve on
+					</p>
+					<div class="score-breakdown">
+						<p class="pass-text"></p>
+						<h3 class="score"></h3>
+						<p class="timestamp-text"></p>
+						<button id="print-btn" class="btn-dark my-2">Print Results</button>
+					</div>
+					<div class="skills-breakdown">
+						<div id="correct">
+							<p class="title correct-title"></p>
+							<p class="skill-title">Mastered Skills</p>
+							<ul class="correct-skills"></ul>
+						</div>
+						<div id="wrong">
+							<p class="title wrong-title"></p>
+							<p class="skill-title">Skills to improve</p>
+							<ul class="wrong-skills"></ul>
+						</div>
 					</div>
 				</div>
 			</div>

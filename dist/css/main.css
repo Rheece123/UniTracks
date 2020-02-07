@@ -344,7 +344,7 @@ input[class^='btn-']:hover {
 
 .loader {
   font-size: 40px;
-  color: #93cb52;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,7 +370,8 @@ input[class^='btn-']:hover {
 
 button {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  outline: 0; }
 
 .module-title {
   color: #fff;
@@ -397,6 +398,59 @@ button {
   background-color: #93cb52;
   color: #333; }
 
+#results-container .container .assessment-text {
+  background-color: #93cb52;
+  border: 2px solid #93cb52;
+  border-radius: 5px;
+  padding: 1rem; }
+
+#results-container .container .score-breakdown {
+  background-color: #f4f4f4;
+  border: 2px solid #f4f4f4;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem; }
+
+#results-container .skills-breakdown {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  border-radius: 5px; }
+  #results-container .skills-breakdown #correct,
+  #results-container .skills-breakdown #wrong {
+    width: 45%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem; }
+    #results-container .skills-breakdown #correct .title,
+    #results-container .skills-breakdown #wrong .title {
+      color: #fff;
+      padding: 0.5rem; }
+    #results-container .skills-breakdown #correct .skill-title,
+    #results-container .skills-breakdown #wrong .skill-title {
+      padding: 0.5rem;
+      font-weight: 800; }
+  #results-container .skills-breakdown #correct .title {
+    background-color: #61b043; }
+  #results-container .skills-breakdown #correct .skill-title {
+    background-color: #d8ebcf;
+    color: #61b043; }
+  #results-container .skills-breakdown #wrong .title {
+    background-color: #c21807; }
+  #results-container .skills-breakdown #wrong .skill-title {
+    background-color: #e6a29b;
+    color: #c21807; }
+  #results-container .skills-breakdown #correct ul,
+  #results-container .skills-breakdown #wrong ul {
+    background-color: #fff;
+    text-align: start;
+    padding: 1.2rem; }
+    #results-container .skills-breakdown #correct ul li,
+    #results-container .skills-breakdown #wrong ul li {
+      list-style-type: disc; }
+
 #footer {
   background: #333;
   color: #fff; }
@@ -408,9 +462,11 @@ button {
     #footer .footer-content #progress {
       width: 50%; }
       #footer .footer-content #progress .progress-count {
-        padding-right: 2rem; }
+        padding-right: 2rem;
+        margin-top: 1rem; }
       #footer .footer-content #progress .progress-bar {
-        background-color: #ddd; }
+        background-color: #ddd;
+        margin-bottom: 1rem; }
         #footer .footer-content #progress .progress-bar .progress-bar-status {
           width: 2%;
           height: 20px;
