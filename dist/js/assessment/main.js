@@ -58,6 +58,15 @@ printButton.addEventListener('click', function() {
 });
 
 function loadingAnimation(loadingText, contentToLoad) {
+	// If loading animation is not showing, show it and hide and the content that is to be loaded
+	if (loader.style.display === 'none') {
+		loader.style.opacity = 1;
+		loader.style.display = 'flex';
+
+		contentToLoad.style.opacity = 0;
+		contentToLoad.style.display = 'none';
+	}
+
 	loader.innerText = loadingText;
 
 	setTimeout(function() {
@@ -185,6 +194,8 @@ function checkAnswer(e) {
 function endOfAssessment() {
 	// If there are no remaining questions, end the assessment, show the score and skills breakdown
 	if (questions.length < currentQuestionIndex + 1) {
+		loadingAnimation('Calculating Results', content);
+
 		questionText.innerText = 'Results';
 
 		// Replace audio button with Exit Assessment button and show the Exit Assessment button
@@ -218,7 +229,6 @@ function endOfAssessment() {
 		// Loop through each question object that has a answeredCorrect property of true and add to the correct skills list
 
 		questions.forEach(function(question) {
-			console.log(question);
 			if (question.answers.answeredCorrectly) {
 				const li = document.createElement('li');
 				li.innerText = question.category;
