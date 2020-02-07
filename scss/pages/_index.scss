@@ -91,10 +91,11 @@
 			}
 
 			&-step {
+				font-family: $font-stack;
 				position: absolute;
 				top: 0;
-				right: 0;
-				font-size: 28px;
+				right: -15px;
+				font-size: 25px;
 				background-color: $main-color;
 				border-radius: 50%;
 				height: 15px;

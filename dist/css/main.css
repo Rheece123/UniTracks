@@ -244,10 +244,11 @@ input[class^='btn-']:hover {
     text-align: center;
     position: relative; }
   #home-use .use-step {
+    font-family: "Roboto", sans-serif;
     position: absolute;
     top: 0;
-    right: 0;
-    font-size: 28px;
+    right: -15px;
+    font-size: 25px;
     background-color: #93cb52;
     border-radius: 50%;
     height: 15px;
