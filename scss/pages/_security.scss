@@ -1,0 +1,38 @@
+#about-module {
+	.container {
+		max-width: 900px;
+	}
+
+	.module {
+		width: 100%;
+	}
+
+	.module-title {
+		background-color: $main-color;
+		color: #000;
+		padding: 0.5rem;
+	}
+
+	.concept {
+		background-color: $light-color;
+		padding: 2rem;
+		font-size: 1.1rem;
+	}
+
+	.topics {
+		padding: 1rem;
+
+		li {
+			padding: 0.5rem;
+			color: #000;
+
+			a {
+				color: #000;
+
+				&:hover {
+					color: $main-color;
+				}
+			}
+		}
+	}
+}

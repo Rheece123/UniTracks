@@ -1,42 +1,46 @@
 const questions = [
 	{
-		question: 'What is 2 + 2?',
+		question: 'Which are these are considered best practises when creating passwords?',
 		answers: [
-			{ text: '4', correct: true, answeredCorrectly: false },
-			{ text: '8', correct: false },
-			{ text: '40', correct: false },
-			{ text: '22', correct: false }
+			{ text: 'Never use personal information', correct: false, answeredCorrectly: false },
+			{ text: 'Always use different passwords for each user account', correct: false, answeredCorrectly: false },
+			{
+				text: 'Passwords shoud include different letters, numbers and special characters',
+				correct: false,
+				answeredCorrectly: false
+			},
+			{ text: 'All of the above', correct: true, answeredCorrectly: false }
 		],
-		category: 'Category 1'
+		category: 'Password Security'
 	},
 	{
-		question: 'What is 2 + 6?',
+		question: 'E-Commerce sites should use which security feature?',
 		answers: [
-			{ text: '220', correct: false },
-			{ text: '5', correct: false },
-			{ text: '81', correct: false },
-			{ text: '8', correct: true }
+			{ text: 'HTTP', correct: false, answeredCorrectly: false },
+			{ text: 'HTTPS', correct: true, answeredCorrectly: false },
+			{ text: 'A valid domain name', correct: false, answeredCorrectly: false },
+			{ text: '.co.uk', correct: false, answeredCorrectly: false }
 		],
-		category: 'Category 2'
+		category: 'E-Commerce Security'
 	},
 	{
-		question: 'What is 18 + 6?',
+		question: 'What does the security acronym CIA stand for?',
 		answers: [
-			{ text: '220', correct: false },
-			{ text: '5', correct: false },
-			{ text: '81', correct: false },
-			{ text: '8', correct: true }
+			{ text: 'Content information association', correct: false, answeredCorrectly: false },
+			{ text: 'Consumer, involvment and academic', correct: false, answeredCorrectly: false },
+			{ text: 'Confidentiality, integrity and availability', correct: true, answeredCorrectly: false },
+			{ text: 'None of the above', correct: false, answeredCorrectly: false }
 		],
-		category: 'Category 3'
+		category: 'Information Security Model'
 	},
 	{
-		question: 'What is 12 + 6?',
+		question: 'Phising, Tailgating and pretext are examples of which type of security attack',
 		answers: [
-			{ text: '220', correct: false },
-			{ text: '5', correct: false },
-			{ text: '81', correct: false },
-			{ text: '8', correct: true }
+			{ text: 'Social Engineering', correct: true, answeredCorrectly: false },
+			{ text: 'Hacking', correct: false, answeredCorrectly: false },
+			{ text: 'SQL Injection', correct: false, answeredCorrectly: false },
+			{ text: 'Denial-of-service (DoS)', correct: false, answeredCorrectly: false }
 		],
-		category: 'Category 4'
+		category: 'Security Attacks'
 	}
 ];

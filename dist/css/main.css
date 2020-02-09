@@ -482,6 +482,32 @@ button {
           height: 20px;
           background-color: #93cb52; }
 
+#about-module .container {
+  max-width: 900px; }
+
+#about-module .module {
+  width: 100%; }
+
+#about-module .module-title {
+  background-color: #93cb52;
+  color: #000;
+  padding: 0.5rem; }
+
+#about-module .concept {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  font-size: 1.1rem; }
+
+#about-module .topics {
+  padding: 1rem; }
+  #about-module .topics li {
+    padding: 0.5rem;
+    color: #000; }
+    #about-module .topics li a {
+      color: #000; }
+      #about-module .topics li a:hover {
+        color: #93cb52; }
+
 .form .text-fields {
   display: grid;
   grid-template-areas: 'name' 'email' 'password' 'confirm-password';
