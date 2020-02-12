@@ -32,8 +32,19 @@
 		}
 	}
 
-	a:hover {
+	.link:hover {
 		color: $main-color;
+	}
+
+	#login-btn,
+	#signup-btn {
+		width: 50%;
+		display: block;
+		margin: 1rem auto;
+
+		&:hover {
+			color: $dark-color;
+		}
 	}
 
 	button[type='submit'] {

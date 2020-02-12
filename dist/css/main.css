@@ -540,6 +540,11 @@ button {
     cursor: pointer;
     padding: 0.2rem 0; }
 
+.buttons {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around; }
+
 .form .text-fields {
   display: grid;
   grid-template-areas: 'name' 'email' 'password' 'confirm-password';
@@ -559,8 +564,17 @@ button {
     font-size: 1rem;
     outline: none; }
 
-.form a:hover {
+.form .link:hover {
   color: #93cb52; }
+
+.form #login-btn,
+.form #signup-btn {
+  width: 50%;
+  display: block;
+  margin: 1rem auto; }
+  .form #login-btn:hover,
+  .form #signup-btn:hover {
+    color: #333; }
 
 .form button[type='submit'] {
   width: 100%; }

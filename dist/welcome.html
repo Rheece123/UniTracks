@@ -43,8 +43,9 @@
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Sign Up | Learn Digital Skills</title>
+		<title>Login | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
 		<div class="form-page-container">
@@ -57,42 +58,28 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="login.html">Login</a></li>
+								<li><a href="welcome.html" class="current">Home</a></li>
+								<li><a href="track.html">Tracks</a></li>
+								<li><a href="resources.html">Resources</a></li>
 							</ul>
-							<a href="#sign-up" class="btn-signup">Sign Up</a>
+							<a href="login.html" class="btn-signup">Sign Out</a>
 						</nav>
 					</div>
 				</div>
 			</header>
 
-			<!-- Section A: Sign Up Form -->
-			<section id="signup" class="text-center py-3 form">
-				<div class="form-container">
-					<h2 class="section-title">Sign Up</h2>
+			<!-- Welcome Section -->
+			<section id="welcome" class="text-center py-3 form">
+				<div class="container">
+					<h2 class="section-title">Welcome Rheece</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
-						Sign up for a free account to access the skillset modules
+						Start using UniTracks now to improve your digital skillset knowledge
 					</p>
-					<form action="">
-						<div class="text-fields">
-							<input type="text" class="text-input name-input" placeholder="Name" required />
-							<input type="email" class="text-input email-input" placeholder="Email" required />
-							<input type="password" class="text-input password-input" minlength="8" placeholder="Password" required />
-							<input
-								type="password"
-								class="text-input confirm-password-input"
-								placeholder="Confirm Password"
-								required
-							/>
-						</div>
-						<a href="welcome.html" class="btn-dark" id="signup-btn">Sign Up</a>
-						<div id="login">
-							<p>Have an account already?</p>
-							<a href="login.html" class="link">Login here</a>
-						</div>
-					</form>
+					<div class="buttons">
+						<a href="track.html" class="btn-dark">Access Skillset Tracks</a>
+						<a href="resources.html" class="btn-dark">Access Resource List</a>
+					</div>
 				</div>
 			</section>
 
