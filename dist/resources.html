@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="E-Learning app for university students" />
+		<meta name="keywords" content="E-Learning, Digital Citizenship, Skills" />
+		<meta name="author" content="Rheece Dawes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="msapplication-TileColor" content="#93cb52" />
+		<meta
+			name="msapplication-config"
+			content="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/safari-pinned-tab.svg"
+			color="#93cb52"
+		/>
+		<link rel="shortcut icon" href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Tracks | Learn Digital Skills</title>
+	</head>
+	<body class="preload-transitions">
+		<div class="main-page-container">
+			<!-- Header -->
+			<header id="header-inner">
+				<div class="about-header-overlay">
+					<div class="container">
+						<nav id="main-nav">
+							<h1 id="logo">
+								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
+							</h1>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="track.html" class="current">Tracks</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+							<a href="signup.html" class="btn-signup">Sign Up</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- Search Resources Section -->
+			<section id="search-resources" class="py-3">
+				<div class="container">
+					<h2 class="section-title">Resources</h2>
+					<div class="bottom-line"></div>
+					<p class="lead text-center">
+						Find resources available online for different IT Skills
+					</p>
+
+					<!-- Select list for resource type -->
+					<div id="select-resource" class="text-center my-1">
+						<select id="resource-type">
+							<option disabled selected>Select a resource type</option>
+							<option value="website">Website</option>
+							<option value="video">Video</option>
+							<option value="book">Book</option>
+							<option value="course">Course</option>
+						</select>
+					</div>
+
+					<!-- Google Search Bar -->
+					<!-- <script id="google-search-engine" async></script> -->
+					<div class="gcse-search"></div>
+					<h3 class="results-title py-1 hide"></h3>
+					<div class="message-alert lead text-center hide"></div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="main-footer">
+				<div class="footer-content container">
+					<p>Copyright&copy; 2019. All Rights Reserved</p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS Script -->
+		<script src="./js/main.js"></script>
+		<script src="./js/resource/main.js"></script>
+		<script src="./js/resource/skills.js"></script>
+	</body>
+</html>

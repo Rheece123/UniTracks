@@ -508,6 +508,38 @@ button {
       #about-module .topics li a:hover {
         color: #93cb52; }
 
+#search-resources .container .results-title {
+  font-size: 2rem; }
+
+#search-resources .container .select-resource {
+  display: flex;
+  justify-content: center; }
+
+#search-resources .container #___gcse_0 form.gsc-search-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center; }
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsc-input-box {
+    border-radius: 5px;
+    border-color: #333;
+    padding: 0.2rem; }
+  #search-resources .container #___gcse_0 form.gsc-search-box .cse .gsc-control-cse,
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsc-control-cse {
+    padding: 1rem 0;
+    width: auto; }
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2,
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2:hover,
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2:focus {
+    border-color: #93cb52;
+    background-color: #93cb52;
+    padding: 0.8rem;
+    width: 5rem;
+    cursor: pointer; }
+  #search-resources .container #___gcse_0 form.gsc-search-box .gsst_a .gscb_a {
+    color: #333;
+    cursor: pointer;
+    padding: 0.2rem 0; }
+
 .form .text-fields {
   display: grid;
   grid-template-areas: 'name' 'email' 'password' 'confirm-password';
