@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -43,11 +47,12 @@
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Tracks | Learn Digital Skills</title>
+		<title>Login | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="main-page-container">
+		<div class="form-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -57,45 +62,53 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="student.php">Home</a></li>
-								<li><a href="track.html">Tracks</a></li>
-								<li><a href="#" class="current">Resources</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#login" class="current">Login</a></li>
 							</ul>
-							<form action="includes/logout.inc.php" method="post">
-								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
-							</form>
+							<a href="signup.php" class="btn-signup">Sign Up</a>
 						</nav>
 					</div>
 				</div>
 			</header>
 
-			<!-- Search Resources Section -->
-			<section id="search-resources" class="py-3">
-				<div class="container">
-					<h2 class="section-title">Resources</h2>
-					<div class="bottom-line"></div>
-					<p class="lead text-center">
-						Find resources available online for different IT Skills
-					</p>
+			<!-- Section A: Login Form -->
+		<section id="login" class="text-center py-3 form">
+			<div class="form-container">
+				<h2 class="section-title">Login</h2>
+				<div class="bottom-line"></div>
+				<p class="lead">Login to access your account and the skillset modules</p>			
+				<p class="status-message"></p>	
+				<?php
+        if (isset($_GET['error'])) {
+          if ($_GET['error'] === "emptyfields") {
+            echo '<p class="lead status-message error">Fill in all fields</p>';
+          }
+          else if ($_GET['error'] === "wrongpwd") {
+            echo '<p class="lead status-message error">Invalid password</p>';
+          }
+          else if ($_GET['error'] === "nouser") {
+            echo '<p class="lead status-message error">Invalid username</p>';
+          }
+        }  
+      ?>
 
-					<!-- Select list for resource type -->
-					<div id="select-resource" class="text-center my-1">
-						<select id="resource-type" class="select-list">
-							<option disabled selected>Select a resource type</option>
-							<option value="website">Website</option>
-							<option value="video">Video</option>
-							<option value="book">Book</option>
-							<option value="course">Course</option>
-						</select>
+
+				<form action="includes/login.inc.php" method="post">
+					<div class="text-fields">
+						<input type="text" class="text-input name-input email-input" name="mailuid" placeholder="Email/Username"/>
+						<input type="password" class="text-input password-input" name="pwd" placeholder="Password"/>
 					</div>
-
-					<!-- Google Search Bar -->
-					<!-- <script id="google-search-engine" async></script> -->
-					<div class="gcse-search"></div>
-					<h3 class="results-title py-1 hide"></h3>
-					<div class="message-alert lead text-center hide"></div>
+					<button type="submit" name="login-submit" class="btn-dark">Login</button>
+				</form>
+				<div id="signin">
+					<p class="pt-2">Don't have an account?</p>
+					<a href="signup.php" class="link">Sign Up Here</a>
 				</div>
-			</section>
+			</div>
+		</section>
+
+		<script src="js/login/status.js"></script>
 
 			<!-- Footer -->
 			<footer id="main-footer">
@@ -105,9 +118,6 @@
 			</footer>
 		</div>
 
-		<!-- JS Script -->
 		<script src="./js/main.js"></script>
-		<script src="./js/resource/main.js"></script>
-		<script src="./js/resource/skills.js"></script>
 	</body>
 </html>

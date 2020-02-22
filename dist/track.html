@@ -57,11 +57,13 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="welcome.html">Home</a></li>
-								<li><a href="track.html" class="current">Tracks</a></li>
+								<li><a href="student.php">Home</a></li>
+								<li><a href="#" class="current">Tracks</a></li>
 								<li><a href="resources.html">Resources</a></li>
 							</ul>
-							<a href="login.html" class="btn-signup">Sign Out</a>
+							<form action="includes/logout.inc.php" method="post">
+								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+							</form>
 						</nav>
 					</div>
 				</div>

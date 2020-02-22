@@ -1,3 +1,19 @@
+<?php
+  session_start();
+  
+  // If the user is not logged in redirect to the login page...
+  if (!isset($_SESSION['userId'])) {
+	  header('Location: index.php');
+	  exit();
+  }  
+
+  // Stop instructors accessing the student page
+  if ($_SESSION['accountType'] === 'instructor') {
+	  header('Location: instructor.php');
+	  exit();
+  }  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -43,11 +59,12 @@
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Tracks | Learn Digital Skills</title>
+		<title>Login | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="main-page-container">
+		<div class="form-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -57,43 +74,30 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="student.php">Home</a></li>
+								<li><a href="#" class="current">Home</a></li>
 								<li><a href="track.html">Tracks</a></li>
-								<li><a href="#" class="current">Resources</a></li>
+								<li><a href="resources.html">Resources</a></li>
 							</ul>
-							<form action="includes/logout.inc.php" method="post">
-								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
-							</form>
+							<form action="includes/logout.inc.php" method="post">	
+						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+					    </form>
 						</nav>
 					</div>
 				</div>
 			</header>
 
-			<!-- Search Resources Section -->
-			<section id="search-resources" class="py-3">
+			<!-- Welcome Section -->
+			<section id="welcome" class="text-center py-3 form">
 				<div class="container">
-					<h2 class="section-title">Resources</h2>
+					<h2 class="section-title">Welcome to the Student Hub</h2>
 					<div class="bottom-line"></div>
-					<p class="lead text-center">
-						Find resources available online for different IT Skills
+					<p class="lead">
+						Start using UniTracks now to improve your digital skillset knowledge
 					</p>
-
-					<!-- Select list for resource type -->
-					<div id="select-resource" class="text-center my-1">
-						<select id="resource-type" class="select-list">
-							<option disabled selected>Select a resource type</option>
-							<option value="website">Website</option>
-							<option value="video">Video</option>
-							<option value="book">Book</option>
-							<option value="course">Course</option>
-						</select>
+					<div class="buttons">
+						<a href="track.html" class="btn-dark">Access Skillset Tracks</a>
+						<a href="resources.html" class="btn-dark">Access Resource List</a>
 					</div>
-
-					<!-- Google Search Bar -->
-					<!-- <script id="google-search-engine" async></script> -->
-					<div class="gcse-search"></div>
-					<h3 class="results-title py-1 hide"></h3>
-					<div class="message-alert lead text-center hide"></div>
 				</div>
 			</section>
 
@@ -105,9 +109,6 @@
 			</footer>
 		</div>
 
-		<!-- JS Script -->
 		<script src="./js/main.js"></script>
-		<script src="./js/resource/main.js"></script>
-		<script src="./js/resource/skills.js"></script>
 	</body>
 </html>
