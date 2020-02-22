@@ -79,7 +79,7 @@
 								<li><a href="resources.html">Resources</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
-						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+						    <button class="btn-logout" type="submit" name="logout-submit">Logout</button>
 					    </form>
 						</nav>
 					</div>
