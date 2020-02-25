@@ -89,7 +89,7 @@
 			<!-- Skill Section -->
 			<section id="welcome" class="text-center py-3 form">
 				<div class="form-container">
-					<h2 class="section-title">Students can access resources to learn digital skills</h2>
+					<h2 class="section-title">Add a new digital skill for students</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
 						Add a new skill using the input field

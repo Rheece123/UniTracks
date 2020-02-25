@@ -327,6 +327,9 @@ input[class^='btn-']:hover {
     #about-quotes .quotes .quote p {
       padding: 1rem; }
 
+.search .search-input {
+  width: 30rem; }
+
 #tracks-catalog #tracks {
   display: grid;
   grid-gap: 1rem;
@@ -653,7 +656,7 @@ footer {
   margin-right: 1rem;
   outline: none;
   padding: 0.5rem 1rem;
-  width: 30rem;
+  width: 100%;
   box-sizing: border-box;
   transition: 0.3s; }
   .search-input:focus {
