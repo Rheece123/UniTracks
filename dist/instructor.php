@@ -61,7 +61,7 @@
 		/>
 
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Login | Learn Digital Skills</title>
+		<title>Instructor | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
 		<div class="form-page-container">
