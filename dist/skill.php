@@ -68,7 +68,7 @@
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
-					<div class="form-container">
+					<div class="container">
 						<nav id="main-nav">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
@@ -88,7 +88,7 @@
 
 			<!-- Skill Section -->
 			<section id="welcome" class="text-center py-3 form">
-				<div class="container">
+				<div class="form-container">
 					<h2 class="section-title">Students can access resources to learn digital skills</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
