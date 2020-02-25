@@ -92,7 +92,7 @@
 					<h2 class="section-title">Welcome to the Instructor Hub</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
-						Start using UniTracks now to improve your digital skillset knowledge
+						Manage how your students use UniTracks by adding skills and monitoring their skillset level
 					</p>
 				</div>
 			</section>
