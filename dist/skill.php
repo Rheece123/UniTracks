@@ -74,8 +74,8 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="#" class="current">Home</a></li>
-								<li><a href="skill.php">Skills</a></li>
+								<li><a href="instructor.php">Home</a></li>
+								<li><a href="#" class="current">Skills</a></li>
 								<li><a href="#">Reports</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
@@ -86,14 +86,41 @@
 				</div>
 			</header>
 
-			<!-- Welcome Section -->
+			<!-- Skill Section -->
 			<section id="welcome" class="text-center py-3 form">
 				<div class="container">
-					<h2 class="section-title">Welcome to the Instructor Hub</h2>
+					<h2 class="section-title">Students can access resources to learn digital skills</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
-						Start using UniTracks now to improve your digital skillset knowledge
+						Add a new skill using the input field
 					</p>
+
+					<?php
+            if (isset($_GET['error'])) {
+              if ($_GET['error'] === "emptyfield") {
+                echo '<p class="lead status-message error">Add a skill</p>';
+              }
+              else if ($_GET['error'] === "invalidskill") {
+                echo '<p class="lead status-message error">Invalid skill</p>';
+              }
+              else if ($_GET['error'] === "skillalreadyexists") {
+                echo '<p class="lead status-message error">This skill has already been added</p>';
+              }
+            }
+
+            else if (isset($_GET['addskill'])) {
+
+              if ($_GET['addskill'] === "success") {
+                echo '<p class="lead status-message success">Skill successfully added</p>';
+              }
+            }
+            
+          ?>
+					
+					<form action="includes/skill.inc.php" method="post">
+							<input type="text" name="add-skill" placeholder="Add a new digital skill" />
+							<button type="submit" name="skill-submit" class="btn-dark my-1">Add Skill</button>
+					</form>
 				</div>
 			</section>
 
@@ -106,5 +133,6 @@
 		</div>
 
 		<script src="./js/main.js"></script>
+		<script src="js/login/status.js"></script>
 	</body>
 </html>
