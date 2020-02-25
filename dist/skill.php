@@ -68,7 +68,7 @@
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
-					<div class="container">
+					<div class="form-container">
 						<nav id="main-nav">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
