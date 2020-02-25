@@ -118,7 +118,7 @@
           ?>
 					
 					<form action="includes/skill.inc.php" method="post">
-							<input type="text" name="add-skill" class="search" placeholder="Add a new digital skill" />
+							<input type="text" name="add-skill" class="search-input" placeholder="Add a new digital skill" />
 							<button type="submit" name="skill-submit" class="btn-dark my-1">Add Skill</button>
 					</form>
 				</div>
