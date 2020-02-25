@@ -645,7 +645,7 @@ footer {
     align-items: center;
     height: 4rem; }
 
-.search input[type='text'] {
+.search-input {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   border: 2px solid #333;
@@ -656,14 +656,9 @@ footer {
   width: 30rem;
   box-sizing: border-box;
   transition: 0.3s; }
-  .search input[type='text']:focus {
+  .search-input:focus {
     border-color: #93cb52;
     box-shadow: 0 0 8px 0 #93cb52; }
-
-.search .search-btn {
-  padding: 0.8rem 2rem;
-  outline: none;
-  line-height: 50%; }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   #header-home {

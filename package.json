@@ -1,17 +1,26 @@
 {
-	"name": "unitracks",
-	"version": "1.0.0",
-	"description": "Unitrack website for project",
-	"main": "index.js",
-	"scripts": {
-		"sass": "node-sass -w scss/ -o dist/css/ --recusrive"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"node-sass": "^4.13.0"
-	},
-	"dependencies": {
-		"sass": "^1.24.0"
-	}
+  "name": "unitracks",
+  "version": "1.0.0",
+  "description": "Unitrack website for project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recusrive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "sass": "^1.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rheece123/UniTracks.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rheece123/UniTracks/issues"
+  },
+  "homepage": "https://github.com/Rheece123/UniTracks#readme"
 }

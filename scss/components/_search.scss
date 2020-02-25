@@ -1,26 +1,18 @@
 // Search Input on Tracks Page
-.search {
-	input[type='text'] {
-		font-family: $font-stack;
-		font-size: 1rem;
-		border: 2px solid #333;
-		border-radius: 5px;
-		margin-right: 1rem;
-		outline: none;
-		padding: 0.5rem 1rem;
-		width: 30rem;
-		box-sizing: border-box;
-		transition: 0.3s;
+.search-input {
+	font-family: $font-stack;
+	font-size: 1rem;
+	border: 2px solid #333;
+	border-radius: 5px;
+	margin-right: 1rem;
+	outline: none;
+	padding: 0.5rem 1rem;
+	width: 30rem;
+	box-sizing: border-box;
+	transition: 0.3s;
 
-		&:focus {
-			border-color: $main-color;
-			box-shadow: 0 0 8px 0 $main-color;
-		}
-	}
-
-	.search-btn {
-		padding: 0.8rem 2rem;
-		outline: none;
-		line-height: 50%;
+	&:focus {
+		border-color: $main-color;
+		box-shadow: 0 0 8px 0 $main-color;
 	}
 }
