@@ -61,7 +61,7 @@
 		/>
 
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Instructor | Learn Digital Skills</title>
+		<title>Reports | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
 		<div class="form-page-container">
@@ -74,9 +74,9 @@
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="#" class="current">Home</a></li>
+								<li><a href="instructor.php">Home</a></li>
 								<li><a href="skill.php">Skills</a></li>
-								<li><a href="report.php">Reports</a></li>
+								<li><a href="#" class="current">Reports</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
 						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
@@ -86,16 +86,66 @@
 				</div>
 			</header>
 
-			<!-- Welcome Section -->
+			<!-- Student Input Section -->
 			<section id="welcome" class="text-center py-3 form">
-				<div class="container">
-					<h2 class="section-title">Welcome to the Instructor Hub</h2>
+				<div class="form-container">
+					<h2 class="section-title">Access student skill reports</h2>
 					<div class="bottom-line"></div>
 					<p class="lead">
-						Manage how your students use UniTracks by adding skills and monitoring their skillset level
+						Enter a student's fullname using the input field
 					</p>
+
+					<?php
+					if (isset($_GET['error'])) {
+						if ($_GET['error'] === "emptyfield") {
+							echo '<p class="lead status-message error">Must search for a student</p>';
+						}
+						else if ($_GET['error'] === "invalidstudent") {
+							echo '<p class="lead status-message error">Invalid student name</p>';
+						}
+						else if ($_GET['error'] === "nostudent") {
+							echo '<p class="lead status-message error">No student found</p>';
+						}
+					}
+					?>
+					
+					<form action="includes/report.inc.php" method="post">
+							<input type="text" name="search-report" class="search-input" placeholder="Enter Username" />
+							<button type="submit" name="submit" class="btn-dark my-1">Submit</button>
+					</form>
+
+					
 				</div>
 			</section>
+
+			<!-- Report Table Section -->
+			<section id="welcome" class="py-3 text-center">
+				<div class="container">
+					<?php
+					// Only show the table if the student exists
+					if (isset($_GET['report'])) {
+						echo "<table class=table cellspacing=0>
+										<tr>
+											<th>Username</th>
+											<th>Email</th>
+											<th>Skillset</th>
+											<th>Date Completed</th>
+										</tr>
+										<tr>
+											<td>$_SESSION[username]</td>
+											<td>$_SESSION[email]</td>
+											<td>$_SESSION[skillset]</td>
+											<td>$_SESSION[dateCompleted]</td>
+										</tr>
+								  </table>";
+					} 
+					?>	
+				</div>
+			</section>
+
+
+			
+			
 
 			<!-- Footer -->
 			<footer id="main-footer">
@@ -106,5 +156,6 @@
 		</div>
 
 		<script src="./js/main.js"></script>
+		<script src="js/login/status.js"></script>
 	</body>
 </html>

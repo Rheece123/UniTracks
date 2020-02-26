@@ -76,7 +76,7 @@
 							<ul>
 								<li><a href="instructor.php">Home</a></li>
 								<li><a href="#" class="current">Skills</a></li>
-								<li><a href="#">Reports</a></li>
+								<li><a href="report.php">Reports</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
 						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
