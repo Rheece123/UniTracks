@@ -229,7 +229,7 @@ function endOfAssessment() {
 		// Create XHR Object
 		const xhr = new XMLHttpRequest();
 
-		xhr.open('POST', 'http://localhost/unitracks-master-test/dist/includes/assessment.inc.php', true);
+		xhr.open('POST', 'http://localhost/unitracks-master/dist/includes/assessment.inc.php', true);
 
 		// Must use this when using POST to send content
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
