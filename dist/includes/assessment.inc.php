@@ -1,7 +1,9 @@
 <?php
 
+session_start();
+
 // Check for a POST Variable
-if (isset($_POST['score']) && isset($_POST['skillset'])) {
+if (isset($_POST['score'])) {
   require 'dbh.inc.php';
 
   // Username from Session

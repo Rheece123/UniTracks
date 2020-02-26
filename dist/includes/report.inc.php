@@ -41,9 +41,9 @@ if (isset($_POST['submit'])) {
 
         // Create session variables
         $_SESSION['username'] = $row['username'];
-        $_SESSION['email'] = $row['email'];
         $_SESSION['skillset'] = $row['skillset'];
-        $_SESSION['dateCompleted'] = $row['date_completed'];
+        $_SESSION['score'] = $row['score'];
+        $_SESSION['dateCompleted'] = date( "d/m/Y", strtotime($row['date_completed']));
 
         header("Location: ../report.php?report=success");
         exit();

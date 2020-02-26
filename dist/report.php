@@ -112,9 +112,7 @@
 					<form action="includes/report.inc.php" method="post">
 							<input type="text" name="search-report" class="search-input" placeholder="Enter Username" />
 							<button type="submit" name="submit" class="btn-dark my-1">Submit</button>
-					</form>
-
-					
+					</form>	
 				</div>
 			</section>
 
@@ -127,14 +125,14 @@
 						echo "<table class=table cellspacing=0>
 										<tr>
 											<th>Username</th>
-											<th>Email</th>
 											<th>Skillset</th>
+											<th>Score</th>
 											<th>Date Completed</th>
 										</tr>
 										<tr>
 											<td>$_SESSION[username]</td>
-											<td>$_SESSION[email]</td>
 											<td>$_SESSION[skillset]</td>
+											<td>$_SESSION[score]%</td>
 											<td>$_SESSION[dateCompleted]</td>
 										</tr>
 								  </table>";

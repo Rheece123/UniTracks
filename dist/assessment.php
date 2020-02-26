@@ -1,17 +1,17 @@
 <?php
   session_start();
   
-  // // If the user is not logged in redirect to the login page...
-  // if (!isset($_SESSION['userId'])) {
-	//   header('Location: login.php');
-	//   exit();
-  // }
+  // If the user is not logged in redirect to the login page...
+  if (!isset($_SESSION['userId'])) {
+	  header('Location: index.php');
+	  exit();
+  }  
 
-  // // Stop students accessing the instructor page
-  // if ($_SESSION['accountType'] === 'student') {
-	//   header('Location: student.php');
-	//   exit();
-  // }
+  // Stop instructors accessing the student page
+  if ($_SESSION['accountType'] === 'instructor') {
+	  header('Location: instructor.php');
+	  exit();
+  }
 ?>
 
 <!DOCTYPE html>

@@ -224,19 +224,18 @@ function endOfAssessment() {
 		timestampText.innerText = d.toUTCString();
 
 		// Parameters to send to PHP
-		const percentageScoreParam = `score=${percentageScore}`;
-		const skillsetParam = `skillset=${moduleTitle}`;
+		const params = `score=${percentageScore}&skillset=${moduleTitle.innerText}`;
 
 		// Create XHR Object
 		const xhr = new XMLHttpRequest();
 
-		xhr.open('POST', 'http://localhost/unitracks-master/dist/includes/assessment.inc.php', true);
+		xhr.open('POST', 'http://localhost/unitracks-master-test/dist/includes/assessment.inc.php', true);
 
 		// Must use this when using POST to send content
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
 		// Send parameters request to url/file
-		xhr.send(percentageScoreParam, skillsetParam);
+		xhr.send(params);
 
 		// Set correct and incorrect text
 		correctText.innerText = `Correct (${correctScore} out of ${questions.length})`;
