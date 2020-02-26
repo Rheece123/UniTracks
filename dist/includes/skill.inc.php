@@ -1,6 +1,6 @@
 <?php
 
-// Prevent user from signing up by typing in this URL
+// Prevent user from accessing this URL
 if (isset($_POST['skill-submit'])) {
 
   require 'dbh.inc.php';
@@ -13,7 +13,7 @@ if (isset($_POST['skill-submit'])) {
     exit();
   }
   // Check for a valid skill
-  else if (!preg_match("/^[a-zA-Z]*$/", $skill)) {
+  else if (!preg_match("/^[a-zA-Z0-9]*$/", $skill)) {
     header("Location: ../skill.php?error=invalidskill");
     exit();
   }

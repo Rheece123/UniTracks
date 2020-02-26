@@ -1,3 +1,19 @@
+<?php
+  session_start();
+  
+  // // If the user is not logged in redirect to the login page...
+  // if (!isset($_SESSION['userId'])) {
+	//   header('Location: login.php');
+	//   exit();
+  // }
+
+  // // Stop students accessing the instructor page
+  // if ($_SESSION['accountType'] === 'student') {
+	//   header('Location: student.php');
+	//   exit();
+  // }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>

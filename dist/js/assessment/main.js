@@ -10,6 +10,7 @@ const skipButton = document.querySelector('#skip-btn');
 const exitButton = document.querySelector('#exit-btn');
 
 // Top bar info
+const moduleTitle = document.querySelector('.module-title');
 const questionsContainer = document.querySelector('#question-container');
 const questionText = document.querySelector('.title');
 
@@ -221,6 +222,21 @@ function endOfAssessment() {
 		let s = new Date();
 		let d = new Date(Date.parse(s));
 		timestampText.innerText = d.toUTCString();
+
+		// Parameters to send to PHP
+		const percentageScoreParam = `score=${percentageScore}`;
+		const skillsetParam = `skillset=${moduleTitle}`;
+
+		// Create XHR Object
+		const xhr = new XMLHttpRequest();
+
+		xhr.open('POST', '../includes/assessment.inc.php', true);
+
+		// Must use this when using POST to send content
+		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+		// Send parameters request to url/file
+		xhr.send(percentageScoreParam, skillsetParam);
 
 		// Set correct and incorrect text
 		correctText.innerText = `Correct (${correctScore} out of ${questions.length})`;
