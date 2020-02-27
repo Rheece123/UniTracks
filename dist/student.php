@@ -91,10 +91,12 @@
 				<div class="container">
 					<h2 class="section-title">Welcome to the Student Hub</h2>
 					<div class="bottom-line"></div>
-					<p class="lead">
-						Start using UniTracks now to improve your digital skillset knowledge
-					</p>
-					<img class="welcome-img" src="img/student/student.webp" alt="Image of students">
+					<div class="welcome-container">
+						<p class="lead">
+							Start using UniTracks now to improve your digital skillset knowledge
+						</p>
+						<img class="welcome-img" src="img/student/student.webp" alt="Image of students">
+					</div>
 				</div>
 			</section>
 
