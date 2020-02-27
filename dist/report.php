@@ -122,7 +122,7 @@
 					<?php
 					// Only show the table if the student exists
 					if (isset($_GET['report'])) {
-						echo "<table class=table cellspacing=0>
+						echo "<table id=report class=table cellspacing=0>
 										<tr>
 											<th>Username</th>
 											<th>Skillset</th>
