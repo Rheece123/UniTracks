@@ -91,9 +91,12 @@
 				<div class="container">
 					<h2 class="section-title">Welcome to the Instructor Hub</h2>
 					<div class="bottom-line"></div>
-					<p class="lead">
-						Manage how your students use UniTracks by adding skills and monitoring their skillset level
-					</p>
+					<div class="welcome-container">
+						<p class="lead">
+							Manage how your students use UniTracks by adding skills and monitoring their skillset level
+						</p>
+						<img src="img/welcome/instructor.webp" alt="Image of students">
+					</div>
 				</div>
 			</section>
 

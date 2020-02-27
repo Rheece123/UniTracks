@@ -201,7 +201,8 @@ input[class^='btn-']:hover {
   font-weight: 600; }
 
 .welcome-container {
-  max-width: 630px; }
+  max-width: 630px;
+  margin: auto; }
 
 #header-home {
   background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.webp") no-repeat center right/cover;

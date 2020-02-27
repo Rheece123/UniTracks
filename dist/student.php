@@ -95,7 +95,7 @@
 						<p class="lead">
 							Start using UniTracks now to improve your digital skillset knowledge
 						</p>
-						<img class="welcome-img" src="img/student/student.webp" alt="Image of students">
+						<img src="img/welcome/student.webp" alt="Image of students">
 					</div>
 				</div>
 			</section>
