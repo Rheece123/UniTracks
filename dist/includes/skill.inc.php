@@ -74,6 +74,48 @@ if (isset($_POST['skill-submit'])) {
   mysqli_close($conn);
 }
 
+// When student uses resources page to find resources for a skill 
+if (isset($_POST['skill'])) {
+  require 'dbh.inc.php';
+
+  // AJAX Params
+  $skill = mysqli_real_escape_string($conn, $_POST['skill']);
+
+  // Check if skill exists
+  $sql = "SELECT skill_name FROM skills WHERE skill_name = ?";
+  $stmt = mysqli_stmt_init($conn);
+
+  // If SQL statement cannot be prepared
+  if (!mysqli_stmt_prepare($stmt, $sql)) {
+    header("Location: ../respources.html?error=sqlerror");
+    exit();
+  }
+  else {
+    // Bind the placeholder to the username and skillset parameter as strings
+    mysqli_stmt_bind_param($stmt, "s", $skill);
+
+    // Execute prepared statement
+    mysqli_stmt_execute($stmt);
+
+    
+    // Store result from prepared statement
+    mysqli_stmt_store_result($stmt);
+
+    // Store number of rows returned from a prepared statement
+    $resultCheck = mysqli_stmt_num_rows($stmt);
+
+    // If skill exists, send back success
+    if ($resultCheck > 0) {
+      echo 'Success';
+    }
+    else {
+      echo 'Failure';
+    }
+  }
+
+}
+
+
 // Redirect user back to skill if they do not use the submit button
 else {
   header("Location: ../skill.php");

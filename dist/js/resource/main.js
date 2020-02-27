@@ -79,26 +79,42 @@ function loadGoogleVars() {
 function searchForInput() {
 	const skill = googleInput.value;
 
-	if (skill === '' || skill === null) {
-		setMessageAlert('Must search for a skill', 'red');
-		googleInput.value = '';
-	} else if (!skills.includes(skill.toLowerCase())) {
-		setMessageAlert('Invalid skill. Search for another skill', 'red');
-		googleSearchResults.classList.add('hide');
-		googleInput.value = '';
+	// Parameters to send to PHP
+	const params = `skill=${skill}`;
 
-		// Remove unneccesary HTML from Google Search Div
-		removeSearchElements();
-	} else {
-		// Insert title before search results
-		resultsTitle.classList.remove('hide');
-		googleSearchResults.insertBefore(resultsTitle, googleSearchResults.childNodes[0]);
+	// Create XHR Object
+	const xhr = new XMLHttpRequest();
 
-		// Remove unneccesary HTML from Google Search Div
-		removeSearchElements();
+	xhr.open('POST', 'http://localhost/unitracks-master/dist/includes/skill.inc.php', true);
 
-		showSearchResults();
-	}
+	xhr.onload = function() {
+		// Check if HTTP status is 200 (OK)
+		if (this.status === 200) {
+			// If skill does not exist in database, send error back
+			if (this.responseText === 'Failure') {
+				setMessageAlert('Invalid skill. Search for another skill', 'red');
+				googleSearchResults.classList.add('hide');
+				googleInput.value = '';
+				// Remove unneccesary HTML from Google Search Div
+				removeSearchElements();
+			} else if (this.responseText === 'Success') {
+				// Insert title before search results
+				resultsTitle.classList.remove('hide');
+				googleSearchResults.insertBefore(resultsTitle, googleSearchResults.childNodes[0]);
+
+				// Remove unneccesary HTML from Google Search Div
+				removeSearchElements();
+
+				showSearchResults();
+			}
+		}
+	};
+
+	// Must use this when using POST to send content
+	xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+	// Send parameters request to url/file
+	xhr.send(params);
 }
 
 function setMessageAlert(message, messageAlertColor) {
