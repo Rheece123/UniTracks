@@ -130,10 +130,10 @@
 											<th>Date Completed</th>
 										</tr>
 										<tr>
-											<td>$_SESSION[username]</td>
-											<td>$_SESSION[skillset]</td>
-											<td>$_SESSION[score]%</td>
-											<td>$_SESSION[dateCompleted]</td>
+											<td class=light-row>$_SESSION[username]</td>
+											<td class=medium-row>$_SESSION[skillset]</td>
+											<td class=light-row>$_SESSION[score]%</td>
+											<td class=medium-row>$_SESSION[dateCompleted]</td>
 										</tr>
 								  </table>";
 					} 

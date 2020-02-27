@@ -22,9 +22,9 @@ table th {
 	font-weight: 300;
 }
 
-table tr:nth-child(2n) {
+.light-row {
 	background-color: $light-color;
 }
-table tr:nth-child(2n + 1) {
+.medium-row {
 	background-color: $medium-color;
 }

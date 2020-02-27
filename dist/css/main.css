@@ -683,10 +683,10 @@ table th {
   background-color: #93cb52;
   font-weight: 300; }
 
-table tr:nth-child(2n) {
+.light-row {
   background-color: #f4f4f4; }
 
-table tr:nth-child(2n + 1) {
+.medium-row {
   background-color: #ccc; }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
