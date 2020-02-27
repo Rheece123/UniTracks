@@ -93,7 +93,7 @@
 					<div class="bottom-line"></div>
 					<div class="welcome-container">
 						<p class="lead">
-							Manage how your students use UniTracks by adding skills and monitoring their skillset level
+							Access skillset reports and add new digital skills to the resource list
 						</p>
 						<img src="img/welcome/instructor.webp" alt="Image of students">
 					</div>
