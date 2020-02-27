@@ -200,6 +200,10 @@ input[class^='btn-']:hover {
   color: green;
   font-weight: 600; }
 
+.welcome-img {
+  width: 500px;
+  height: 500px; }
+
 #header-home {
   background: #000 url("https://sharp-ptolemy-6ee3d5.netlify.com/../img/showpiece.webp") no-repeat center right/cover;
   height: 90vh;

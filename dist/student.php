@@ -94,10 +94,7 @@
 					<p class="lead">
 						Start using UniTracks now to improve your digital skillset knowledge
 					</p>
-					<div class="buttons">
-						<a href="track.html" class="btn-dark">Access Skillset Tracks</a>
-						<a href="resources.html" class="btn-dark">Access Resource List</a>
-					</div>
+					<img class="welcome-img" src="img/student/student.webp" alt="Image of students">
 				</div>
 			</section>
 
