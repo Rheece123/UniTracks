@@ -149,7 +149,7 @@ function showQuestion(question) {
 	xhr.onload = function() {
 		// Check if HTTP status is 200 (OK)
 		if (this.status === 200) {
-			console.log(this.responseText);
+			console.log('PHP Response: ', this.responseText);
 		}
 	};
 
