@@ -91,7 +91,19 @@
               }
               else if ($_GET['error'] === "invalidmail") {
                 echo '<p class="lead status-message error">Invalid e-mail</p>';
-              }
+							}
+							else if ($_GET['error'] === "invalidpasswordlength") {
+                echo '<p class="lead status-message error">Your password must be at least 8 characters</p>';
+							}
+							else if ($_GET['error'] === "invalidpasswordnumber") {
+                echo '<p class="lead status-message error">Your password must contain at least 1 number</p>';
+							}
+							else if ($_GET['error'] === "invalidpasswordcapital") {
+                echo '<p class="lead status-message error">Your password must contain at least 1 capital letter</p>';
+							}
+							else if ($_GET['error'] === "invalidpasswordlower") {
+                echo '<p class="lead status-message error">Your password must contain at least 1 lowercase letter</p>';
+							}
               else if ($_GET['error'] === "passwordcheck") {
                 echo '<p class="lead status-message error">Your passwords do not match</p>';
               }

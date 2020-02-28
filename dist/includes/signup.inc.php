@@ -31,6 +31,26 @@ if (isset($_POST['signup-submit'])) {
     header("Location: ../signup.php?error=invaliduid&mail=$email");
     exit();
   }
+  // Check if password is greater than 7 characters
+  else if (strlen($password) <= 8) {
+    header("Location: ../signup.php?error=invalidpasswordlength");
+    exit();
+  }
+  // Check if password contains at least 1 number
+  elseif(!preg_match("#[0-9]+#",$password)) {
+    header("Location: ../signup.php?error=invalidpasswordnumber");
+    exit();
+  }
+  // Check if password contains at least 1 capital letter
+  elseif(!preg_match("#[A-Z]+#",$password)) {
+    header("Location: ../signup.php?error=invalidpasswordcapital");
+    exit();
+  }
+  // Check if password contains at least 1 lowercase letter
+  elseif(!preg_match("#[a-z]+#",$password)) {
+    header("Location: ../signup.php?error=invalidpasswordlower");
+    exit();
+  }
   // Check if passwords match
   else if ($password !== $passwordRepeat) {
     header("Location: ../signup.php?error=passwordcheck&uid=$username&mail=$email");
