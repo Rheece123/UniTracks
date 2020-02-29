@@ -138,27 +138,6 @@ function showQuestion(question) {
 	// Show current question in questions container div
 	questionText.innerText = `Question ${currentQuestionIndex + 1}: ${question.question}`;
 
-	// Parameters to send to PHP
-	const params = `currentQuestion=${currentQuestionIndex + 1}&moduleTitle=${moduleTitle}`;
-
-	// Create XHR Object
-	const xhr = new XMLHttpRequest();
-
-	xhr.open('POST', 'http://localhost/unitracks-master/dist/includes/assessment.inc.php', true);
-
-	xhr.onload = function() {
-		// Check if HTTP status is 200 (OK)
-		if (this.status === 200) {
-			console.log('PHP Response: ', this.responseText);
-		}
-	};
-
-	// Must use this when using POST to send content
-	xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-	// Send parameters request to url/file
-	xhr.send(params);
-
 	// Add answer buttons
 	addAnswerButtons(question);
 }
