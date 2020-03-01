@@ -1,0 +1,16 @@
+{
+	"name": "unitracks",
+	"description": "Unitrack website for project",
+	"authors": [
+		{
+			"name": "Rheece Dawes",
+			"email": "rheece.d123@gmail.com"
+		}
+	],
+	"require": {
+		"sass": "^1.24.0"
+	},
+	"require-dev": {
+		"node-sass": "^4.13.1"
+	}
+}
