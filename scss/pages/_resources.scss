@@ -39,6 +39,20 @@
 		}
 
 		#___gcse_0 {
+			// Hide elements from Google results
+			.gsc-above-wrapper-area {
+				display: none;
+			}
+			.gsc-adBlock {
+				display: none;
+			}
+			.gsc-results .gsc-cursor {
+				display: none;
+			}
+			.gcsc-more-maybe-branding-root {
+				display: none;
+			}
+
 			form.gsc-search-box {
 				font-family: $font-stack;
 				font-size: 1rem;

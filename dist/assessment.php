@@ -68,7 +68,7 @@
 
 		<div class="page-container content">
 			<!-- Header -->
-			<header id="header-inner">
+			<header id="header-inner" class="assessment-header">
 				<div class="about-header-overlay">
 					<div class="container">
 						<nav id="main-nav">
@@ -81,7 +81,7 @@
 				</div>
 			</header>
 
-			<div id="question-container" class="py-2">
+			<div id="question-container">
 				<div class="container">
 					<h2 class="title">Instructions</h2>
 					<button id="audio-btn" class="btn-dark">Audio</button>
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 
-			<div id="answer-container" class="my-3">
+			<div id="answer-container">
 				<div class="container">
 					<div class="answer-buttons hide"></div>
 					<div class="instructions">
@@ -137,7 +137,7 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<div class="footer-content container">
+				<div class="footer-content progress container">
 					<div id="progress" class="hide">
 						<div class="progress-counter">0</div>
 						<div class="progress-bar">

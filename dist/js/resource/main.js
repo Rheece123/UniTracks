@@ -1,7 +1,6 @@
 // UI Variables
 const selectResources = document.querySelector('#select-resource');
 const messageAlert = document.querySelector('.message-alert');
-const resultsTitle = document.querySelector('.results-title');
 const searchInput = document.querySelector('#search');
 const gcseSearch = document.querySelector('.gcse-search');
 
@@ -26,19 +25,15 @@ function setScriptSrc(e) {
 	switch (resourceSelected) {
 		case 'website':
 			createScript('https://cse.google.com/cse.js?cx=009113957325937548474:eqchqjudpi7');
-			resultsTitle.textContent = 'Websites';
 			break;
 		case 'video':
 			createScript('https://cse.google.com/cse.js?cx=009113957325937548474:osqgxtko82s');
-			resultsTitle.textContent = 'Videos';
 			break;
 		case 'book':
 			createScript('https://cse.google.com/cse.js?cx=009113957325937548474:rvvr7y7rrti');
-			resultsTitle.textContent = 'Books';
 			break;
 		case 'course':
 			createScript('https://cse.google.com/cse.js?cx=009113957325937548474:8tvvsej9gsk');
-			resultsTitle.textContent = 'Courses';
 			break;
 		default:
 			void 0;
@@ -66,7 +61,7 @@ function createScript(src) {
 
 function loadGoogleVars() {
 	googleContainer = document.querySelector('#___gcse_0');
-	googleForm = document.querySelector('form.gsc-search-box');
+	googleForm = document.querySelector('.gsc-search-box.gsc-search-box-tools');
 	googleInputContainer = document.querySelector('.gsc-input-box');
 	googleInput = document.querySelector('input.gsc-input');
 	googleClearInputButton = document.querySelector('.gsib_b');
@@ -74,6 +69,11 @@ function loadGoogleVars() {
 	googleSearchResults = document.querySelector('.gsc-results-wrapper-nooverlay');
 
 	googleSearchButton.addEventListener('click', searchForInput);
+
+	// This does not work. BUG: If enter key is pressed inside input field, does not search databse
+	// if (googleForm.addEventListener) {
+	// 	searchForInput();
+	// }
 }
 
 function searchForInput() {
@@ -98,10 +98,6 @@ function searchForInput() {
 				// Remove unneccesary HTML from Google Search Div
 				removeSearchElements();
 			} else if (this.responseText === 'Success') {
-				// Insert title before search results
-				resultsTitle.classList.remove('hide');
-				googleSearchResults.insertBefore(resultsTitle, googleSearchResults.childNodes[0]);
-
 				// Remove unneccesary HTML from Google Search Div
 				removeSearchElements();
 
@@ -144,8 +140,6 @@ const removeSearchElements = (function() {
 				div.remove();
 			});
 
-			document.querySelector('.gsc-above-wrapper-area-invisible').remove();
-
 			document.querySelectorAll('.gsc-adBlockInvisible').forEach(function(div) {
 				div.remove();
 			});
@@ -177,5 +171,9 @@ function removeSearchElementsAfterSearch() {
 
 	if (document.querySelector('.gsc-adBlockNoHeight')) {
 		document.querySelector('.gsc-adBlockNoHeight').remove();
+	}
+
+	if (document.querySelector('.gcsc-find-more-on-google-root')) {
+		document.querySelector('.gcsc-find-more-on-google-root').remove();
 	}
 }

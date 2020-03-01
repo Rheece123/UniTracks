@@ -216,6 +216,20 @@
 		}
 	}
 
+	// Track
+	#tracks-catalog {
+		#tracks {
+			.track {
+				&-text {
+					margin-top: -55%;
+					a.btn-light {
+						margin: 1rem 0;
+					}
+				}
+			}
+		}
+	}
+
 	// Login
 	#login {
 		.form-container {
@@ -242,6 +256,130 @@
 
 		.search-btn {
 			padding: 0.8rem 1.4rem;
+		}
+	}
+
+	// Assessment
+	#header-inner.assessment-header {
+		height: 8rem;
+	}
+
+	.loader {
+		font-size: 35px;
+	}
+
+	#question-container {
+		padding: 0.8rem 0;
+		.container {
+			display: block;
+		}
+
+		.title {
+			font-size: 1.5rem;
+		}
+
+		#audio-btn {
+			margin: 1rem 0;
+		}
+	}
+
+	#answer-container {
+		margin: 0 0 4rem 0;
+
+		.answer-btn {
+			margin: 1rem 0;
+			width: 100%;
+		}
+
+		.instructions {
+			font-size: 1.2rem;
+		}
+	}
+
+	// Assessment Results
+	#results-container {
+		.container {
+			.assessment-text {
+				padding: 0.8rem;
+			}
+
+			.score-breakdown {
+				font-size: 1.5rem;
+			}
+		}
+		.skills-breakdown {
+			display: block;
+
+			#correct,
+			#wrong {
+				width: 100%;
+			}
+		}
+	}
+
+	#footer .footer-content.progress {
+		height: 4rem;
+	}
+
+	// Resource Page
+	#search-resources {
+		.container {
+			.results-title {
+				font-size: 2rem;
+			}
+
+			// Select list
+			#select-resource {
+				display: block;
+
+				.select-list {
+					width: 100%;
+				}
+			}
+
+			#___gcse_0 {
+				.cse .gsc-control-cse,
+				.gsc-control-cse {
+					padding: 0;
+					width: 100%;
+				}
+				.gsc-search-box-tools .gsc-search-box .gsc-input {
+					padding-right: 1rem;
+				}
+
+				.gcsc-find-more-on-google-root {
+					display: none;
+				}
+
+				form.gsc-search-box {
+					font-family: $font-stack;
+					font-size: 1rem;
+
+					text-align: center;
+
+					.gsc-input-box {
+						border-radius: 5px;
+						border-color: #333;
+						padding: 0.2rem;
+					}
+
+					.gsc-search-button-v2,
+					.gsc-search-button-v2:hover,
+					.gsc-search-button-v2:focus {
+						border-color: #93cb52;
+						background-color: #93cb52;
+						padding: 0.9rem;
+						width: 5rem;
+						cursor: pointer;
+					}
+
+					.gsst_a .gscb_a {
+						color: #333;
+						cursor: pointer;
+						padding: 0.2rem 0;
+					}
+				}
+			}
 		}
 	}
 }

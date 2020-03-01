@@ -347,6 +347,8 @@ input[class^='btn-']:hover {
       width: 100%;
       position: relative;
       margin-top: -45%; }
+      #tracks-catalog #tracks .track-text a.btn-light {
+        margin: 2rem 0; }
 
 #course-overview .container,
 #course-modules .container {
@@ -407,22 +409,22 @@ button {
   padding-top: 0.5rem; }
 
 #question-container {
-  background-color: #ccc; }
+  background-color: #ccc;
+  padding: 2rem 0; }
+  #question-container .container {
+    display: flex;
+    justify-content: space-between; }
+  #question-container .title {
+    font-size: 1.8rem; }
 
-#question-container .container {
-  display: flex;
-  justify-content: space-between; }
-
-#question-container .title {
-  font-size: 1.8rem; }
-
-#answer-container .answer-btn {
-  display: block;
-  margin: 2rem 0;
-  width: 50%; }
-
-#answer-container .instructions {
-  font-size: 1.2rem; }
+#answer-container {
+  margin: 3rem; }
+  #answer-container .answer-btn {
+    display: block;
+    margin: 2rem 0;
+    width: 50%; }
+  #answer-container .instructions {
+    font-size: 1.2rem; }
 
 .hide {
   display: none; }
@@ -556,6 +558,18 @@ button {
       outline: none; }
     #search-resources .container #select-resource .select-list option {
       font-weight: normal; }
+
+#search-resources .container #___gcse_0 .gsc-above-wrapper-area {
+  display: none; }
+
+#search-resources .container #___gcse_0 .gsc-adBlock {
+  display: none; }
+
+#search-resources .container #___gcse_0 .gsc-results .gsc-cursor {
+  display: none; }
+
+#search-resources .container #___gcse_0 .gcsc-more-maybe-branding-root {
+  display: none; }
 
 #search-resources .container #___gcse_0 form.gsc-search-box {
   font-family: "Roboto", sans-serif;
@@ -779,6 +793,10 @@ table#report {
         margin-bottom: 0; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1' 'quote2' 'quote3' 'quote4'; }
+  #tracks-catalog #tracks .track-text {
+    margin-top: -55%; }
+    #tracks-catalog #tracks .track-text a.btn-light {
+      margin: 1rem 0; }
   #login .form-container #signin {
     margin-bottom: 3rem; }
   #signup .form-container #login {
@@ -786,7 +804,71 @@ table#report {
   .search input[type='text'] {
     width: 15rem; }
   .search .search-btn {
-    padding: 0.8rem 1.4rem; } }
+    padding: 0.8rem 1.4rem; }
+  #header-inner.assessment-header {
+    height: 8rem; }
+  .loader {
+    font-size: 35px; }
+  #question-container {
+    padding: 0.8rem 0; }
+    #question-container .container {
+      display: block; }
+    #question-container .title {
+      font-size: 1.5rem; }
+    #question-container #audio-btn {
+      margin: 1rem 0; }
+  #answer-container {
+    margin: 0 0 4rem 0; }
+    #answer-container .answer-btn {
+      margin: 1rem 0;
+      width: 100%; }
+    #answer-container .instructions {
+      font-size: 1.2rem; }
+  #results-container .container .assessment-text {
+    padding: 0.8rem; }
+  #results-container .container .score-breakdown {
+    font-size: 1.5rem; }
+  #results-container .skills-breakdown {
+    display: block; }
+    #results-container .skills-breakdown #correct,
+    #results-container .skills-breakdown #wrong {
+      width: 100%; }
+  #footer .footer-content.progress {
+    height: 4rem; }
+  #search-resources .container .results-title {
+    font-size: 2rem; }
+  #search-resources .container #select-resource {
+    display: block; }
+    #search-resources .container #select-resource .select-list {
+      width: 100%; }
+  #search-resources .container #___gcse_0 .cse .gsc-control-cse,
+  #search-resources .container #___gcse_0 .gsc-control-cse {
+    padding: 0;
+    width: 100%; }
+  #search-resources .container #___gcse_0 .gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 1rem; }
+  #search-resources .container #___gcse_0 .gcsc-find-more-on-google-root {
+    display: none; }
+  #search-resources .container #___gcse_0 form.gsc-search-box {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    text-align: center; }
+    #search-resources .container #___gcse_0 form.gsc-search-box .gsc-input-box {
+      border-radius: 5px;
+      border-color: #333;
+      padding: 0.2rem; }
+    #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2,
+    #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2:hover,
+    #search-resources .container #___gcse_0 form.gsc-search-box .gsc-search-button-v2:focus {
+      border-color: #93cb52;
+      background-color: #93cb52;
+      padding: 0.9rem;
+      width: 5rem;
+      cursor: pointer; }
+    #search-resources .container #___gcse_0 form.gsc-search-box .gsst_a .gscb_a {
+      color: #333;
+      cursor: pointer;
+      padding: 0.2rem 0; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
