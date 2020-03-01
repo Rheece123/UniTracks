@@ -14,33 +14,33 @@
 		<meta name="msapplication-TileColor" content="#93cb52" />
 		<meta
 			name="msapplication-config"
-			content="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/browserconfig.xml"
+			content="img/favicon/browserconfig.xml"
 		/>
 		<meta name="theme-color" content="#ffffff" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/apple-touch-icon.png"
+			href="img/favicon/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon-32x32.png"
+			href="img/favicon/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon-16x16.png"
+			href="img/favicon/favicon-16x16.png"
 		/>
-		<link rel="manifest" href="./img/favicon/site.webmanifest" />
+		<link rel="manifest" href="img/favicon/site.webmanifest" />
 		<link
 			rel="mask-icon"
-			href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/safari-pinned-tab.svg"
+			href="img/favicon/safari-pinned-tab.svg"
 			color="#93cb52"
 		/>
-		<link rel="shortcut icon" href="https://sharp-ptolemy-6ee3d5.netlify.com/../img/favicon/favicon.ico" />
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
