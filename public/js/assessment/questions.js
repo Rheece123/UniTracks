@@ -56,7 +56,7 @@ const questions = [
 		category: 'Browser Software'
 	},
 	{
-		question: 'What is an advantage of the Brave browser compared to other browsers such as Google Chrome?',
+		question: 'What is an advantage of the Brave browser compared to other browsers?',
 		answers: [
 			{ text: 'It is faster', correct: false, answeredCorrectly: false },
 			{ text: 'It forces websites to use HTTPS where possible', correct: true, answeredCorrectly: false },
