@@ -205,7 +205,7 @@ input[class^='btn-']:hover {
   margin: auto; }
 
 #header-home {
-  background: #000 url("../img/showpiece.webp") no-repeat center right/cover;
+  background: #000 url("../img/index/showpiece.jpg") no-repeat center right/cover;
   height: 90vh;
   color: #fff; }
   #header-home .header-overlay {
@@ -219,7 +219,7 @@ input[class^='btn-']:hover {
       line-height: 1.2; }
 
 #header-inner {
-  background: #000 url("../img/showpiece.webp") no-repeat 20% 30%/cover;
+  background: #000 url("../img/index/showpiece.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #93cb52; }
 
@@ -237,7 +237,7 @@ input[class^='btn-']:hover {
     padding-bottom: 0.4rem; }
 
 #home-tracks {
-  background: url("../img/tracks-bg.webp") no-repeat center center/cover;
+  background: url("../img/index/tracks-bg.webp") no-repeat center center/cover;
   color: #fff; }
   #home-tracks .container .tracks-container {
     display: flex;
@@ -753,7 +753,7 @@ table#report {
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   #header-home {
-    background: #000 url("../img/showpiece.webp") no-repeat center center/cover;
+    background: #000 url("../img/index/showpiece.jpg") no-repeat center center/cover;
     height: 50vh; }
     #header-home .header-overlay {
       height: 50vh; } }
