@@ -758,12 +758,21 @@ table#report {
     #header-home .header-overlay {
       height: 50vh; } }
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) {
-  #header-home {
-    background: #000 url("../img/showpiece.webp") no-repeat center center/cover;
-    height: 90vh; }
-    #header-home .header-overlay {
-      height: 90vh; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  .container {
+    max-width: 1100px; }
+  #start-btn {
+    margin: 0.1rem 0 4rem 0; }
+  #question-container {
+    padding: 1rem 0; }
+  #question-container .title {
+    font-size: 1.5rem; }
+  #answer-container .answer-btn:last-child {
+    margin-bottom: 4rem; }
+  #tracks-catalog #tracks .track-text {
+    margin-top: -50%; }
+  #report-table {
+    padding: 1rem 0; } }
 
 @media (max-width: 800px) {
   #header-home {
@@ -841,6 +850,8 @@ table#report {
         margin-bottom: 0; }
   #about-quotes .quotes {
     grid-template-areas: 'quote1' 'quote2' 'quote3' 'quote4'; }
+  .welcome-img {
+    padding-bottom: 3rem; }
   #tracks-catalog #tracks .track-text {
     margin-top: -55%; }
     #tracks-catalog #tracks .track-text a.btn-light {
@@ -870,6 +881,8 @@ table#report {
     #answer-container .answer-btn {
       margin: 1rem 0;
       width: 100%; }
+      #answer-container .answer-btn:first-child {
+        margin-top: 1rem; }
     #answer-container .instructions {
       font-size: 1.2rem; }
   #results-container .container .assessment-text {
@@ -916,7 +929,9 @@ table#report {
     #search-resources .container #___gcse_0 form.gsc-search-box .gsst_a .gscb_a {
       color: #333;
       cursor: pointer;
-      padding: 0.2rem 0; } }
+      padding: 0.2rem 0; }
+  #report-table {
+    padding: 0 0 5rem 0; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
