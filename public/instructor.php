@@ -64,7 +64,7 @@
 		<title>Instructor | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="form-page-container">
+		<div class="main-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -95,7 +95,7 @@
 						<p class="lead">
 							Access skillset reports and add new digital skills to the resource list
 						</p>
-						<img src="img/welcome/instructor.webp" alt="Image of students">
+						<img class="welcome-img" src="img/welcome/instructor.jpg" alt="Image of an university lecturer teaching">
 					</div>
 				</div>
 			</section>

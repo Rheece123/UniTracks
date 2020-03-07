@@ -64,7 +64,7 @@
 		<title>Student | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="form-page-container">
+		<div class="main-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -75,7 +75,7 @@
 							</h1>
 							<ul>
 								<li><a href="#" class="current">Home</a></li>
-								<li><a href="track.html">Tracks</a></li>
+								<li><a href="tracks/track.html">Tracks</a></li>
 								<li><a href="resources.html">Resources</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
@@ -95,7 +95,7 @@
 						<p class="lead">
 							Start using UniTracks now to improve your digital skillset knowledge
 						</p>
-						<img src="img/welcome/student.webp" alt="Image of students">
+						<img class="welcome-img" src="img/welcome/student.jpg" alt="Image of students sat at a table">
 					</div>
 				</div>
 			</section>

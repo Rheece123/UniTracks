@@ -52,7 +52,7 @@
 		<title>Login | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="form-page-container">
+		<div class="main-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -92,12 +92,10 @@
           }
         }  
       ?>
-
-
 				<form action="includes/login.inc.php" method="post">
 					<div class="text-fields">
-						<input type="text" class="text-input name-input email-input" name="mailuid" placeholder="Email/Username"/>
-						<input type="password" class="text-input password-input" name="pwd" placeholder="Password"/>
+						<input type="text" class="text-input name-input email-input" name="mailuid" id="mailuid" placeholder="Email/Username"/>
+						<input type="password" class="text-input password-input" name="pwd" id="pwd" placeholder="Password"/>
 					</div>
 					<button type="submit" name="login-submit" class="btn-dark">Login</button>
 				</form>

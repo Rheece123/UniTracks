@@ -3,13 +3,13 @@
   
   // If the user is not logged in redirect to the login page...
   if (!isset($_SESSION['userId'])) {
-	  header('Location: index.php');
+	  header('Location: ../../index.php');
 	  exit();
   }  
 
   // Stop instructors accessing the student page
   if ($_SESSION['accountType'] === 'instructor') {
-	  header('Location: instructor.php');
+	  header('Location: ../../instructor.php');
 	  exit();
   }
 ?>
@@ -26,40 +26,40 @@
 		<meta name="msapplication-TileColor" content="#93cb52" />
 		<meta
 			name="msapplication-config"
-			content="img/favicon/browserconfig.xml"
+			content="../../img/favicon/browserconfig.xml"
 		/>
 		<meta name="theme-color" content="#ffffff" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="img/favicon/apple-touch-icon.png"
+			href="../../img/favicon/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="img/favicon/favicon-32x32.png"
+			href="../../img/favicon/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="img/favicon/favicon-16x16.png"
+			href="../../img/favicon/favicon-16x16.png"
 		/>
 		<link rel="manifest" href="img/favicon/site.webmanifest" />
 		<link
 			rel="mask-icon"
-			href="img/favicon/safari-pinned-tab.svg"
+			href="../../img/favicon/safari-pinned-tab.svg"
 			color="#93cb52"
 		/>
-		<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+		<link rel="shortcut icon" href="../../img/favicon/favicon.ico" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="../../css/main.css" />
 		<title>Assessment | Learn Digital Skills</title>
 	</head>
 	<body>
@@ -137,7 +137,7 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<div class="footer-content progress container">
+				<div class="footer-progress progress container">
 					<div id="progress" class="hide">
 						<div class="progress-counter">0</div>
 						<div class="progress-bar">
@@ -150,8 +150,8 @@
 		</div>
 
 		<!-- JavaScript Files -->
-		<script src="./js/assessment/speech.js"></script>
-		<script src="./js/assessment/questions.js"></script>
-		<script src="./js/assessment/main.js"></script>
+		<script src="../../js/assessment/speech.js"></script>
+		<script src="../../js/assessment/questions.js"></script>
+		<script src="../../js/assessment/main.js"></script>
 	</body>
 </html>

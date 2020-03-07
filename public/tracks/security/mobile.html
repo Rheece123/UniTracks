@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="E-Learning app for university students" />
+		<meta name="keywords" content="E-Learning, Digital Citizenship, Skills" />
+		<meta name="author" content="Rheece Dawes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="msapplication-TileColor" content="#93cb52" />
+		<meta name="msapplication-config" content="../../img/favicon/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="../..img/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="../..img/favicon/safari-pinned-tab.svg" color="#93cb52" />
+		<link rel="shortcut icon" href="../..img/favicon/favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../../css/main.css" />
+		<title>Mobile Security | Learn Digital Skills</title>
+	</head>
+	<body class="preload-transitions">
+		<div class="main-page-container">
+			<!-- Header -->
+			<header id="header-inner">
+				<div class="about-header-overlay">
+					<div class="container">
+						<nav id="main-nav">
+							<h1 id="logo">
+								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
+							</h1>
+							<ul>
+								<li><a href="../../student.php">Home</a></li>
+								<li><a href="../track.html" class="current">Tracks</a></li>
+								<li><a href="../../resources.html">Resources</a></li>
+							</ul>
+							<form action="includes/logout.inc.php" method="post">
+								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+							</form>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- Browser Section -->
+			<section id="track-section" class="py-3">
+				<div class="container">
+					<h2 class="section-title">Mobile Security</h2>
+					<div class="bottom-line"></div>
+					<div class="module-info">
+						<h2 class="my-1">Introduction</h2>
+						<p class="section-text">
+							With the increasing number of people who use their mobile devices on a daily basis, there are a number of
+							nefarious who try to take advantage of people's mobile devices. This section will outline some of the best
+							practises which you can follow to protect your mobile device while you are out on your travels.
+						</p>
+					</div>
+					<div class="module-info">
+						<h2 class="my-1">Use authentication</h2>
+						<p class="section-text">
+							Most modern mobile device have some form of authentication such as fingerprint scanners, facial
+							recognition and pin verfication. These authentication features are designed to protect your devices from
+							unauthorised access and can also help protect your mobile device if you ever lose your phone. Where
+							possible, use two-factor authentication which is an extra layer of security. This can consist of using a
+							PIN and a fingerprint to access your phone.
+						</p>
+					</div>
+					<div class="module-info">
+						<h2 class="my-1">Avoid public Wi-Fi</h2>
+						<p class="section-text">
+							Avoid using public Wi-Fi as they tend to be extremely insecure. Although it's very tempting to use that
+							free Wi-Fi at the coffee shop or hotel lobby, don't do it. There are many tools available online which
+							even a novice hacker can use to intercept traffic flowing over a public Wi-Fi. This is known as a a
+							man-in-the-middle attack where a hacker sits in between the user and the end destination to access, relays
+							and possibly alters the communications. This allows the hacker to eavesdrop data being transfered and gain
+							access to sensitive data.
+						</p>
+					</div>
+					<div class="module-info">
+						<h2 class="my-1">Watch this video to learn more</h2>
+						<p class="section-text">
+							This video explains the possible risks of using public Wi-Fi and how to protect yourself
+						</p>
+						<iframe
+							src="https://www.youtube.com/embed/4YbXXW3DLQM"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+
+					<div class="info my-3">
+						<h2 class="">End of lesson</h2>
+						<div class="controls">
+							<a href="pc.html" class="btn-dark">Previous Lesson</a>
+							<a href="security.html" class="btn-dark">View Course</a>
+							<a href="assessment.php" class="btn-dark">Take Assessment</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="main-footer">
+				<div class="footer-content container">
+					<p>Copyright&copy; 2019. All Rights Reserved</p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS Script -->
+		<script src="../../js/main.js"></script>
+	</body>
+</html>

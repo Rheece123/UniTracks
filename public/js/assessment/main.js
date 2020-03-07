@@ -216,6 +216,9 @@ function endOfAssessment() {
 			passText.innerText = 'You did not pass the assessment';
 		}
 
+		// Round Number
+		percentageScore = Math.round(percentageScore);
+
 		scoreText.innerText = `${percentageScore}%`;
 
 		// Get current date and parse it to remove timezone
@@ -229,7 +232,7 @@ function endOfAssessment() {
 		// Create XHR Object
 		const xhr = new XMLHttpRequest();
 
-		xhr.open('POST', 'http://localhost/unitracks-master/dist/includes/assessment.inc.php', true);
+		xhr.open('POST', 'http://unitracks.herokuapp.com/includes/assessment.inc.php', true);
 
 		// Must use this when using POST to send content
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

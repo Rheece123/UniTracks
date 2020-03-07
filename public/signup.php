@@ -51,7 +51,7 @@
 		<title>Sign Up | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="form-page-container">
+		<div class="main-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -123,11 +123,11 @@
 
           <form action="includes/signup.inc.php" method="post">
             <div class="text-fields">
-              <input type="text" class="text-input name-input" name="uid" placeholder="Username *" required/>
-              <input type="text" class="text-input email-input" name="mail" placeholder="E-mail  *" required/>
-              <input type="password" class="text-input password-input" name="pwd" placeholder="Password *" required/>
-              <input type="password" class="text-input confirm-password-input" name="pwd-repeat" placeholder="Repeat Password *" required/>
-							<select name="account-type" class="text-input account-input" required>
+							<input type="text" class="text-input name-input" name="uid" id="uid" placeholder="Username *" required/>
+							<input type="text" class="text-input email-input" name="mail" id="mail" placeholder="E-mail  *" required/>
+							<input type="password" class="text-input password-input" name="pwd" id="pwd" placeholder="Password *" required/>
+							<input type="password" class="text-input confirm-password-input" name="pwd-repeat" id="pwd-repeat" placeholder="Repeat Password *" required/>
+							<select name="account-type" id="account-type" class="text-input account-input" required>
                 <option selected="selected" disabled>Account Type *</option>
                 <option value="student">Student</option>
                 <option value="instructor">Instructor</option>

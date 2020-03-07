@@ -64,7 +64,7 @@
 		<title>Reports | Learn Digital Skills</title>
 	</head>
 	<body class="preload-transitions">
-		<div class="form-page-container">
+		<div class="main-page-container">
 			<!-- Header -->
 			<header id="header-inner">
 				<div class="about-header-overlay">
@@ -117,7 +117,7 @@
 			</section>
 
 			<!-- Report Table Section -->
-			<section id="welcome" class="py-3 text-center">
+			<section id="report-table" class="text-center">
 				<div class="container">
 					<?php
 					// Only show the table if the student exists
