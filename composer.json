@@ -1,4 +1,11 @@
 {
-    "name": "rheece/unitracks-master",
-    "require": {}
+	"name": "rheece/unitracks",
+	"description": "unitracks website for FYP",
+	"authors": [
+		{
+			"name": "rheece123",
+			"email": "rheece.d123@gmail.com"
+		}
+	],
+	"require": {}
 }
