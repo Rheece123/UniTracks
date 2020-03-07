@@ -41,8 +41,7 @@ section#track-section {
 			margin-bottom: 1.8rem;
 		}
 
-		ul.track-list,
-		ol.track-list {
+		ul.track-list {
 			font-size: 1.3rem;
 			list-style-type: disc;
 			margin-left: 1.3rem;
@@ -51,10 +50,6 @@ section#track-section {
 			li {
 				padding: 0.5rem 0;
 			}
-		}
-
-		ol.track-list {
-			list-style-type: none;
 		}
 	}
 }
