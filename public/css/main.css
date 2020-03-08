@@ -666,11 +666,10 @@ section#track-section .info {
     font-size: 2rem;
     padding: 1rem 0; }
   section#track-section .info .controls {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
     padding: 1rem 0; }
+    section#track-section .info .controls .control-btn {
+      margin: 0 1rem; }
 
 section#track-section .module-info {
   margin-bottom: 4rem; }
