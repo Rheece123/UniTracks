@@ -533,22 +533,22 @@ button {
     #results-container .skills-breakdown #wrong ul li {
       list-style-type: disc; }
 
-#footer {
+#progress-container {
   background-color: #ccc;
   color: #000;
   padding: 2rem 0; }
-  #footer .footer-progress {
+  #progress-container .footer-progress {
     display: flex;
     justify-content: space-between; }
-    #footer .footer-progress #progress {
+    #progress-container .footer-progress #progress {
       width: 50%; }
-      #footer .footer-progress #progress .progress-count {
+      #progress-container .footer-progress #progress .progress-count {
         padding-right: 2rem;
         margin-top: 1rem; }
-      #footer .footer-progress #progress .progress-bar {
-        background-color: #ddd;
+      #progress-container .footer-progress #progress .progress-bar {
+        background-color: #000;
         margin-bottom: 1rem; }
-        #footer .footer-progress #progress .progress-bar .progress-bar-status {
+        #progress-container .footer-progress #progress .progress-bar .progress-bar-status {
           width: 2%;
           height: 20px;
           background-color: #93cb52; }

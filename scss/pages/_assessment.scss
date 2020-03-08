@@ -171,8 +171,8 @@ button {
 	}
 }
 
-// Footer
-#footer {
+// Progress Footer
+#progress-container {
 	background-color: $medium-color;
 	color: #000;
 	padding: 2rem 0;
@@ -190,7 +190,7 @@ button {
 			}
 
 			.progress-bar {
-				background-color: #ddd;
+				background-color: #000;
 				margin-bottom: 1rem;
 
 				.progress-bar-status {

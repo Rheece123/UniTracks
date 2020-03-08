@@ -133,8 +133,8 @@
 				</div>
 			</div>
 
-			<!-- Footer -->
-			<footer id="footer">
+			<!-- Progress -->
+			<div id="progress-container">
 				<div class="footer-progress progress container">
 					<div id="progress" class="hide">
 						<div class="progress-counter">0</div>
@@ -144,7 +144,20 @@
 					</div>
 					<button id="skip-btn" class="btn-dark hide">Skip</button>
 				</div>
-			</footer>
+			</div>
+
+			<!-- Footer -->
+			<!-- <footer id="footer">
+				<div class="footer-progress progress container">
+					<div id="progress" class="hide">
+						<div class="progress-counter">0</div>
+						<div class="progress-bar">
+							<div class="progress-bar-status"></div>
+						</div>
+					</div>
+					<button id="skip-btn" class="btn-dark hide">Skip</button>
+				</div>
+			</footer> -->
 		</div>
 
 		<!-- JavaScript Files -->
