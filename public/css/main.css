@@ -950,6 +950,8 @@ table#report {
   section#track-section .controls {
     flex-direction: column;
     padding: 0; }
+    section#track-section .controls .control-btn {
+      margin-bottom: 1rem; }
     section#track-section .controls a {
       width: 130px;
       text-align: center;
