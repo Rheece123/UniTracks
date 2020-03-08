@@ -793,7 +793,7 @@ table#report {
   #about-quotes .quotes {
     grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
   #tracks-catalog #tracks .track-text {
-    margin-top: -70%; }
+    margin-top: -65%; }
     #tracks-catalog #tracks .track-text a.btn-light {
       margin: 0.5rem 0; } }
 
