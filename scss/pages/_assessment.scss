@@ -173,13 +173,13 @@ button {
 
 // Footer
 #footer {
-	background: $dark-color;
-	color: #fff;
+	background-color: $medium-color;
+	color: #000;
+	padding: 2rem 0;
 
 	.footer-progress {
 		display: flex;
 		justify-content: space-between;
-		padding: 2rem 0;
 
 		#progress {
 			width: 50%;

@@ -534,12 +534,12 @@ button {
       list-style-type: disc; }
 
 #footer {
-  background: #333;
-  color: #fff; }
+  background-color: #ccc;
+  color: #000;
+  padding: 2rem 0; }
   #footer .footer-progress {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 0; }
+    justify-content: space-between; }
     #footer .footer-progress #progress {
       width: 50%; }
       #footer .footer-progress #progress .progress-count {
