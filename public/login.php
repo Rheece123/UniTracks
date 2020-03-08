@@ -93,7 +93,7 @@
         }  
       ?>
 				<form action="includes/login.inc.php" method="post">
-					<div class="text-fields">
+					<div class="login-fields">
 						<input type="text" class="text-input username" name="mailuid" id="mailuid" placeholder="Email/Username"/>
 						<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Password"/>
 					</div>
