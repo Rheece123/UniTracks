@@ -795,7 +795,12 @@ table#report {
   #tracks-catalog #tracks .track-text {
     margin-top: -65%; }
     #tracks-catalog #tracks .track-text a.btn-light {
-      margin: 0.5rem 0; } }
+      margin: 0.5rem 0; }
+  #question-container .container {
+    display: block; }
+  #question-container .title {
+    font-size: 1.6rem;
+    padding-bottom: 1rem; } }
 
 @media (max-width: 480px) {
   #main-nav {
