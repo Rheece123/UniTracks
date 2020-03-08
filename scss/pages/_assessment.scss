@@ -178,8 +178,7 @@ button {
 
 	.footer-progress {
 		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		justify-content: space-between;
 		height: 5rem;
 
 		#progress {
@@ -202,32 +201,4 @@ button {
 			}
 		}
 	}
-
-	// .footer-content {
-	// 	display: flex;
-	// 	justify-content: space-evenly;
-	// 	align-items: center;
-	// 	height: 6rem;
-
-	// 	// Progress Bar
-	// 	#progress {
-	// 		width: 50%;
-
-	// 		.progress-count {
-	// 			padding-right: 2rem;
-	// 			margin-top: 1rem;
-	// 		}
-
-	// 		.progress-bar {
-	// 			background-color: #ddd;
-	// 			margin-bottom: 1rem;
-
-	// 			.progress-bar-status {
-	// 				width: 2%;
-	// 				height: 20px;
-	// 				background-color: $main-color;
-	// 			}
-	// 		}
-	// 	}
-	// }
 }
