@@ -428,6 +428,17 @@
 			height: 315px;
 			margin-left: 0;
 		}
+
+		.controls {
+			flex-direction: column;
+			padding: 0;
+
+			a {
+				width: 130px;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+		}
 	}
 }
 
