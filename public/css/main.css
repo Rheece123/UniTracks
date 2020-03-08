@@ -539,7 +539,7 @@ button {
   #footer .footer-progress {
     display: flex;
     justify-content: space-between;
-    height: 5rem; }
+    padding: 2rem 0; }
     #footer .footer-progress #progress {
       width: 50%; }
       #footer .footer-progress #progress .progress-count {
