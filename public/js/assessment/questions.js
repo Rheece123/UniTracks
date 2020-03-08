@@ -1,14 +1,10 @@
 const questions = [
 	{
-		question: 'Which are these are considered best practises when creating passwords?',
+		question: 'Which of these are considered a password best practise?',
 		answers: [
 			{ text: 'Never use personal information', correct: false, answeredCorrectly: false },
 			{ text: 'Always use different passwords for each user account', correct: false, answeredCorrectly: false },
-			{
-				text: 'Passwords shoud include different letters, numbers and special characters',
-				correct: false,
-				answeredCorrectly: false
-			},
+			{ text: 'Passwords shoud use letters, numbers and special characters', correct: false, answeredCorrectly: false },
 			{ text: 'All of the above', correct: true, answeredCorrectly: false }
 		],
 		category: 'Password Protection'
@@ -18,11 +14,7 @@ const questions = [
 		answers: [
 			{ text: 'At least 5 characters or more', correct: false, answeredCorrectly: false },
 			{ text: 'At least 6 characters or more', correct: false, answeredCorrectly: false },
-			{
-				text: 'At least 7 characters or more',
-				correct: false,
-				answeredCorrectly: false
-			},
+			{ text: 'At least 7 characters or more', correct: false, answeredCorrectly: false },
 			{ text: 'At least 8 characters or more', correct: true, answeredCorrectly: false }
 		],
 		category: 'Password Requirements'
@@ -36,7 +28,7 @@ const questions = [
 		category: 'Safe Passwords'
 	},
 	{
-		question: 'E-Commerce sites should use which security feature?',
+		question: 'Sites should have which security feature?',
 		answers: [
 			{ text: 'HTTP', correct: false, answeredCorrectly: false },
 			{ text: 'HTTPS', correct: true, answeredCorrectly: false },
@@ -56,7 +48,7 @@ const questions = [
 		category: 'Browser Software'
 	},
 	{
-		question: 'What is an advantage of the Brave browser compared to other browsers?',
+		question: 'What is an advantage of the Brave browser?',
 		answers: [
 			{ text: 'It is faster', correct: false, answeredCorrectly: false },
 			{ text: 'It forces websites to use HTTPS where possible', correct: true, answeredCorrectly: false },
@@ -89,35 +81,23 @@ const questions = [
 		question: 'What is the difference between anti-virus and anti-malware?',
 		answers: [
 			{
-				text: 'Antivirus protects against older threats and anti-malware focuses on newer viruses',
+				text: 'Anti-virus looks at old viruses and anti-malware looks at new viruses',
 				correct: true,
 				answeredCorrectly: false
 			},
-			{ text: 'Antivirus only protects against trojan horses', correct: false, answeredCorrectly: false },
+			{ text: 'Anti-virus only protects against trojan horses', correct: false, answeredCorrectly: false },
 			{ text: 'There is no difference, they are the same thing', correct: false, answeredCorrectly: false },
-			{
-				text: 'Antivirus software works on PC whereas anti-malware is built for mobile devices',
-				correct: false,
-				answeredCorrectly: false
-			}
+			{ text: 'Anti-virus works on PC and anti-malware works on mobiles', correct: false, answeredCorrectly: false }
 		],
 		category: 'Antivirus and Anti-malware'
 	},
 	{
 		question: 'How can you protect yourself while using public Wi-Fi?',
 		answers: [
-			{
-				text: 'There are no ways to protect yourself',
-				correct: false,
-				answeredCorrectly: false
-			},
+			{ text: 'There are no ways to protect yourself', correct: false, answeredCorrectly: false },
 			{ text: 'Use incognito or private mode within your browser', correct: false, answeredCorrectly: false },
 			{ text: "Only use safe sites and don't click on suspicious  links", correct: false, answeredCorrectly: false },
-			{
-				text: 'Use a Virtual Private Network to encrypt your network traffic',
-				correct: true,
-				answeredCorrectly: false
-			}
+			{ text: 'Use a Virtual Private Network to encrypt your network traffic', correct: true, answeredCorrectly: false }
 		],
 		category: 'Public Wi-Fi Security'
 	}
