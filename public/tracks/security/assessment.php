@@ -142,7 +142,7 @@
 							<div class="progress-bar-status"></div>
 						</div>
 					</div>
-					<button id="skip-btn" class="btn-dark hide">Skip</button>
+					<button id="skip-btn" class="btn-dark hide">Skip Question</button>
 				</div>
 			</footer>
 		</div>
