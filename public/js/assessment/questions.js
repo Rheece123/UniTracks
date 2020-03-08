@@ -89,7 +89,7 @@ const questions = [
 		question: 'What is the difference between anti-virus and anti-malware?',
 		answers: [
 			{
-				text: 'Antivirus usually deals with the older threats and anti-malware focuses on newer viruses',
+				text: 'Antivirus protects against older threats and anti-malware focuses on newer viruses',
 				correct: true,
 				answeredCorrectly: false
 			},
