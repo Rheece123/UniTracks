@@ -372,28 +372,28 @@ button[type='submit'] {
       #tracks-catalog #tracks .track-text a.btn-light {
         margin: 2rem 0; }
 
-.text-fields {
+.login-fields {
   display: grid;
   grid-template-areas: 'username' 'password';
   grid-gap: 1.2rem; }
-  .text-fields .username {
+  .login-fields .username {
     grid-area: username; }
-  .text-fields .pwd {
+  .login-fields .pwd {
     grid-area: password; }
 
-.text-fields {
+.signup-fields {
   display: grid;
   grid-template-areas: 'username' 'email' 'password' 'comfirm-password' 'account';
   grid-gap: 1.2rem; }
-  .text-fields .username {
+  .signup-fields .username {
     grid-area: username; }
-  .text-fields .email {
+  .signup-fields .email {
     grid-area: email; }
-  .text-fields .pwd {
+  .signup-fields .pwd {
     grid-area: password; }
-  .text-fields .confirm-pwd {
+  .signup-fields .confirm-pwd {
     grid-area: comfirm-password; }
-  .text-fields .account {
+  .signup-fields .account {
     grid-area: account; }
 
 #course-overview .container,
