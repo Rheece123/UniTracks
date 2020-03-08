@@ -350,8 +350,13 @@
 		}
 	}
 
-	#footer .footer-content.progress {
+	// Progress footer
+	#footer .footer-progress {
 		height: 4rem;
+
+		#progress {
+			display: none;
+		}
 	}
 
 	// Resource Page
