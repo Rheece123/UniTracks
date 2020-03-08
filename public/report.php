@@ -87,7 +87,7 @@
 			</header>
 
 			<!-- Student Input Section -->
-			<section id="welcome" class="text-center py-3 form">
+			<section id="welcome" class="text-center pt-3 form">
 				<div class="form-container">
 					<h2 class="section-title">Access student skill reports</h2>
 					<div class="bottom-line"></div>
