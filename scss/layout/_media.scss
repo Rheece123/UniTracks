@@ -108,6 +108,39 @@
 			padding-bottom: 0.8rem;
 		}
 	}
+
+	// Resource Page
+	#search-resources {
+		.container {
+			.results-title {
+				font-size: 2rem;
+			}
+
+			// Select list
+			#select-resource {
+				display: block;
+
+				.select-list {
+					width: 100%;
+				}
+			}
+
+			#___gcse_0 {
+				.cse .gsc-control-cse,
+				.gsc-control-cse {
+					padding: 0;
+					width: 100%;
+				}
+				.gsc-search-box-tools .gsc-search-box .gsc-input {
+					padding-right: 1rem;
+				}
+
+				.gcsc-find-more-on-google-root {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 // Smartphones

@@ -800,7 +800,21 @@ table#report {
     display: block; }
   #question-container .title {
     font-size: 1.6rem;
-    padding-bottom: 0.8rem; } }
+    padding-bottom: 0.8rem; }
+  #search-resources .container .results-title {
+    font-size: 2rem; }
+  #search-resources .container #select-resource {
+    display: block; }
+    #search-resources .container #select-resource .select-list {
+      width: 100%; }
+  #search-resources .container #___gcse_0 .cse .gsc-control-cse,
+  #search-resources .container #___gcse_0 .gsc-control-cse {
+    padding: 0;
+    width: 100%; }
+  #search-resources .container #___gcse_0 .gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 1rem; }
+  #search-resources .container #___gcse_0 .gcsc-find-more-on-google-root {
+    display: none; } }
 
 @media (max-width: 480px) {
   #main-nav {
