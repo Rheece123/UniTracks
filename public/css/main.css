@@ -609,7 +609,7 @@ section#track-section iframe {
   height: 315px;
   margin-left: 0.4rem; }
 
-section#track-section img .track-img {
+section#track-section img.track-img {
   height: 200px;
   width: 200px; }
 
@@ -926,7 +926,12 @@ table#report {
       cursor: pointer;
       padding: 0.2rem 0; }
   #report-table {
-    padding: 0 0 5rem 0; } }
+    padding: 0 0 5rem 0; }
+  section#track-section iframe {
+    display: block;
+    width: 100%;
+    height: 315px;
+    margin-left: 0; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {

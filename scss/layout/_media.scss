@@ -404,6 +404,16 @@
 	#report-table {
 		padding: 0 0 5rem 0;
 	}
+
+	// Video on module-section pages
+	section#track-section {
+		iframe {
+			display: block;
+			width: 100%;
+			height: 315px;
+			margin-left: 0;
+		}
+	}
 }
 
 // Smartphone Landscape
