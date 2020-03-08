@@ -94,7 +94,7 @@
       ?>
 				<form action="includes/login.inc.php" method="post">
 					<div class="text-fields">
-						<input type="text" class="text-input name-input email-input" name="mailuid" id="mailuid" placeholder="Email/Username"/>
+						<input type="text" class="text-input name-input" name="mailuid" id="mailuid" placeholder="Email/Username"/>
 						<input type="password" class="text-input password-input" name="pwd" id="pwd" placeholder="Password"/>
 					</div>
 					<button type="submit" name="login-submit" class="btn-dark">Login</button>
