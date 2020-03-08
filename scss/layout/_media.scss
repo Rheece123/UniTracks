@@ -11,8 +11,12 @@
 	#question-container .title {
 		font-size: 1.5rem;
 	}
-	#answer-container .answer-btn:last-child {
-		margin-bottom: 6rem;
+	#answer-container {
+		margin: 1.6rem 0;
+
+		&:last-child {
+			margin-bottom: 5rem;
+		}
 	}
 	// Progress Footer
 	#footer {

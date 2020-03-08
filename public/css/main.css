@@ -764,8 +764,10 @@ table#report {
     padding: 1rem 0; }
   #question-container .title {
     font-size: 1.5rem; }
-  #answer-container .answer-btn:last-child {
-    margin-bottom: 6rem; }
+  #answer-container {
+    margin: 1.6rem 0; }
+    #answer-container:last-child {
+      margin-bottom: 5rem; }
   #footer {
     padding: 1rem 0; }
   #tracks-catalog #tracks .track-text {
