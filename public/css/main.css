@@ -904,10 +904,12 @@ table#report {
       width: 100%; }
     #results-container .skills-breakdown #wrong ul li:last-child {
       margin-bottom: 1rem; }
-  #footer .footer-progress {
-    height: 4rem; }
-    #footer .footer-progress #progress {
-      display: none; }
+  #footer {
+    padding: 0.5rem; }
+    #footer .footer-progress {
+      height: 3rem; }
+      #footer .footer-progress #progress {
+        display: none; }
   #search-resources .container .results-title {
     font-size: 2rem; }
   #search-resources .container #select-resource {

@@ -351,11 +351,15 @@
 	}
 
 	// Progress footer
-	#footer .footer-progress {
-		height: 4rem;
+	#footer {
+		padding: 0.5rem;
 
-		#progress {
-			display: none;
+		.footer-progress {
+			height: 3rem;
+
+			#progress {
+				display: none;
+			}
 		}
 	}
 
