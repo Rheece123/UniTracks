@@ -314,6 +314,7 @@
 		}
 
 		.instructions {
+			margin-top: 1rem;
 			font-size: 1.2rem;
 		}
 	}
@@ -335,6 +336,16 @@
 			#correct,
 			#wrong {
 				width: 100%;
+			}
+
+			#wrong {
+				ul {
+					li {
+						&:last-child {
+							margin-bottom: 1rem;
+						}
+					}
+				}
 			}
 		}
 	}

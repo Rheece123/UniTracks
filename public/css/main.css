@@ -881,6 +881,7 @@ table#report {
       #answer-container .answer-btn:last-child {
         margin-bottom: 2rem; }
     #answer-container .instructions {
+      margin-top: 1rem;
       font-size: 1.2rem; }
   #results-container .container .assessment-text {
     padding: 0.8rem; }
@@ -891,6 +892,8 @@ table#report {
     #results-container .skills-breakdown #correct,
     #results-container .skills-breakdown #wrong {
       width: 100%; }
+    #results-container .skills-breakdown #wrong ul li:last-child {
+      margin-bottom: 1rem; }
   #footer .footer-content.progress {
     height: 4rem; }
   #search-resources .container .results-title {
