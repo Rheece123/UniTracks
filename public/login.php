@@ -97,7 +97,7 @@
 						<input type="text" class="text-input username" name="mailuid" id="mailuid" placeholder="Email/Username"/>
 						<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Password"/>
 					</div>
-					<button type="submit" name="login-submit" class="btn-dark">Login</button>
+					<button type="submit" name="login-submit" class="btn-dark my-1">Login</button>
 				</form>
 				<div id="signin">
 					<p class="pt-2">Don't have an account?</p>
