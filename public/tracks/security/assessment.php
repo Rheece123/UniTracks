@@ -95,11 +95,9 @@
 					<div class="instructions">
 						<!-- This text will be changed for a video as the Speech Synthesis does not work with long pieces of text -->
 						<p class="instruction-text">
-							This assessment will contain 10 questions. Each question will provide 4 answers, click on the answer you
-							believe to be correct and the next question will then appear. There is a skip button which will allow you
+							This assessment will contain 10 questions. There is a skip button which will allow you
 							to skip a question without providing an answer. You cannot return to the previous question. This
-							assessment has no time limit so take as much time as needed. Once you have completed the assessment, your
-							results will appear.
+							assessment has no time limit so take as much time as needed.
 						</p>
 						<p class="instruction-text my-2">To start the assessment, click the Start Assessment button.</p>
 						<button id="start-btn" class="btn-dark my-2">Start Assessment</button>
