@@ -878,6 +878,8 @@ table#report {
       width: 100%; }
       #answer-container .answer-btn:first-child {
         margin-top: 1rem; }
+      #answer-container .answer-btn:last-child {
+        margin-bottom: 3rem; }
     #answer-container .instructions {
       font-size: 1.2rem; }
   #results-container .container .assessment-text {
