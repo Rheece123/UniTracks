@@ -1,0 +1,28 @@
+// Signup Page
+.text-fields {
+	display: grid;
+	grid-template-areas:
+		'username'
+		'email'
+		'password'
+		'comfirm-password'
+		'account';
+	grid-gap: 1.2rem;
+
+	// Grid Areas
+	.username {
+		grid-area: username;
+	}
+	.email {
+		grid-area: email;
+	}
+	.pwd {
+		grid-area: password;
+	}
+	.confirm-pwd {
+		grid-area: comfirm-password;
+	}
+	.account {
+		grid-area: account;
+	}
+}

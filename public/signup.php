@@ -123,11 +123,11 @@
 
           <form action="includes/signup.inc.php" method="post">
             <div class="text-fields">
-							<input type="text" class="text-input name-input" name="uid" id="uid" placeholder="Username *" required/>
-							<input type="text" class="text-input email-input" name="mail" id="mail" placeholder="E-mail  *" required/>
-							<input type="password" class="text-input password-input" name="pwd" id="pwd" placeholder="Password *" required/>
-							<input type="password" class="text-input confirm-password-input" name="pwd-repeat" id="pwd-repeat" placeholder="Repeat Password *" required/>
-							<select name="account-type" id="account-type" class="text-input account-input" required>
+							<input type="text" class="text-input username" name="uid" id="uid" placeholder="Username *" required/>
+							<input type="text" class="text-input email" name="mail" id="mail" placeholder="E-mail  *" required/>
+							<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Password *" required/>
+							<input type="password" class="text-input confirm-pwd" name="pwd-repeat" id="pwd-repeat" placeholder="Repeat Password *" required/>
+							<select name="account-type" id="account-type" class="text-input account" required>
                 <option selected="selected" disabled>Account Type *</option>
                 <option value="student">Student</option>
                 <option value="instructor">Instructor</option>

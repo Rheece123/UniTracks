@@ -1,0 +1,17 @@
+// Login Page
+.text-fields {
+	display: grid;
+	grid-template-areas:
+		'username'
+		'password';
+	grid-gap: 1.2rem;
+
+	// Grid Areas
+	.username {
+		grid-area: username;
+	}
+
+	.pwd {
+		grid-area: password;
+	}
+}

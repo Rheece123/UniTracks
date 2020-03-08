@@ -149,6 +149,22 @@ input[class^='btn-']:hover {
 	color: #333;
 }
 
+// Login and Signup buttons
+#login-btn,
+#signup-btn {
+	width: 50%;
+	display: block;
+	margin: 1rem auto;
+
+	&:hover {
+		color: $dark-color;
+	}
+}
+
+button[type='submit'] {
+	width: 100%;
+}
+
 // Background Colors
 .bg {
 	&-main {
@@ -276,4 +292,16 @@ input[class^='btn-']:hover {
 .welcome-container {
 	max-width: 630px;
 	margin: auto;
+}
+
+.text-input {
+	padding: 0.5rem 1rem;
+	border: 2px solid #000;
+	border-radius: 5px;
+	font-size: 1rem;
+	outline: none;
+}
+
+.link:hover {
+	color: $main-color;
 }

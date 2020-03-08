@@ -105,6 +105,18 @@ input[class^='btn-']:hover {
   background-color: #93cb52;
   color: #333; }
 
+#login-btn,
+#signup-btn {
+  width: 50%;
+  display: block;
+  margin: 1rem auto; }
+  #login-btn:hover,
+  #signup-btn:hover {
+    color: #333; }
+
+button[type='submit'] {
+  width: 100%; }
+
 .bg-main {
   background-color: #93cb52;
   color: #fff; }
@@ -203,6 +215,16 @@ input[class^='btn-']:hover {
 .welcome-container {
   max-width: 630px;
   margin: auto; }
+
+.text-input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none; }
+
+.link:hover {
+  color: #93cb52; }
 
 #header-home {
   background: #000 url("../img/index/showpiece.jpg") no-repeat center right/cover;
@@ -350,6 +372,30 @@ input[class^='btn-']:hover {
       #tracks-catalog #tracks .track-text a.btn-light {
         margin: 2rem 0; }
 
+.text-fields {
+  display: grid;
+  grid-template-areas: 'username' 'password';
+  grid-gap: 1.2rem; }
+  .text-fields .username {
+    grid-area: username; }
+  .text-fields .pwd {
+    grid-area: password; }
+
+.text-fields {
+  display: grid;
+  grid-template-areas: 'username' 'email' 'password' 'comfirm-password' 'account';
+  grid-gap: 1.2rem; }
+  .text-fields .username {
+    grid-area: username; }
+  .text-fields .email {
+    grid-area: email; }
+  .text-fields .pwd {
+    grid-area: password; }
+  .text-fields .confirm-pwd {
+    grid-area: comfirm-password; }
+  .text-fields .account {
+    grid-area: account; }
+
 #course-overview .container,
 #course-modules .container {
   max-width: 1000px; }
@@ -481,7 +527,7 @@ button {
   #results-container .skills-breakdown #correct ul,
   #results-container .skills-breakdown #wrong ul {
     background-color: #fff;
-    text-align: start;
+    text-align: left;
     padding: 1.2rem; }
     #results-container .skills-breakdown #correct ul li,
     #results-container .skills-breakdown #wrong ul li {
@@ -640,40 +686,6 @@ section#track-section div.container ul.track-list {
   margin-bottom: 1.8rem; }
   section#track-section div.container ul.track-list li {
     padding: 0.5rem 0; }
-
-.form .text-fields {
-  display: grid;
-  grid-template-areas: 'name' 'email' 'password' 'confirm-password';
-  grid-gap: 1.2rem; }
-  .form .text-fields .name-input {
-    grid-area: name; }
-  .form .text-fields .email-input {
-    grid-area: email; }
-  .form .text-fields .password-input {
-    grid-area: password; }
-  .form .text-fields .confirm-password-input {
-    grid-area: confirm-password; }
-  .form .text-fields .text-input {
-    padding: 0.5rem 1rem;
-    border: 2px solid #000;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none; }
-
-.form .link:hover {
-  color: #93cb52; }
-
-.form #login-btn,
-.form #signup-btn {
-  width: 50%;
-  display: block;
-  margin: 1rem auto; }
-  .form #login-btn:hover,
-  .form #signup-btn:hover {
-    color: #333; }
-
-.form button[type='submit'] {
-  width: 100%; }
 
 #main-nav {
   display: flex;

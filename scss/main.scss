@@ -5,6 +5,8 @@
 @import 'pages/index';
 @import 'pages/about';
 @import 'pages/track';
+@import 'pages/login';
+@import 'pages/signup';
 @import 'pages/skillset';
 @import 'pages/assessment';
 @import 'pages/security';
@@ -13,7 +15,7 @@
 @import 'pages/module-section';
 
 // Components
-@import 'components/form';
+// @import 'components/form';
 @import 'components/navbar';
 @import 'components/footer';
 @import 'components/search';
