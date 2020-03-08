@@ -22,5 +22,4 @@ Installation:
 
 To run this application locally, you will need an Apache server running on your local machine such as XAMPP.
 
-To visit the deployed application on Heroku, vist:
-`https://unitracks.herokuapp.com/`
+To visit the deployed application on Heroku, vist: <https://unitracks.herokuapp.com/>
