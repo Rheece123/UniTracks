@@ -552,6 +552,8 @@ button {
           width: 2%;
           height: 20px;
           background-color: #93cb52; }
+      #footer .footer-progress #progress #skip-btn {
+        width: 100%; }
 
 #about-module .container {
   max-width: 900px; }
