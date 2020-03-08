@@ -232,7 +232,7 @@ function endOfAssessment() {
 		// Create XHR Object
 		const xhr = new XMLHttpRequest();
 
-		xhr.open('POST', 'http://unitracks.herokuapp.com/includes/assessment.inc.php', true);
+		xhr.open('POST', 'https://unitracks.herokuapp.com/includes/assessment.inc.php', true);
 
 		// Must use this when using POST to send content
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
