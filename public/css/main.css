@@ -791,7 +791,11 @@ table#report {
     margin: 0;
     width: 100%; }
   #about-quotes .quotes {
-    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; } }
+    grid-template-areas: 'quote1 quote2' 'quote3 quote4'; }
+  #tracks-catalog #tracks .track-text {
+    margin-top: -70%; }
+    #tracks-catalog #tracks .track-text a.btn-light {
+      margin: 0.5rem 0; } }
 
 @media (max-width: 480px) {
   #main-nav {
