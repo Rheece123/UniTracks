@@ -104,7 +104,7 @@ const questions = [
 		category: 'Antivirus and Anti-malware'
 	},
 	{
-		question: 'How can you protect yourself while using public Wi-Fi connections?',
+		question: 'How can you protect yourself while using public Wi-Fi?',
 		answers: [
 			{
 				text: 'There are no ways to protect yourself',
