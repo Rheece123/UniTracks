@@ -242,7 +242,7 @@ button[type='submit'] {
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
-    #header-home .header-content h1 {
+    #header-home .header-content h2 {
       font-size: 4rem;
       line-height: 1.2; }
 
@@ -999,7 +999,7 @@ table#report {
 @media (max-height: 580px) {
   #header-home .header-content {
     padding-top: 3rem; }
-    #header-home .header-content h1 {
+    #header-home .header-content h2 {
       font-size: 3rem; }
   #home-benefits .benefits {
     margin-top: 2rem; }

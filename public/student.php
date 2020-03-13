@@ -70,9 +70,9 @@
 				<div class="about-header-overlay">
 					<div class="container">
 						<nav id="main-nav">
-							<h2 id="logo">
+							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
-							</h2>
+							</h1>
 							<ul>
 								<li><a href="#" class="current">Home</a></li>
 								<li><a href="tracks/track.html">Tracks</a></li>
