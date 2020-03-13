@@ -16,19 +16,13 @@
 				color: $dark-color;
 				padding: 0.8rem;
 				width: 40%;
-				border: 1px solid #aaa;
+				border: 2px solid #000;
 				border-radius: 5px;
 				background-color: #fff;
 
-				&:hover {
-					border-color: #888;
-				}
-
 				&:focus {
-					border-color: #aaa;
-					box-shadow: 0 0 1px 3px $main-color;
-					box-shadow: 0 0 0 3px -moz-mac-focusring;
-					color: #222;
+					border-color: $main-color;
+					box-shadow: 0 0 8px 0 $main-color;
 				}
 
 				option {
