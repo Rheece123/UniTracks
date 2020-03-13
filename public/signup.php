@@ -65,7 +65,7 @@
 								<li><a href="about.html">About</a></li>
 								<li><a href="login.php">Login</a></li>
 							</ul>
-							<a href="#sign-up" class="btn-signup">Sign Up</a>
+							<a href="#" class="btn-signup">Sign Up</a>
 						</nav>
 					</div>
 				</div>

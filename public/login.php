@@ -64,7 +64,7 @@
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#login" class="current">Login</a></li>
+								<li><a href="#" class="current">Login</a></li>
 							</ul>
 							<a href="signup.php" class="btn-signup">Sign Up</a>
 						</nav>
