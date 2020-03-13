@@ -59,7 +59,7 @@ function speakQuestions() {
 	let speakText = new SpeechSynthesisUtterance(questionText.innerText);
 
 	// Set voice, pitch and rate for voice
-	speakText.voice = voices[4];
+	speakText.voice = voices[0];
 	speakText.rate = 1;
 	speakText.pitch = 1;
 
