@@ -76,7 +76,7 @@
         <div class="form-container">
           <h2 class="section-title">Sign Up</h2>
           <div class="bottom-line"></div>
-          <p class="lead">Sign up for a free account to access the skillset modules</p>
+          <p class="lead">Sign up to access the skillset modules</p>
           <p class="status-message"></p>	
           <?php
             if (isset($_GET['error'])) {
@@ -123,15 +123,30 @@
 
           <form action="includes/signup.inc.php" method="post">
             <div class="signup-fields">
-							<input type="text" class="text-input username" name="uid" id="uid" placeholder="Username *" required/>
-							<input type="text" class="text-input email" name="mail" id="mail" placeholder="E-mail  *" required/>
-							<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Password *" required/>
-							<input type="password" class="text-input confirm-pwd" name="pwd-repeat" id="pwd-repeat" placeholder="Repeat Password *" required/>
-							<select name="account-type" id="account-type" class="text-input account" required>
-                <option selected="selected" disabled>Account Type *</option>
-                <option value="student">Student</option>
-                <option value="instructor">Instructor</option>
-              </select>
+							<div class="username">
+								<label for="uid">Username *</label>
+								<input type="text" class="text-input username" name="uid" id="uid" placeholder="Enter username" required/>
+							</div>
+							<div class="email">
+								<label for="mail">Email *</label>
+								<input type="text" class="text-input email" name="mail" id="mail" placeholder="Enter email" required/>
+							</div>
+							<div class="pwd">
+								<label for="pwd">Password *</label>
+								<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Example: P@assword123" required/>
+							</div>
+							<div class="confirm-pwd">
+								<label for="pwd-repeat">Repeat Password *</label>
+								<input type="password" class="text-input confirm-pwd" name="pwd-repeat" id="pwd-repeat" placeholder="Example: P@assword123" required/>
+							</div>
+							<div class="account">
+								<label for="account-type">Account Type *</label>
+								<select name="account-type" id="account-type" class="text-input account" required>
+									<option selected="selected" disabled>Account Type</option>
+									<option label="Student" value="student">Student</option>
+									<option label="Instructor" value="instructor">Instructor</option>
+								</select>
+							</div>	
             </div>
 						<button type="submit" name="signup-submit" class="btn-dark my-1">Sign Up</button>
 						<div id="login">

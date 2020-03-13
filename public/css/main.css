@@ -64,7 +64,7 @@ img {
   overflow: hidden; }
 
 .form-container {
-  max-width: 522px;
+  max-width: 510px;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden; }
@@ -221,10 +221,13 @@ button[type='submit'] {
   margin: auto; }
 
 .text-input {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
   border: 2px solid #000;
   border-radius: 5px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box; }
 
 .link:hover {
   color: #93cb52; }
@@ -375,30 +378,40 @@ button[type='submit'] {
       #tracks-catalog #tracks .track-text a.btn-light {
         margin: 2rem 0; }
 
-.login-fields {
+#login p.lead {
+  text-align: center; }
+
+#login .login-fields {
   display: grid;
-  grid-template-areas: 'username' 'password';
-  grid-gap: 1.2rem; }
-  .login-fields label {
-    text-align: left; }
-  .login-fields .username {
+  grid-template-areas: 'username' 'password'; }
+  #login .login-fields label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.2rem; }
+  #login .login-fields .username {
     grid-area: username; }
-  .login-fields .pwd {
+  #login .login-fields .pwd {
     grid-area: password; }
 
-.signup-fields {
+#signup p.lead {
+  text-align: center; }
+
+#signup .signup-fields {
   display: grid;
-  grid-template-areas: 'username' 'email' 'password' 'comfirm-password' 'account';
-  grid-gap: 1.2rem; }
-  .signup-fields .username {
+  grid-template-areas: 'username' 'email' 'password' 'comfirm-password' 'account'; }
+  #signup .signup-fields label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.2rem; }
+  #signup .signup-fields .username {
     grid-area: username; }
-  .signup-fields .email {
+  #signup .signup-fields .email {
     grid-area: email; }
-  .signup-fields .pwd {
+  #signup .signup-fields .pwd {
     grid-area: password; }
-  .signup-fields .confirm-pwd {
+  #signup .signup-fields .confirm-pwd {
     grid-area: comfirm-password; }
-  .signup-fields .account {
+  #signup .signup-fields .account {
     grid-area: account; }
 
 #course-overview .container,

@@ -77,7 +77,7 @@
 			<div class="form-container">
 				<h2 class="section-title">Login</h2>
 				<div class="bottom-line"></div>
-				<p class="lead">Login to access your account and the skillset modules</p>			
+				<p class="lead">Login to access the skillset modules</p>			
 				<p class="status-message"></p>	
 				<?php
         if (isset($_GET['error'])) {
@@ -99,9 +99,9 @@
 							<input type="text" class="text-input" name="mailuid" id="mailuid" placeholder="Enter your username or email"/>
 						</div>
 						<div class="pwd">
-							<label for="mailuid">Password</label>
+							<label for="pwd">Password</label>
 						<input type="password" class="text-input" name="pwd" id="pwd" placeholder="Enter your password"/>
-					</div>
+						</div>
 					</div>
 					<button type="submit" name="login-submit" class="btn-dark my-1">Login</button>
 				</form>

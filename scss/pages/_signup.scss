@@ -1,28 +1,39 @@
 // Signup Page
-.signup-fields {
-	display: grid;
-	grid-template-areas:
-		'username'
-		'email'
-		'password'
-		'comfirm-password'
-		'account';
-	grid-gap: 1.2rem;
+#signup {
+	p.lead {
+		text-align: center;
+	}
 
-	// Grid Areas
-	.username {
-		grid-area: username;
-	}
-	.email {
-		grid-area: email;
-	}
-	.pwd {
-		grid-area: password;
-	}
-	.confirm-pwd {
-		grid-area: comfirm-password;
-	}
-	.account {
-		grid-area: account;
+	.signup-fields {
+		label {
+			text-align: left;
+			display: block;
+			margin-bottom: 0.2rem;
+		}
+
+		display: grid;
+		grid-template-areas:
+			'username'
+			'email'
+			'password'
+			'comfirm-password'
+			'account';
+
+		// Grid Areas
+		.username {
+			grid-area: username;
+		}
+		.email {
+			grid-area: email;
+		}
+		.pwd {
+			grid-area: password;
+		}
+		.confirm-pwd {
+			grid-area: comfirm-password;
+		}
+		.account {
+			grid-area: account;
+		}
 	}
 }
