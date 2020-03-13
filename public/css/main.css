@@ -113,9 +113,14 @@ input[class^='btn-']:hover {
   #login-btn:hover,
   #signup-btn:hover {
     color: #333; }
+  #login-btn-focus,
+  #signup-btn-focus {
+    outline: 1px solid #93cb52; }
 
 button[type='submit'] {
   width: 100%; }
+  button[type='submit']-focus {
+    outline: 1px solid #93cb52; }
 
 .bg-main {
   background-color: #93cb52;
