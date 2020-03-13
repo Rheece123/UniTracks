@@ -305,7 +305,7 @@ button[type='submit'] {
 
 #about-unitracks .about-info {
   display: flex; }
-  #about-unitracks .about-info img {
+  #about-unitracks .about-info .bio-image {
     height: auto;
     width: 40%; }
   #about-unitracks .about-info .bio {
