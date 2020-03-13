@@ -148,6 +148,7 @@
 		</div>
 
 		<!-- JavaScript Files -->
+		<script src="../../js/main.js"></script>
 		<script src="../../js/assessment/speech.js"></script>
 		<script src="../../js/assessment/questions.js"></script>
 		<script src="../../js/assessment/main.js"></script>
