@@ -17,17 +17,12 @@ body {
 a {
   text-decoration: none;
   color: #333; }
-  a:focus {
-    outline: thin dotted; }
 
 ul {
   list-style: none; }
 
 img {
   width: 100%; }
-
-button:focus {
-  outline: thin dotted; }
 
 #logo {
   padding-top: 0.5rem;

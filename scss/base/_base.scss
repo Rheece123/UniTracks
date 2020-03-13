@@ -37,10 +37,6 @@ body {
 a {
 	text-decoration: none;
 	color: $dark-color;
-
-	&:focus {
-		outline: thin dotted;
-	}
 }
 
 ul {
@@ -49,12 +45,6 @@ ul {
 
 img {
 	width: 100%;
-}
-
-button {
-	&:focus {
-		outline: thin dotted;
-	}
 }
 
 // Utilities
