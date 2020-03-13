@@ -72,9 +72,9 @@
 				<div class="about-header-overlay">
 					<div class="container">
 						<nav id="main-nav">
-							<h1 id="logo">
+							<h2 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
-							</h1>
+							</h2>
 							<h2 class="module-title">Cyber Security</h2>
 						</nav>
 					</div>

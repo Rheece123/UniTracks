@@ -29,7 +29,8 @@ img {
 
 #logo {
   padding-top: 0.5rem;
-  color: #fff; }
+  color: #fff;
+  font-size: 24px; }
 
 .preload-transitions * {
   -webkit-transition: none !important;
