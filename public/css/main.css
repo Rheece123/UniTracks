@@ -379,6 +379,8 @@ button[type='submit'] {
   display: grid;
   grid-template-areas: 'username' 'password';
   grid-gap: 1.2rem; }
+  .login-fields label {
+    text-align: left; }
   .login-fields .username {
     grid-area: username; }
   .login-fields .pwd {

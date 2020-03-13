@@ -1,5 +1,9 @@
 // Login Page
 .login-fields {
+	label {
+		text-align: left;
+	}
+
 	display: grid;
 	grid-template-areas:
 		'username'
