@@ -100,7 +100,7 @@
 						</div>
 						<div class="pwd">
 							<label for="pwd">Password</label>
-						<input type="password" class="text-input" name="pwd" id="pwd" placeholder="Enter your password"/>
+						<input type="password" class="text-input" name="pwd" id="pwd" placeholder="Enter your password" autocomplete="current-password"/>
 						</div>
 					</div>
 					<button type="submit" name="login-submit" class="btn-dark my-1">Login</button>

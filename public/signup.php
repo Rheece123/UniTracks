@@ -133,11 +133,11 @@
 							</div>
 							<div class="pwd">
 								<label for="pwd">Password *</label>
-								<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Example: P@assword123" required/>
+								<input type="password" class="text-input pwd" name="pwd" id="pwd" placeholder="Example: P@assword123" autocomplete="new-password" required/>
 							</div>
 							<div class="confirm-pwd">
 								<label for="pwd-repeat">Repeat Password *</label>
-								<input type="password" class="text-input confirm-pwd" name="pwd-repeat" id="pwd-repeat" placeholder="Example: P@assword123" required/>
+								<input type="password" class="text-input confirm-pwd" name="pwd-repeat" id="pwd-repeat" placeholder="Example: P@assword123" autocomplete="new-password" required/>
 							</div>
 							<div class="account">
 								<label for="account-type">Account Type *</label>
