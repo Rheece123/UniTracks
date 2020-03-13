@@ -220,8 +220,9 @@ button[type='submit'] {
   padding: 0.5rem 1rem;
   border: 2px solid #000;
   border-radius: 5px;
-  font-size: 1rem;
-  outline: none; }
+  font-size: 1rem; }
+  .text-input:focus {
+    outline: 1px solid #93cb52; }
 
 .link:hover {
   color: #93cb52; }
@@ -447,8 +448,9 @@ button[type='submit'] {
 
 button {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  outline: 0; }
+  font-family: 'Roboto', sans-serif; }
+  button:focus {
+    outline: 1px solid #93cb52; }
 
 .module-title {
   color: #fff;
@@ -602,7 +604,7 @@ button {
       box-shadow: 0 0 1px 3px #93cb52;
       box-shadow: 0 0 0 3px -moz-mac-focusring;
       color: #222;
-      outline: none; }
+      outline: 1px solid #93cb52; }
     #search-resources .container #select-resource .select-list option {
       font-weight: normal; }
 
@@ -723,14 +725,14 @@ footer {
   border: 2px solid #333;
   border-radius: 5px;
   margin-right: 1rem;
-  outline: none;
   padding: 0.5rem 1rem;
   width: 100%;
   box-sizing: border-box;
   transition: 0.3s; }
   .search-input:focus {
     border-color: #93cb52;
-    box-shadow: 0 0 8px 0 #93cb52; }
+    box-shadow: 0 0 8px 0 #93cb52;
+    outline: 1px solid #93cb52; }
 
 .table {
   border: 1px solid #93cb52;
