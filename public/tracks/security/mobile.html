@@ -31,17 +31,24 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="../../student.php">Home</a></li>
+								<li><a href="../../student.php" aria-label="Go to home page">Home</a></li>
 								<li><a href="../track.html" class="current">Tracks</a></li>
-								<li><a href="../../resources.html">Resources</a></li>
+								<li><a href="../../resources.html" aria-label="Go to resources page">Resources</a></li>
 							</ul>
 							<form action="../../includes/logout.inc.php" method="post">
-								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+								<button
+									type="submit"
+									name="logout-submit"
+									class="btn-logout"
+									aria-label="Logout and go back to home page"
+								>
+									Logout
+								</button>
 							</form>
 						</nav>
 					</div>
@@ -98,9 +105,13 @@
 					<div class="info my-3">
 						<h2>End of lesson</h2>
 						<div class="controls">
-							<a href="pc.html" class="btn-dark control-btn">Previous Lesson</a>
-							<a href="security.html" class="btn-dark control-btn">View Course</a>
-							<a href="assessment.php" class="btn-dark control-btn">Take Assessment</a>
+							<a href="pc.html" class="btn-dark control-btn" aria-label="Go back to PC lesson page">Previous Lesson</a>
+							<a href="security.html" class="btn-dark control-btn" aria-label="Go back to security tracks page"
+								>View Course</a
+							>
+							<a href="assessment.php" class="btn-dark control-btn" aria-label="Go to assessment page"
+								>Take Assessment</a
+							>
 						</div>
 					</div>
 				</div>

@@ -56,14 +56,14 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="login.php">Login</a></li>
+								<li><a href="index.html" aria-label="Go to home page">Home</a></li>
+								<li><a href="about.html" aria-label="Go to about page">About</a></li>
+								<li><a href="login.php" aria-label="Go to login page">Login</a></li>
 							</ul>
 							<a href="#" class="btn-signup">Sign Up</a>
 						</nav>
@@ -148,10 +148,10 @@
 								</select>
 							</div>	
             </div>
-						<button type="submit" name="signup-submit" class="btn-dark my-1">Sign Up</button>
+						<button type="submit" name="signup-submit" class="btn-dark my-1" aria-label="Submit user details and sign up">Sign Up</button>
 						<div id="login">
 							<p>Have an account already?</p>
-							<a href="login.php" class="link">Login here</a>
+							<a href="login.php" class="link" aria-label="Go to login page">Login here</a>
 						</div>
           </form>
         </div>

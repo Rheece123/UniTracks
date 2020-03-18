@@ -69,17 +69,17 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="instructor.php">Home</a></li>
-								<li><a href="skill.php">Skills</a></li>
+								<li><a href="instructor.php" aria-label="Go to home page">Home</a></li>
+								<li><a href="skill.php" aria-label="Go to skills page">Skills</a></li>
 								<li><a href="#" class="current">Reports</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
-						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+						    <button type="submit" name="logout-submit" class="btn-logout" aria-label="Logout and go back to home page">Logout</button>
 					    </form>
 						</nav>
 					</div>
@@ -111,7 +111,7 @@
 					
 					<form action="includes/report.inc.php" method="post">
 							<input type="text" name="search-report" class="search-input" placeholder="Enter Username" />
-							<button type="submit" name="submit" class="btn-dark my-1">Submit</button>
+							<button type="submit" name="submit" class="btn-dark my-1" aria-label="Submit username">Submit</button>
 					</form>	
 				</div>
 			</section>
@@ -140,10 +140,6 @@
 					?>	
 				</div>
 			</section>
-
-
-			
-			
 
 			<!-- Footer -->
 			<footer id="main-footer">

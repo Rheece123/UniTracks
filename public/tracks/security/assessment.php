@@ -85,7 +85,7 @@
 				<div class="container">
 					<h2 class="title">Instructions</h2>
 					<button id="audio-btn" class="btn-dark">Audio</button>
-					<a id="exit-btn" href="security.html" class="btn-dark hide">Exit Assessment</a>
+					<a id="exit-btn" href="security.html" class="btn-dark hide" aria-label="Exit assessment and go back to tracks page">Exit Assessment</a>
 				</div>
 			</div>
 
@@ -100,7 +100,7 @@
 							assessment has no time limit so take as much time as needed.
 						</p>
 						<p class="instruction-text my-2">To start the assessment, click the Start Assessment button.</p>
-						<button id="start-btn" class="btn-dark my-2">Start Assessment</button>
+						<button id="start-btn" class="btn-dark my-2" aria-label="Start assessment and go to first question">Start Assessment</button>
 					</div>
 				</div>
 			</div>
@@ -142,7 +142,7 @@
 							<div class="progress-bar-status"></div>
 						</div>
 					</div>
-					<button id="skip-btn" class="btn-dark hide">Skip Question</button>
+					<button id="skip-btn" class="btn-dark hide" aria-label="Skip question and go to the next question">Skip Question</button>
 				</div>
 			</footer>
 		</div>

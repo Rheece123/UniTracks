@@ -69,17 +69,17 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
 								<li><a href="#" class="current">Home</a></li>
-								<li><a href="tracks/track.html">Tracks</a></li>
-								<li><a href="resources.html">Resources</a></li>
+								<li><a href="tracks/track.html" aria-label="Go to tracks page">Tracks</a></li>
+								<li><a href="resources.html" aria-label="Go to resources page">Resources</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
-						    <button class="btn-logout" type="submit" name="logout-submit">Logout</button>
+						    <button class="btn-logout" type="submit" name="logout-submit" aria-label="Logout and go back to home page">Logout</button>
 					    </form>
 						</nav>
 					</div>

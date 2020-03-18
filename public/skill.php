@@ -69,17 +69,17 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="instructor.php">Home</a></li>
+								<li><a href="instructor.php" aria-label="Go to home page"">Home</a></li>
 								<li><a href="#" class="current">Skills</a></li>
-								<li><a href="report.php">Reports</a></li>
+								<li><a href="report.php" aria-label="Go to reports page">Reports</a></li>
 							</ul>
 							<form action="includes/logout.inc.php" method="post">	
-						    <button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+						    <button type="submit" name="logout-submit" class="btn-logout" aria-label="Logout and go back to home page">Logout</button>
 					    </form>
 						</nav>
 					</div>
@@ -119,7 +119,7 @@
 					
 					<form action="includes/skill.inc.php" method="post">
 							<input type="text" name="add-skill" class="search-input" placeholder="Add a new digital skill" />
-							<button type="submit" name="skill-submit" class="btn-dark my-1">Add Skill</button>
+							<button type="submit" name="skill-submit" class="btn-dark my-1" aria-label="Submit new digital skill">Add Skill</button>
 					</form>
 				</div>
 			</section>

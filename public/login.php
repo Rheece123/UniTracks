@@ -57,16 +57,16 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="index.html" aria-label="Go to home page">Home</a></li>
+								<li><a href="about.html" aria-label="Go to about page">About</a></li>
 								<li><a href="#" class="current">Login</a></li>
 							</ul>
-							<a href="signup.php" class="btn-signup">Sign Up</a>
+							<a href="signup.php" class="btn-signup" aria-label="Go to sign up page">Sign Up</a>
 						</nav>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 				</form>
 				<div id="signin">
 					<p class="pt-2">Don't have an account?</p>
-					<a href="signup.php" class="link">Sign Up Here</a>
+					<a href="signup.php" class="link" aria-label="Go to sign up page">Sign Up Here</a>
 				</div>
 			</div>
 		</section>

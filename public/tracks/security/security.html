@@ -31,17 +31,24 @@
 			<header id="header-inner">
 				<div class="about-header-overlay">
 					<div class="container">
-						<nav id="main-nav">
+						<nav id="main-nav" aria-label="Primary navigation menu">
 							<h1 id="logo">
 								<span class="text-primary"> <i class="fas fa-university"></i> Uni</span>Tracks
 							</h1>
 							<ul>
-								<li><a href="../../student.php">Home</a></li>
+								<li><a href="../../student.php" aria-label="Go to home page">Home</a></li>
 								<li><a href="../track.html" class="current">Tracks</a></li>
-								<li><a href="../../resources.html">Resources</a></li>
+								<li><a href="../../resources.html" aria-label="Go to resources page">Resources</a></li>
 							</ul>
 							<form action="../../includes/logout.inc.php" method="post">
-								<button type="submit" name="logout-submit" class="btn-logout">Logout</button>
+								<button
+									type="submit"
+									name="logout-submit"
+									class="btn-logout"
+									aria-label="Logout and go back to home page"
+								>
+									Logout
+								</button>
 							</form>
 						</nav>
 					</div>
@@ -70,8 +77,8 @@
 									websites.
 								</p>
 								<ol class="topics">
-									<li><a href="password.html">Password Protecion</a></li>
-									<li><a href="browser.html">Browser Security</a></li>
+									<li><a href="password.html" aria-label="Go to password page">Password Protecion</a></li>
+									<li><a href="browser.html" aria-label="Go to browser page">Browser Security</a></li>
 								</ol>
 							</div>
 						</div>
@@ -83,8 +90,8 @@
 									in order to keep your PC and mobile devices safe and protected from security vulnerabilities
 								</p>
 								<ol class="topics">
-									<li><a href="pc.html">PC Security</a></li>
-									<li><a href="mobile.html">Mobile Security</a></li>
+									<li><a href="pc.html" aria-label="Go to PC page">PC Security</a></li>
+									<li><a href="mobile.html" aria-label="Go to mobile page">Mobile Security</a></li>
 								</ol>
 							</div>
 						</div>
@@ -95,7 +102,7 @@
 									Take the assessment to test your knowledge about the concepts covered within this module.
 								</p>
 								<ol class="topics">
-									<li><a href="assessment.php">Take Assessment</a></li>
+									<li><a href="assessment.php" aria-label="Go to assessment page">Take Assessment</a></li>
 								</ol>
 							</div>
 						</div>
