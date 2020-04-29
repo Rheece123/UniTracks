@@ -1,9 +1,16 @@
 <?php
 
-$servername = "sql2.freesqldatabase.com";
-$dBUsername = "sql2326579";
-$dBPassword = "jK9*cV6*";
-$dBName = "sql2326579";
+// FreeSQLDatabase no longer works
+
+// $servername = "sql2.freesqldatabase.com";
+// $dBUsername = "sql2326579";
+// $dBPassword = "jK9*cV6*";
+// $dBName = "sql2326579";
+
+$servername = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "unitracks";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 

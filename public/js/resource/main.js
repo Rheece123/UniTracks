@@ -85,7 +85,11 @@ function searchForInput() {
 	// Create XHR Object
 	const xhr = new XMLHttpRequest();
 
-	xhr.open('POST', 'https://unitracks.herokuapp.com/includes/skill.inc.php', true);
+	// Heroku URL
+	// xhr.open('POST', 'https://unitracks.herokuapp.com/includes/skill.inc.php', true);
+
+	// Localhost URL
+	xhr.open('POST', 'http://localhost/Unitracks/public/includes/skill.inc.php', true);
 
 	xhr.onload = function() {
 		// Check if HTTP status is 200 (OK)

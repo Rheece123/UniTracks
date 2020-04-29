@@ -62,7 +62,7 @@
 		<link rel="stylesheet" href="../../css/main.css" />
 		<title>Assessment | Learn Digital Skills</title>
 	</head>
-	<body>
+	<body class="preload-transitions">
 		<!-- Loading Animation -->
 		<div class="loader"></div>
 
